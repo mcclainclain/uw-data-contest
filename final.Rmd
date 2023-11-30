@@ -1,0 +1,175 @@
+---
+title: UW Athletics Data Contest
+author: Matt McClain
+date: December 6, 2023
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+# SEC Schools (11/14 Teams)
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=T,eval=T,message=F,warning=F,fig.align='center')
+library(tidyverse)
+library(rvest)
+library(kableExtra)
+```
+
+```{r, include=FALSE}
+show_table = function(df, caption="") {
+  return (df %>% kbl(caption = caption) %>% kable_classic_2(bootstrap_options = c("striped", "hover"), full_width = F, font_size=20, html_font="Cambria"))
+}
+```
+
+
+## Scraping
+
+All of the scraping for this project was done in R, using the `rvest` package, with the `read_html()` and `html_table`, functions. These conveniently take a webpage and automatically create a list of R dataframes, allowing for easy, simple scraping. Here's an example:
+
+```{r, eval=FALSE}
+# Scraping data for the University of Missouri's rosters for all sports in 2023
+
+
+# The sports that the school offers
+sports = c("baseball",
+           "softball",
+           "mens-basketball",
+           "womens-basketball",
+           "cross-country",
+           "football",
+           "mens-golf",
+           "womens-golf",
+           "mens-swimming-and-diving",
+           "womens-swimming-and-diving",
+           "womens-gymnastics",
+           "womens-soccer",
+           "track-and-field",
+           "wrestling",
+           "womens-tennis",
+           "womens-volleyball")
+
+# "Type" is just determining what the format of the year is. If the sport's urls are formatted as 2023, 2024, etc, its type is 0. If it is formatted like 2023-24, it is 1.
+types = c(0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0)
+
+sports_df = data.frame(Sport = sports, Type = types) # DataFrame combining sports with their types'
+
+# This is a helper function taking in a column that has Hometown data. Some of the columns are presented as "Hometown/High School"; we only want Hometown, so we can split on the "/" character, and take the first element.
+hometown_split = function(L) {
+  new_list = c()
+  for (i in 1:length(L)) {
+    new_list = c(new_list, str_trim(str_split_1(L[i], "/")[1]))
+  }
+  return (new_list)
+}
+
+# Scraping
+BASE_URL = "https://mutigers.com"
+years = 2023:2023 # List of years that we want to look at. Normally this would be something like 2013:2023.
+
+college_df = data.frame() # Initializing an empty dataframe that we can add to.
+
+for (i in 1:nrow(sports_df)) {
+  sport = sports_df$Sport[i] # Easier for readability
+  for (y in 1:length(years)) {
+    year = years[y] # Easier for readability
+    
+    # If the sport's url is presented as 2023-24 (type 1), we want to convert the year in our for loop to be of that format.
+    if (sports_df$Type[i] == 1) {
+      next_year = as.character(years[y] + 1)
+      year_str = paste(years[y], "-", substr(next_year, nchar(next_year) -1, nchar(next_year)), sep="")
+    }
+    else { # otherwise, keep year as is.
+      year_str = as.character(years[y])
+    }
+    
+    # Put together the pieces of the url
+    url = paste(BASE_URL, "/sports/", sport, "/roster/", year_str, sep="")
+    
+    # Read the data.
+    tables = read_html(url) %>% html_table()
+    
+    # Which element of the tables list the roster is on depends on the school.
+    roster = data.frame(tables[3])
+    
+    # Some sports have men's and women's rosters combined in two different tables. This adds that extra table in.
+    if (sport %in% c("cross-country", "track-and-field")) {
+      roster = rbind(roster, data.frame(tables[4]))
+    }
+    
+    # Adding a column for the year and the sport
+    roster$Year = rep(year, nrow(roster))
+    roster$Sport = rep(sport, nrow(roster))
+    
+    # This checks if there is a column including the name "hometown". If there is one, it adds a Hometown column, using the hometown_split() function.
+    for (i in 1:length(colnames(roster))){
+      if (length(grep("[hH]ometown", colnames(roster)[i])) > 0){
+        roster$Hometown = hometown_split(roster[[colnames(roster)[i]]])
+      }
+      
+      # If there is a column "Name", add it to the roster dataframe.
+      if (length(grep("[nN]ame", colnames(roster)[i])) > 0){
+        roster$Name = roster[[colnames(roster)[i]]]
+      }
+    }
+    
+    
+    # If we don't find a column with "Hometown" in it, likely this url doesn't contain any data. We move on to the next year/sport.
+    if (!("Hometown" %in% colnames(roster))) {
+      next
+    }
+    
+    # Get the columns we want from the roster, and add them to the overall college dataframe.
+    roster = roster %>% select(Name, Hometown, Year, Sport)
+    college_df = rbind(college_df, roster)
+  }
+  # For monitoring purposes
+  # print(paste("Finished with ", sport))
+}
+
+# Typically, csv files are written for each school, so we can combine them in the cleaning. I will not do that here, but instead show a snapshot of the dataframe.
+# write.csv(college_df, "MIZZOU.csv", row.names=F)
+
+```
+
+Here is a snapshot of `MIZZOU.csv`.
+
+```{r}
+show_table(head(read_csv("./Missouri/mizzou.csv")))
+```
+
+
+## Data Cleaning
+
+The way I did the scraping, we are now left with 11 different directories, each with a `.csv` file, and a `.R` script file that scrapes the data, and generates those `.csv` files.
+
+### Reading and Combining
+
+The approach I took is to get those `.csv.` files recursively from the home directory that houses all of these subdirectories.
+
+```{r, warning=F, message=F}
+# Get all files from this directory
+files = list.files(recursive=T)
+
+# Get all .csv files, this will remove the .R scripts
+csv_files = files[endsWith(files, ".csv")]
+
+all_schools = data.frame()
+
+for (f in csv_files) {
+  file = read_csv(f)
+  file$School = rep(str_split_1(f, "/")[1], nrow(file))
+  all_schools = rbind(all_schools, file)
+}
+```
+
+We can see the head and tail of this dataset, showing we have combined all the data for all schools.
+
+```{r}
+show_table(head(all_schools))
+show_table(tail(all_schools))
+```
+
+
