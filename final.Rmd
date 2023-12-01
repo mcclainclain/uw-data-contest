@@ -16,6 +16,10 @@ knitr::opts_chunk$set(echo=T,eval=T,message=F,warning=F,fig.align='center')
 library(tidyverse)
 library(rvest)
 library(kableExtra)
+library(leaflet)
+library(leaflet.providers)
+library(ggmap)
+library(sqldf)
 ```
 
 ```{r, include=FALSE}
@@ -155,6 +159,8 @@ files = list.files(recursive=T)
 
 # Get all .csv files, this will remove the .R scripts
 csv_files = files[endsWith(files, ".csv")]
+csv_files = csv_files[!(csv_files %in% c("geocodes.csv", "rosters.csv"))]
+
 
 all_schools = data.frame()
 
@@ -171,5 +177,92 @@ We can see the head and tail of this dataset, showing we have combined all the d
 show_table(head(all_schools))
 show_table(tail(all_schools))
 ```
+
+When scraping and creating these `.csv` files, I just added the sport names as the universities had structured them, so some of them had different names. We need to loop through the sport vector and create some sort of standard naming for the sport names, so that they can be visualized. Here we can see all the different names we have of sports.
+
+```{r}
+sport_names = all_schools$Sport
+unique(sport_names)
+```
+
+I don't want to do this automatically with a loop (and with things like regular expressions) so I'm going to just create a manual dataframe by combining two lists together.
+
+```{r}
+names = unique(sport_names)
+name_replacements = c("baseball", "softball", "mens-basketball", "womens-basketball", "football", "mens-golf", "womens-golf", "swimming-and-diving", "gymnastics", "womens-soccer", "xc-track", "womens-tennis", "mens-tennis", "volleyball", "womens-rowing", "baseball", "softball", "mens-basketball", "womens-basketball", "football", "mens-golf", "womens-golf", "swimming-and-diving", "gymnastics", "womens-soccer", "xc-track", "xc-track", "xc-track", "xc-track", "womens-tennis", "mens-tennis", "volleyball", "xc-track", "swimming-and-diving", "swimming-and-diving", "xc-track", "womens-lacrosse", "mens-basketball", "womens-basketball", "xc-track", "mens-golf", "womens-golf", "swimming-and-diving", "gymnastics", "mens-soccer", "womens-soccer", "xc-track", "mens-tennis", "womens-tennis", "volleyball", "baseball", "softball", "mens-basketball", "xc-track", "football", "mens-golf", "womens-golf", "swimming-and-diving", "gymnastics", "womens-soccer", "xc-track", "mens-tennis", "womens-tennis", "volleyball", "beach-volleyball", "wrestling", "xc-track", "xc-track", "swimming-and-diving", "xc-track", "womens-lacrosse")
+
+sport_name_changes = data.frame(Name = names, Modified = name_replacements)
+show_table(tail(sport_name_changes))
+```
+
+This adjustment also allows me to combine some men's/women's sports together. Some universities combine the rosters, while some don't, so this allows me to combine sports like cross country, track and field, and swimming and diving.
+
+```{r}
+# Apply this to the all_sports sport list
+
+new_sports = c()
+
+for (sport in all_schools$Sport){
+  new_sports = c(new_sports, sport_name_changes[sport_name_changes["Name"] == sport][2])
+}
+all_schools$Sport = new_sports
+
+# Write this to a csv to use for geocoding
+write.csv(all_schools, "rosters.csv", row.names=F)
+
+print(paste("Old number of names:", length(names), "New number of names", length(unique(new_sports))))
+```
+
+### Adding Census Data
+
+### Geocoding the Data
+
+I created a `geocodes.R` script that takes the cities in the players dataset and geocodes all 5000+ unique cities. This way we can map them and show all the different areas these student-athletes come from. Here is what that script looks like.
+
+```{r, eval=F}
+
+library(tidyverse)
+library(ggmap)
+
+players = read_csv("rosters.csv")
+
+readRenviron("./.Renviron")
+register_google(Sys.getenv("MAPSAPIKEY"))
+
+
+cities = data.frame(unique(players$Hometown))
+cities$Hometown = cities$unique.players.Hometown.
+cities = cities %>% select(Hometown) %>% drop_na()
+
+
+
+geocoded_cities = mutate_geocode(cities, Hometown)
+
+write_csv(distinct(geocoded_cities %>% select(Hometown, lon, lat)), "./geocodes.csv")
+
+```
+
+Here is part of what that returns.
+
+
+```{r}
+geocodes = read_csv("geocodes.csv")
+show_table(head(geocodes))
+```
+
+To help with the map, I will add a metric that has the top school of choice for each hometown.
+
+```{r}
+
+schools = all_schools %>% select(Hometown, School) %>% group_by(Hometown, School) %>% summarize(n = length(Hometown)) %>% drop_na()
+
+cities = sqldf("SELECT Hometown, School, max(n) as Num_Players FROM schools GROUP BY Hometown ORDER BY Num_Players DESC")
+
+```
+
+
+### Mapping the Data
+
+We will use the leaflet package for this portion. This will give us a nice interactive map we can look at.
 
 

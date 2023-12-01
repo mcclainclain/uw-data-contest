@@ -615,14 +615,16 @@ subdirectories.</p>
 <span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a></span>
 <span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co"># Get all .csv files, this will remove the .R scripts</span></span>
 <span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>csv_files <span class="ot">=</span> files[<span class="fu">endsWith</span>(files, <span class="st">&quot;.csv&quot;</span>)]</span>
-<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>all_schools <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>csv_files <span class="ot">=</span> csv_files[<span class="sc">!</span>(csv_files <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;geocodes.csv&quot;</span>, <span class="st">&quot;rosters.csv&quot;</span>))]</span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a></span>
 <span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="cf">for</span> (f <span class="cf">in</span> csv_files) {</span>
-<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>  file <span class="ot">=</span> <span class="fu">read_csv</span>(f)</span>
-<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>  file<span class="sc">$</span>School <span class="ot">=</span> <span class="fu">rep</span>(<span class="fu">str_split_1</span>(f, <span class="st">&quot;/&quot;</span>)[<span class="dv">1</span>], <span class="fu">nrow</span>(file))</span>
-<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>  all_schools <span class="ot">=</span> <span class="fu">rbind</span>(all_schools, file)</span>
-<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a>}</span></code></pre></div>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>all_schools <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="cf">for</span> (f <span class="cf">in</span> csv_files) {</span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>  file <span class="ot">=</span> <span class="fu">read_csv</span>(f)</span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a>  file<span class="sc">$</span>School <span class="ot">=</span> <span class="fu">rep</span>(<span class="fu">str_split_1</span>(f, <span class="st">&quot;/&quot;</span>)[<span class="dv">1</span>], <span class="fu">nrow</span>(file))</span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a>  all_schools <span class="ot">=</span> <span class="fu">rbind</span>(all_schools, file)</span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a>}</span></code></pre></div>
 <p>We can see the head and tail of this dataset, showing we have
 combined all the data for all schools.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">show_table</span>(<span class="fu">head</span>(all_schools))</span></code></pre></div>
@@ -881,6 +883,286 @@ Vanderbilt
 </tr>
 </tbody>
 </table>
+<p>When scraping and creating these <code>.csv</code> files, I just
+added the sport names as the universities had structured them, so some
+of them had different names. We need to loop through the sport vector
+and create some sort of standard naming for the sport names, so that
+they can be visualized. Here we can see all the different names we have
+of sports.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>sport_names <span class="ot">=</span> all_schools<span class="sc">$</span>Sport</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="fu">unique</span>(sport_names)</span></code></pre></div>
+<pre><code>##  [1] &quot;baseball&quot;                   &quot;softball&quot;                  
+##  [3] &quot;mens-basketball&quot;            &quot;womens-basketball&quot;         
+##  [5] &quot;football&quot;                   &quot;mens-golf&quot;                 
+##  [7] &quot;womens-golf&quot;                &quot;swimming-and-diving&quot;       
+##  [9] &quot;womens-gymnastics&quot;          &quot;womens-soccer&quot;             
+## [11] &quot;xctrack&quot;                    &quot;womens-tennis&quot;             
+## [13] &quot;mens-tennis&quot;                &quot;womens-volleyball&quot;         
+## [15] &quot;womens-rowing&quot;              &quot;m-basebl&quot;                  
+## [17] &quot;w-softbl&quot;                   &quot;m-baskbl&quot;                  
+## [19] &quot;w-baskbl&quot;                   &quot;m-footbl&quot;                  
+## [21] &quot;m-golf&quot;                     &quot;w-golf&quot;                    
+## [23] &quot;w-swim&quot;                     &quot;w-gym&quot;                     
+## [25] &quot;w-soccer&quot;                   &quot;m-track&quot;                   
+## [27] &quot;w-track&quot;                    &quot;m-xc&quot;                      
+## [29] &quot;w-xc&quot;                       &quot;w-tennis&quot;                  
+## [31] &quot;m-tennis&quot;                   &quot;w-volley&quot;                  
+## [33] &quot;cross-country&quot;              &quot;mens-swimming-and-diving&quot;  
+## [35] &quot;womens-swimming-and-diving&quot; &quot;track-and-field&quot;           
+## [37] &quot;womens-lacrosse&quot;            &quot;mbball&quot;                    
+## [39] &quot;wbball&quot;                     &quot;cross&quot;                     
+## [41] &quot;mgolf&quot;                      &quot;wgolf&quot;                     
+## [43] &quot;swimming&quot;                   &quot;wgym&quot;                      
+## [45] &quot;msoc&quot;                       &quot;wsoc&quot;                      
+## [47] &quot;track&quot;                      &quot;mten&quot;                      
+## [49] &quot;wten&quot;                       &quot;wvball&quot;                    
+## [51] &quot;bsb&quot;                        &quot;sb&quot;                        
+## [53] &quot;mb&quot;                         &quot;xc&quot;                        
+## [55] &quot;fb&quot;                         &quot;mg&quot;                        
+## [57] &quot;wg&quot;                         &quot;sd&quot;                        
+## [59] &quot;gm&quot;                         &quot;sc&quot;                        
+## [61] &quot;tf&quot;                         &quot;mt&quot;                        
+## [63] &quot;wt&quot;                         &quot;vb&quot;                        
+## [65] &quot;bvb&quot;                        &quot;wrestling&quot;                 
+## [67] &quot;wcross&quot;                     &quot;mcross&quot;                    
+## [69] &quot;wswim&quot;                      &quot;wtrack&quot;                    
+## [71] &quot;wlax&quot;</code></pre>
+<p>I don’t want to do this automatically with a loop (and with things
+like regular expressions) so I’m going to just create a manual dataframe
+by combining two lists together.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>names <span class="ot">=</span> <span class="fu">unique</span>(sport_names)</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>name_replacements <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;baseball&quot;</span>, <span class="st">&quot;softball&quot;</span>, <span class="st">&quot;mens-basketball&quot;</span>, <span class="st">&quot;womens-basketball&quot;</span>, <span class="st">&quot;football&quot;</span>, <span class="st">&quot;mens-golf&quot;</span>, <span class="st">&quot;womens-golf&quot;</span>, <span class="st">&quot;swimming-and-diving&quot;</span>, <span class="st">&quot;gymnastics&quot;</span>, <span class="st">&quot;womens-soccer&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;womens-tennis&quot;</span>, <span class="st">&quot;mens-tennis&quot;</span>, <span class="st">&quot;volleyball&quot;</span>, <span class="st">&quot;womens-rowing&quot;</span>, <span class="st">&quot;baseball&quot;</span>, <span class="st">&quot;softball&quot;</span>, <span class="st">&quot;mens-basketball&quot;</span>, <span class="st">&quot;womens-basketball&quot;</span>, <span class="st">&quot;football&quot;</span>, <span class="st">&quot;mens-golf&quot;</span>, <span class="st">&quot;womens-golf&quot;</span>, <span class="st">&quot;swimming-and-diving&quot;</span>, <span class="st">&quot;gymnastics&quot;</span>, <span class="st">&quot;womens-soccer&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;womens-tennis&quot;</span>, <span class="st">&quot;mens-tennis&quot;</span>, <span class="st">&quot;volleyball&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;swimming-and-diving&quot;</span>, <span class="st">&quot;swimming-and-diving&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;womens-lacrosse&quot;</span>, <span class="st">&quot;mens-basketball&quot;</span>, <span class="st">&quot;womens-basketball&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;mens-golf&quot;</span>, <span class="st">&quot;womens-golf&quot;</span>, <span class="st">&quot;swimming-and-diving&quot;</span>, <span class="st">&quot;gymnastics&quot;</span>, <span class="st">&quot;mens-soccer&quot;</span>, <span class="st">&quot;womens-soccer&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;mens-tennis&quot;</span>, <span class="st">&quot;womens-tennis&quot;</span>, <span class="st">&quot;volleyball&quot;</span>, <span class="st">&quot;baseball&quot;</span>, <span class="st">&quot;softball&quot;</span>, <span class="st">&quot;mens-basketball&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;football&quot;</span>, <span class="st">&quot;mens-golf&quot;</span>, <span class="st">&quot;womens-golf&quot;</span>, <span class="st">&quot;swimming-and-diving&quot;</span>, <span class="st">&quot;gymnastics&quot;</span>, <span class="st">&quot;womens-soccer&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;mens-tennis&quot;</span>, <span class="st">&quot;womens-tennis&quot;</span>, <span class="st">&quot;volleyball&quot;</span>, <span class="st">&quot;beach-volleyball&quot;</span>, <span class="st">&quot;wrestling&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;swimming-and-diving&quot;</span>, <span class="st">&quot;xc-track&quot;</span>, <span class="st">&quot;womens-lacrosse&quot;</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>sport_name_changes <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">Name =</span> names, <span class="at">Modified =</span> name_replacements)</span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="fu">show_table</span>(<span class="fu">tail</span>(sport_name_changes))</span></code></pre></div>
+<table class=" lightable-classic-2" style="font-size: 20px; font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Name
+</th>
+<th style="text-align:left;">
+Modified
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+66
+</td>
+<td style="text-align:left;">
+wrestling
+</td>
+<td style="text-align:left;">
+wrestling
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+67
+</td>
+<td style="text-align:left;">
+wcross
+</td>
+<td style="text-align:left;">
+xc-track
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+68
+</td>
+<td style="text-align:left;">
+mcross
+</td>
+<td style="text-align:left;">
+xc-track
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+69
+</td>
+<td style="text-align:left;">
+wswim
+</td>
+<td style="text-align:left;">
+swimming-and-diving
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+70
+</td>
+<td style="text-align:left;">
+wtrack
+</td>
+<td style="text-align:left;">
+xc-track
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+71
+</td>
+<td style="text-align:left;">
+wlax
+</td>
+<td style="text-align:left;">
+womens-lacrosse
+</td>
+</tr>
+</tbody>
+</table>
+<p>This adjustment also allows me to combine some men’s/women’s sports
+together. Some universities combine the rosters, while some don’t, so
+this allows me to combine sports like cross country, track and field,
+and swimming and diving.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co"># Apply this to the all_sports sport list</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>new_sports <span class="ot">=</span> <span class="fu">c</span>()</span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="cf">for</span> (sport <span class="cf">in</span> all_schools<span class="sc">$</span>Sport){</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>  new_sports <span class="ot">=</span> <span class="fu">c</span>(new_sports, sport_name_changes[sport_name_changes[<span class="st">&quot;Name&quot;</span>] <span class="sc">==</span> sport][<span class="dv">2</span>])</span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>}</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>all_schools<span class="sc">$</span>Sport <span class="ot">=</span> new_sports</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a><span class="co"># Write this to a csv to use for geocoding</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a><span class="fu">write.csv</span>(all_schools, <span class="st">&quot;rosters.csv&quot;</span>, <span class="at">row.names=</span>F)</span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;Old number of names:&quot;</span>, <span class="fu">length</span>(names), <span class="st">&quot;New number of names&quot;</span>, <span class="fu">length</span>(<span class="fu">unique</span>(new_sports))))</span></code></pre></div>
+<pre><code>## [1] &quot;Old number of names: 71 New number of names 19&quot;</code></pre>
+</div>
+<div id="adding-census-data" class="section level3">
+<h3>Adding Census Data</h3>
+</div>
+<div id="geocoding-the-data" class="section level3">
+<h3>Geocoding the Data</h3>
+<p>I created a <code>geocodes.R</code> script that takes the cities in
+the players dataset and geocodes all 5000+ unique cities. This way we
+can map them and show all the different areas these student-athletes
+come from. Here is what that script looks like.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">library</span>(ggmap)</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>players <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">&quot;rosters.csv&quot;</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="fu">readRenviron</span>(<span class="st">&quot;./.Renviron&quot;</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a><span class="fu">register_google</span>(<span class="fu">Sys.getenv</span>(<span class="st">&quot;MAPSAPIKEY&quot;</span>))</span>
+<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a>cities <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="fu">unique</span>(players<span class="sc">$</span>Hometown))</span>
+<span id="cb11-11"><a href="#cb11-11" tabindex="-1"></a>cities<span class="sc">$</span>Hometown <span class="ot">=</span> cities<span class="sc">$</span>unique.players.Hometown.</span>
+<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a>cities <span class="ot">=</span> cities <span class="sc">%&gt;%</span> <span class="fu">select</span>(Hometown) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
+<span id="cb11-13"><a href="#cb11-13" tabindex="-1"></a></span>
+<span id="cb11-14"><a href="#cb11-14" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" tabindex="-1"></a></span>
+<span id="cb11-16"><a href="#cb11-16" tabindex="-1"></a>geocoded_cities <span class="ot">=</span> <span class="fu">mutate_geocode</span>(cities, Hometown)</span>
+<span id="cb11-17"><a href="#cb11-17" tabindex="-1"></a></span>
+<span id="cb11-18"><a href="#cb11-18" tabindex="-1"></a><span class="fu">write_csv</span>(<span class="fu">distinct</span>(geocoded_cities <span class="sc">%&gt;%</span> <span class="fu">select</span>(Hometown, lon, lat)), <span class="st">&quot;./geocodes.csv&quot;</span>)</span></code></pre></div>
+<p>Here is part of what that returns.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>geocodes <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">&quot;geocodes.csv&quot;</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">show_table</span>(<span class="fu">head</span>(geocodes))</span></code></pre></div>
+<table class=" lightable-classic-2" style="font-size: 20px; font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Hometown
+</th>
+<th style="text-align:right;">
+lon
+</th>
+<th style="text-align:right;">
+lat
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Birmingham, Ala.
+</td>
+<td style="text-align:right;">
+-86.81036
+</td>
+<td style="text-align:right;">
+33.51859
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Shreveport, La.
+</td>
+<td style="text-align:right;">
+-93.75018
+</td>
+<td style="text-align:right;">
+32.52515
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Boaz, Ala.
+</td>
+<td style="text-align:right;">
+-86.15210
+</td>
+<td style="text-align:right;">
+34.20317
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cullman, Ala.
+</td>
+<td style="text-align:right;">
+-86.84361
+</td>
+<td style="text-align:right;">
+34.17482
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mobile, Ala.
+</td>
+<td style="text-align:right;">
+-88.03989
+</td>
+<td style="text-align:right;">
+30.69537
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pensacola, Fla.
+</td>
+<td style="text-align:right;">
+-87.21691
+</td>
+<td style="text-align:right;">
+30.42131
+</td>
+</tr>
+</tbody>
+</table>
+<p>To help with the map, I will add a metric that has the top school of
+choice for each hometown.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>schools <span class="ot">=</span> all_schools <span class="sc">%&gt;%</span> <span class="fu">select</span>(Hometown, School) <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Hometown, School) <span class="sc">%&gt;%</span> <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">length</span>(Hometown)) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>cities <span class="ot">=</span> <span class="fu">sqldf</span>(<span class="st">&quot;SELECT Hometown, School, max(n) as Num_Players FROM schools GROUP BY Hometown ORDER BY Num_Players DESC&quot;</span>)</span></code></pre></div>
+</div>
+<div id="mapping-the-data" class="section level3">
+<h3>Mapping the Data</h3>
+<p>We will use the leaflet package for this portion. This will give us a
+nice interactive map we can look at.</p>
 </div>
 </div>
 </div>
