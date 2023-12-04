@@ -207,11 +207,157 @@ for (sport in all_schools$Sport){
 }
 all_schools$Sport = new_sports
 
-# Write this to a csv to use for geocoding
-write.csv(all_schools, "rosters.csv", row.names=F)
+
 
 print(paste("Old number of names:", length(names), "New number of names", length(unique(new_sports))))
 ```
+
+### Standardizing State Names
+
+```{r}
+
+hometowns = data.frame(City = all_schools$Hometown)
+
+states = c()
+cities = c()
+for (city in hometowns$City){
+  if (is.na(city)){
+    states = c(states, NA)
+    cities = c(cities, NA)
+    next
+  }
+  cities = c(cities, str_trim(str_split_1(city, ",")[1]))
+  states = c(states, str_trim(str_split_1(city, ",")[2]))
+}
+
+hometowns$Town = cities
+hometowns$State = states
+```
+
+
+```{r, include=F}
+# State revisions
+revised_states = c()
+
+for (state in hometowns$State) {
+  
+  if (length(grep("A[lL]", state)) > 0) {
+    revised_states = c(revised_states, "Alabama")
+  }
+  else if (length(grep("L[aA]", state)) > 0) {
+    revised_states = c(revised_states, "Louisiana")
+  }
+  else if (length(grep("F[lL]", state)) > 0) {
+    revised_states = c(revised_states, "Florida")
+  }
+  else if (length(grep("Tenn", state)) > 0) {
+    revised_states = c(revised_states, "Tennessee")
+  }
+  else if (length(grep("Miss.", state)) > 0) {
+    revised_states = c(revised_states, "Mississippi")
+  }
+  else if (length(grep("Missis", state)) > 0){
+    revised_states = c(revised_states, "Mississippi")
+  }
+  else if (length(grep("M[dD]", state)) > 0) {
+    revised_states = c(revised_states, "Maryland")
+  }
+  else if (length(grep("G[aA]", state)) > 0) {
+    revised_states = c(revised_states, "Georgia")
+  }
+  else if (length(grep("V[aA]", state)) > 0) {
+    revised_states = c(revised_states, "Virginia")
+  }
+  else if (length(grep("C[aA]", state)) > 0) {
+    revised_states = c(revised_states, "California")
+  }
+  else if (length(grep("Tex", state)) > 0) {
+    revised_states = c(revised_states, "Texas")
+  }
+  else if (length(grep("S.C", state)) > 0) {
+    revised_states = c(revised_states, "South Carolina")
+  }
+  else if (length(grep("N.C", state)) > 0) {
+    revised_states = c(revised_states, "North Carolina")
+  }
+  else if (length(grep("Ark", state)) > 0) {
+    revised_states = c(revised_states, "Arkansas")
+  }
+  else if (length(grep("M[oO]", state)) > 0) {
+    revised_states = c(revised_states, "Missouri")
+  }
+  else if (length(grep("Ariz", state)) > 0) {
+    revised_states = c(revised_states, "Arizona")
+  }
+  else if (length(grep("K[yY]", state)) > 0) {
+    revised_states = c(revised_states, "Kentucky")
+  }
+  else if (length(grep("Mass", state)) > 0) {
+    revised_states = c(revised_states, "Massachussets")
+  }
+  else if (length(grep("Minn", state)) > 0) {
+    revised_states = c(revised_states, "Minnesota")
+  }
+  else if (length(grep("Colo", state)) > 0) {
+    revised_states = c(revised_states, "Colorado")
+  }
+  else if (length(grep("P[aA]", state)) > 0) {
+    revised_states = c(revised_states, "Pennsylvania")
+  }
+  else if (length(grep("N.J", state)) > 0) {
+    revised_states = c(revised_states, "New Jersey")
+  }
+  else if (length(grep("Ind", state)) > 0) {
+    revised_states = c(revised_states, "Indiana")
+  }
+  else if (length(grep("Wis", state)) > 0) {
+    revised_states = c(revised_states, "Wisconsin")
+  }
+  else if (length(grep("N.D", state)) > 0) {
+    revised_states = c(revised_states, "North Dakota")
+  }
+  else if (length(grep("Mich", state)) > 0) {
+    revised_states = c(revised_states, "Michigan")
+  }
+  else if (length(grep("Neb", state)) > 0) {
+    revised_states = c(revised_states, "Nebraska")
+  }
+  else if (length(grep("N.Y", state)) > 0) {
+    revised_states = c(revised_states, "New York")
+  }
+  else if (length(grep("Ill", state)) > 0) {
+    revised_states = c(revised_states, "Illinois")
+  }
+  else if (length(grep("Wash", state)) > 0) {
+    revised_states = c(revised_states, "Washington")
+  }
+  else if (length(grep("Ore", state)) > 0) {
+    revised_states = c(revised_states, "Oregon")
+  }
+  else if (length(grep("Okla", state)) > 0) {
+    revised_states = c(revised_states, "Oklahoma")
+  }
+  
+  else{
+    revised_states = c(revised_states, state)
+  }
+
+}
+
+hometowns$State = revised_states
+```
+
+
+Behind the scenes, I used a script to help standardize the states, so that we don't have multiple instances of the same city. Now we can combine this back to the original format.
+
+```{r}
+hometowns$City = paste(hometowns$Town, ", ", hometowns$State, sep="")
+all_schools$Hometown = hometowns$City
+
+# Write this to a csv to use for geocoding
+write.csv(all_schools, "rosters.csv", row.names=F)
+```
+
 
 ### Adding Census Data
 
@@ -256,7 +402,19 @@ To help with the map, I will add a metric that has the top school of choice for 
 
 schools = all_schools %>% select(Hometown, School) %>% group_by(Hometown, School) %>% summarize(n = length(Hometown)) %>% drop_na()
 
-cities = sqldf("SELECT Hometown, School, max(n) as Num_Players FROM schools GROUP BY Hometown ORDER BY Num_Players DESC")
+cities = sqldf("SELECT Hometown, School, max(n) as Num_Players FROM schools GROUP BY Hometown")
+
+top_schools = c()
+ns = c()
+for (city in geocodes$Hometown) {
+  df = cities[cities["Hometown"] == city,] %>% select(School, Num_Players)
+  top_schools = append(top_schools, df$School[1])
+  ns = append(ns, df$Num_Players[1])
+}
+
+geocodes$School = top_schools
+geocodes$Num_Players = ns
+
 
 ```
 
@@ -264,5 +422,71 @@ cities = sqldf("SELECT Hometown, School, max(n) as Num_Players FROM schools GROU
 ### Mapping the Data
 
 We will use the leaflet package for this portion. This will give us a nice interactive map we can look at.
+
+```{r}
+# These are some mapping functions that will allow us to see not only some statistics on the cities, but color them so we know what schools are getting the most recruits from each city.
+
+school_color = function (school) {
+  
+  school = school[1]
+  
+  if (is.na(school)){
+    return ("black")
+  }
+  
+  if (school == "Alabama") {
+    return ("#9E1B32")
+  }
+  
+  if (school == "Auburn"){
+    return ("#E87722")
+  }
+  
+  if (school == "Missouri"){
+    return ("#F1B82D")
+  }
+  
+  if (school == "Arkansas"){
+    return ("#9D2235")
+  }
+  
+  if (school == "Kentucky") {
+    return ("#0033A0")
+  }
+  
+  if (school == "Florida") {
+    return ("#0021A5")
+  }
+  if (school == "Mississippi State") {
+    return ("#5D1725")
+  }
+  if (school == "LSU") {
+    return ("#461D7C")
+  }
+  if (school == "South Carolina") {
+    return ("#73000A")
+  }
+  if (school == "Vanderbilt") {
+    return ("#866D4B")
+  }
+  
+  
+}
+
+colors = c()
+for (school in geocodes$School){
+  colors = c(colors, school_color(school))
+}
+geocodes$Color = colors
+```
+
+
+```{r}
+m = leaflet() %>% 
+  addProviderTiles(provider=providers$Esri.WorldGrayCanvas) %>%
+  addCircleMarkers(geocodes$lon, geocodes$lat, label=geocodes$Hometown, popup=paste("<b>", geocodes$Hometown, "</b><br>", geocodes$Num_Players, "were recruited to", geocodes$School), radius=4.5, color=geocodes$Color, fillOpacity=1.0, stroke=F)
+m
+```
+
 
 
