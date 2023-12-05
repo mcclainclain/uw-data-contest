@@ -20,6 +20,9 @@ library(leaflet)
 library(leaflet.providers)
 library(ggmap)
 library(sqldf)
+library(jsonlite)
+library(geosphere)
+library(ggrepel)
 ```
 
 ```{r, include=FALSE}
@@ -359,7 +362,6 @@ write.csv(all_schools, "rosters.csv", row.names=F)
 ```
 
 
-### Adding Census Data
 
 ### Geocoding the Data
 
@@ -488,5 +490,211 @@ m = leaflet() %>%
 m
 ```
 
+<br></br>
 
+### Adding Census Data
+
+First, we retrieve the data from the census API, and clean it up slightly.
+
+```{r}
+readRenviron("./.Renviron")
+api_key = Sys.getenv("CENSUSKEY")
+url = str_glue("https://api.census.gov/data/2019/acs/acs5?get=NAME,B01002_001E,B02001_002E,B02001_003E,B25010_001E,B01003_001E&for=place:*&in=state:*&key={api_key}")
+
+data = fromJSON(url)
+
+census_data = data.frame(data) %>% slice(2:nrow(data))
+colnames(census_data) = c("City", "Avg_Age", "B02001_002E", "B02001_003E", "Avg_Household_Size", "Total_Pop", "state", "place")
+
+census_data$B02001_002E = as.numeric(census_data$B02001_002E)
+census_data$B02001_003E = as.numeric(census_data$B02001_003E)
+census_data$Total_Pop = as.numeric(census_data$Total_Pop)
+
+census_data = census_data %>% 
+  mutate(Percent_White = (B02001_002E/Total_Pop) * 100) %>% 
+  mutate(Percent_Black = (B02001_003E/Total_Pop) * 100) %>% 
+  select(City, Avg_Age, Percent_White, Percent_Black, Avg_Household_Size)
+```
+
+```{r}
+# Split City and State
+split_city = function(name){
+  split_list = strsplit(name, ",")[[1]]
+  
+  city_name = split_list[1]
+  
+  city_split = strsplit(city_name, " ")[[1]]
+  city_name = paste(city_split[-length(city_split)], collapse = " ")
+  
+  return (city_name)
+}
+
+get_state = function(name) {
+  split_list = strsplit(name, ",")[[1]]
+  
+  state = str_trim(split_list[2])
+  
+  return(state)
+}
+```
+
+```{r}
+census_data$State = lapply(census_data$City, get_state)
+census_data$City = lapply(census_data$City, split_city)
+census_data$City_str = paste(census_data$City, ", ", census_data$State, sep="")
+```
+
+
+## Data Visualizations
+
+We get as many cities as we can that have available census data.
+
+```{r}
+cities_w_census = census_data %>% 
+  filter(City_str %in% cities$Hometown)
+
+
+# What cities in our database have the highest percentage of black players?
+
+pct_black = cities_w_census %>% 
+  select(City_str, Percent_Black) %>% 
+  arrange(desc(Percent_Black)) %>% 
+  top_n(25)
+
+ggplot(pct_black, aes(y=reorder(City_str, Percent_Black), x=Percent_Black)) +
+  geom_col(fill="lightblue", color="black") +
+  ylab("City Name") +
+  xlab("% of Black People") +
+  ggtitle("% of Black Population by Census City")
+
+```
+
+Let's plot the top 50 towns, and see where they land on the map in accordance with the players.
+
+```{r}
+register_google(Sys.getenv("MAPSAPIKEY"))
+
+geocoded_top_50 = cities_w_census %>% 
+  select(City_str, Percent_Black) %>% 
+  arrange(desc(Percent_Black)) %>% 
+  top_n(50) %>% 
+  mutate_geocode(City_str)
+
+m %>% addCircleMarkers(geocoded_top_50$lon, geocoded_top_50$lat, label=geocoded_top_50$City_str, popup=paste("<b>", geocoded_top_50$City_str, "</b><br>", round(geocoded_top_50$Percent_Black, 2), "% Black"), color="purple")
+```
+
+### Distance Away From Home
+
+I am quite fascinated by the world of Name, Image, and Likeness (NIL), as well as the impact of the transfer portal on the world of college sports. It started on July 1, 2021, so let's take into account some things with its impact.
+
+
+```{r}
+universities = unique(schools$School)
+uni_cities = c("Nashville, TN", "Lexington, KY", "Tuscaloosa, AL", "Gainesville, FL", "Baton Rouge, LA", "Starkville, MS", "Columbia, SC", "Fayetteville, AR", "Auburn, AL", "Columbia, MO")
+
+school_locs = data.frame(School = universities, City = uni_cities) %>% mutate_geocode(City)
+```
+```{r}
+
+lons = c()
+lats = c()
+# Apply to all players dataframe
+for (city in all_schools$Hometown) {
+  geocode = geocodes[geocodes$Hometown == city,]
+  lons = c(lons, geocode$lon)
+  lats = c(lats, geocode$lat)
+}
+
+all_schools$lon = lons
+all_schools$lat = lats
+```
+
+```{r}
+sc_lons = c()
+sc_lats = c()
+for (school in all_schools$School) {
+  code = school_locs[school_locs$School == school,]
+  sc_lons = c(sc_lons, code$lon)
+  sc_lats = c(sc_lats, code$lat)
+}
+
+all_schools$school_lon = sc_lons
+all_schools$school_lat = sc_lats
+```
+
+```{r}
+dists = c()
+
+for (i in 1:nrow(all_schools)) {
+  dists = c(dists, distHaversine(c(all_schools$lon[i], all_schools$lat[i]), c(all_schools$school_lon[i], all_schools$school_lat[i]))/1000)
+}
+
+all_schools$school_dist = dists
+
+```
+
+
+Now we can group this by school, and by year, and find the variance.
+
+```{r}
+schools_dist_var = all_schools %>% 
+  drop_na() %>% 
+  group_by(School, Year) %>% 
+  summarize(distance_var = var(school_dist)) %>% 
+  mutate(Color = school_color(School), label= toupper(substr(School, 1, 3)))
+```
+
+```{r}
+
+group.colors = c("Alabama" = "#9E1B32", "Arkansas" = "#9D2235", "Auburn" = "#E87722", "Florida" = "#0021A5", "Kentucky" = "#0033A0", "LSU" = "#461D7C", "Mississippi State" = "#5D1725", "Missouri" = "#F1B82D", "South Carolina" = "#73000A", "Vanderbilt" = "#866D4B")
+
+ends = schools_dist_var %>% filter(Year == 2023)
+
+ggplot(schools_dist_var, aes(x=Year, y=distance_var)) +
+  geom_smooth(aes(color=School), ,se=F, size=1.25) +
+  scale_color_manual(values=group.colors) +
+  scale_x_continuous(breaks=c(2013, 2015, 2017, 2019, 2021, 2023)) +
+  geom_text_repel(aes(label=label), data=ends, nudge_x=1, na.rm=T) +
+  ggtitle("Variance in Distance from 2013-2023") +
+  ylab("Variance in Distance") +
+  theme(axis.text.y=element_blank(), axis.ticks.y = element_blank())
+
+```
+
+We see from this that Florida has the most variance in distance at the moment, while schools like Kentucky have dropped off over the years.
+
+Since the transfer portal and NIL came about, let's take a look at the difference across all schools in variance before and after this change.
+
+```{r}
+nil_difference = schools_dist_var %>% 
+  mutate(nil = ifelse(Year >= 2021, "2021-2023", "2013-2020")) %>% 
+  group_by(nil) %>% 
+  summarize(avg_var = mean(distance_var))
+
+ggplot(nil_difference, aes(x=nil, y=avg_var)) +
+  geom_col(width=0.5, color="black", fill="lightblue") +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank()) +
+  ylab("Average Variance") +
+  xlab("Year Range") +
+  ggtitle("Average Variance in Distance Before and After NIL Introduction")
+```
+We can see a slight increase in variance, but it is likely negligible, so this will probably need a few more years of data to see changes, if any. However, we can still look at this by school.
+
+```{r}
+nil_diff_school = schools_dist_var %>% 
+  mutate(nil = ifelse(Year >= 2021, "after", "before")) %>% 
+  group_by(nil, School) %>% 
+  summarize(avg_var = mean(distance_var)) %>% 
+  pivot_wider(names_from=nil, values_from=avg_var) %>% 
+  mutate(var_diff = after-before)
+
+ggplot(nil_diff_school, aes(x=School, y=var_diff, fill=School)) +
+  geom_col(width=0.5, color="black") +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_text(angle=90, vjust=1)) +
+  scale_fill_manual(values=group.colors) +
+  ylab("Difference in Variance") +
+  xlab("Year Range") +
+  ggtitle("Difference in Variance Before and After NIL Introduction") 
+```
+We see from this that 6 out of 10 schools have increased their recruitment range since NIL was introduced. Some like Kentucky and Auburn have adjusted to bring recruits in that are closer to campus.
 

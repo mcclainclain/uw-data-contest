@@ -17,7 +17,7 @@ Hometown,lon,lat
 "Vestavia Hills, Alabama",-86.7877668,33.4487183
 "Phenix City, Alabama",-85.0007653,32.4709761
 "Nashville, Tennessee",-86.7816016,36.1626638
-"Irmo, California",-119.4179324,36.778261
+"Irmo, South Carolina",-81.1831513,34.0859829
 "Jasper, Alabama",-87.2775053,33.8312185
 "Odessa, Florida",-82.5579537,28.1793926
 "Kenner, Louisiana",-90.2417434,29.9940924
@@ -28,11 +28,11 @@ Hometown,lon,lat
 "Florence, Alabama",-87.677251,34.79981
 "Montgomery, Alabama",-86.3077368,32.3792233
 "Headland, Alabama",-85.3421559,31.351284
-"Aiken, California",-119.4179324,36.778261
+"Aiken, South Carolina",-81.7195533,33.5604168
 "Northport, Alabama",-87.5772293,33.229007
 "Atlanta, Georgia",-84.38768449999999,33.748752
 "Royersford, Pennsylvania",-75.5379639,40.1842688
-"Fayetteville, California",-119.4179324,36.778261
+"Fayetteville, North Carolina",-78.87837739999999,35.0523673
 "Troy, Alabama",-85.969951,31.8087678
 "Columbia, Tennessee",-87.0352831,35.6150716
 "Pelham, Alabama",-86.8099885,33.2856687
@@ -42,7 +42,7 @@ Hometown,lon,lat
 "Corpus Christi, Texas",-97.39638099999999,27.8005828
 "Goodwater, Alabama",-86.0533013,33.065675
 "Valley, Alabama",-85.1793852,32.8187406
-"St. Louis, Mississippi",-89.33004609999999,30.3088076
+"St. Louis, Missouri",-90.19940419999999,38.6270025
 "Fort Worth, Texas",-97.3307658,32.7554883
 "Watkinsville, Georgia",-83.4087708,33.8628959
 "Cumming, Georgia",-84.14019259999999,34.2073196
@@ -95,7 +95,7 @@ Hometown,lon,lat
 "Louisville, Kentucky",-85.7584557,38.2526647
 "Memphis, Tennessee",-90.0489801,35.1495343
 "Suwanee, Georgia",-84.0712997,34.0514898
-"Doniphan, Mississippi",-89.3985283,32.3546679
+"Doniphan, Missouri",-90.82345509999999,36.6208917
 "Gainesville, Florida",-82.324998,29.6519563
 "Gilbert, Arizona",-111.789027,33.3528264
 "Waynesboro, Mississippi",-88.6461465,31.674883
@@ -111,7 +111,7 @@ Hometown,lon,lat
 "Wellesley, Massachussets",-71.29238769999999,42.296797
 "Lebanon, Tennessee",-86.2911024,36.2081098
 "Dallas, Georgia",-84.8413056,33.9244531
-"Billings, Mississippi",-89.3985283,32.3546679
+"Billings, Missouri",-93.5521411,37.0675544
 "Charleston, Illinois",-88.1761521,39.4961458
 "Santa Barbara, California",-119.6981901,34.4208305
 "Panama City, Florida",-85.6602058,30.1588129
@@ -144,14 +144,14 @@ Hometown,lon,lat
 "Clanton, Alabama",-86.6294262,32.8387371
 "Fairhope, Alabama",-87.9033261,30.5229719
 "Daphne, Alabama",-87.9036047,30.6035255
-"Myrtle Beach, California",-119.4179324,36.778261
+"Myrtle Beach, South Carolina",-78.8802094,33.6954218
 "Evans, Georgia",-82.1306747,33.5337464
 "Waterloo, Iowa",-92.34257749999999,42.492786
 "Bay City, Texas",-95.969402,28.9827565
 "Priceville, Alabama",-86.8862594,34.5188586
 "Indianapolis, Indiana",-86.158068,39.768403
 "Houston, Texas",-95.3698028,29.7604267
-"Anderson, California",-122.2977815,40.448208
+"Anderson, South Carolina",-82.6501332,34.5034394
 "Sacramento, California",-121.4943996,38.5815719
 "Rusk, Texas",-95.15022139999999,31.7960064
 "Naples, Florida",-81.7948103,26.1420358
@@ -169,9 +169,9 @@ Hometown,lon,lat
 "Madisonville, Kentucky",-87.4988882,37.32810050000001
 "Lafayette, Louisiana",-92.0198427,30.2240897
 "Hastings, New Zealand",176.8304088,-39.6302214
-"Centralia, Mississippi",-89.3985283,32.3546679
+"Centralia, Missouri",-92.1379539,39.2103186
 "Woodstock, Georgia",-84.5193754,34.1014873
-"Candler, California",-119.4179324,36.778261
+"Candler, North Carolina",-82.69273629999999,35.5360973
 "Mechanicsburg, Pennsylvania",-77.0080309,40.2132692
 "Grayson, Kentucky",-82.9485023,38.3325812
 "Westbury, New York",-73.5876273,40.7556561
@@ -193,7 +193,7 @@ Hometown,lon,lat
 "Ystad, Sweden",13.8200308,55.4295051
 "Greensboro, Alabama",-87.59583959999999,32.7045753
 "Johnson City, Tennessee",-82.3534727,36.313439700000004
-"Kansas City, Mississippi",-89.3985283,32.3546679
+"Kansas City, Missouri",-94.5785667,39.0997265
 "Hurtsboro, Alabama",-85.4163327,32.2418146
 "Antwerp, Belgium",4.4051485,51.2213404
 "Fishers, Indiana",-86.0171742,39.9568857
@@ -203,11 +203,11 @@ Hometown,lon,lat
 "Theodore, Alabama",-88.17925,30.5549276
 "Chester, Virginia",-77.4416505,37.3568157
 "Luverne, Alabama",-86.2638492,31.7165455
-"High Point, California",-121.404824,40.125857
+"High Point, North Carolina",-80.0053176,35.9556923
 "Mableton, Georgia",-84.5824329,33.8187167
 "Lagos, Nigeria",3.3792057,6.5243793
 "Tacoma, Washington",-122.4442906,47.2528768
-"Charlotte, California",-118.4268981,36.7761885
+"Charlotte, North Carolina",-80.8431267,35.2270869
 "Muscle Shoals, Alabama",-87.66752919999999,34.7448112
 "Devils Lake, North Dakota",-98.86512019999999,48.112779
 "Dallas, Texas",-96.79698789999999,32.7766642
@@ -215,8 +215,8 @@ Hometown,lon,lat
 "Queens, New York",-73.7948516,40.7282239
 "Bronx, New York",-73.8648268,40.8447819
 "Omaha, Nebraska",-95.9345034,41.2565369
-"Chapel Hill, California",-120.4062296,35.6777495
-"Seabrook, California",-119.4179324,36.778261
+"Chapel Hill, North Carolina",-79.0558445,35.9131996
+"Seabrook, South Carolina",-80.7664952,32.5279652
 "The Villages, Florida",-82.0037608,28.927019
 "Elgin, Illinois",-88.2825668,42.0354084
 "Pittsburgh, Pennsylvania",-79.9958864,40.44062479999999
@@ -228,15 +228,15 @@ Hometown,lon,lat
 "Newbern, Alabama",-87.5327815,32.5931884
 "Kennesaw, Georgia",-84.6154897,34.0234337
 "Covington, Georgia",-83.8601827,33.5967815
-"Blue Springs, Mississippi",-88.8728369,34.4017697
+"Blue Springs, Missouri",-94.2816148,39.0169509
 "Baltimore, Maryland",-76.6121893,39.2903848
 "Mississauga, Ontario",-79.6441198,43.5890452
 "Anniston, Alabama",-85.8316318,33.6598257
-"Ozark, Mississippi",-88.469493,34.4139903
+"Ozark, Missouri",-93.2060163,37.0208865
 "Morgan City, Louisiana",-91.20676999999999,29.6993748
 "New Orleans, Louisiana",-90.0715323,29.95106579999999
 "Ellisville, Mississippi",-89.1956142,31.6040538
-"Garner, California",-119.4179324,36.778261
+"Garner, North Carolina",-78.61417089999999,35.7112642
 "Windermere, Florida",-81.53479519999999,28.4955593
 "Sao Paulo, Brazil",-46.6395571,-23.5557714
 "Bay Minette, Alabama",-87.7730474,30.8829628
@@ -249,8 +249,8 @@ Hometown,lon,lat
 "Murfreesboro, Tennessee",-86.39027,35.8456213
 "Toronto, California",-119.4179324,36.778261
 "Manchester, Georgia",-84.6199251,32.8598538
-"Florence, California",-118.2481287,33.9744592
-"Raleigh, California",-78.6381787,35.7795897
+"Florence, South Carolina",-79.7625625,34.1954331
+"Raleigh, North Carolina",-78.6381787,35.7795897
 "Long Island, New York",-73.13496099999999,40.789142
 "Valdosta, Georgia",-83.2771957,30.8328597
 "Loretto, Tennessee",-87.439742999999993,35.0778595
@@ -266,9 +266,9 @@ Hometown,lon,lat
 "Gainesville, Georgia",-83.8240663,34.2978794
 "Rayville, Louisiana",-91.7548473,32.4773643
 "Monaca, Pennsylvania",-80.2714505,40.6872885
-"Asheville, California",-119.4179324,36.778261
+"Asheville, North Carolina",-82.5514869,35.5950581
 "Miami, Florida",-80.1917902,25.7616798
-"Manning, California",-119.4179324,36.778261
+"Manning, South Carolina",-80.2109134,33.6951627
 "Bridgeport, Alabama",-85.7144155,34.9475807
 "Centreville, Alabama",-87.1386067,32.9445682
 "Tuscumbia, Alabama",-87.70253,34.7312005
@@ -321,8 +321,8 @@ Hometown,lon,lat
 "Woodbridge, Virginia",-77.2497049,38.6581722
 "Norman, Oklahoma",-97.4394777,35.2225668
 "Denver, Colorado",-104.990251,39.7392358
-"Greenville, California",-120.9510675,40.1396126
-"Columbia, California",-120.4013061,38.0363119
+"Greenville, North Carolina",-77.3663538,35.612661
+"Columbia, South Carolina",-81.0348144,34.0007104
 "Rochelle, Georgia",-83.4562744,31.9510105
 "Ocala, Florida",-82.14009229999999,29.1871986
 "Boynton Beach, Florida",-80.0905465,26.5317866
@@ -336,7 +336,7 @@ Hometown,lon,lat
 "Roanoke, Alabama",-85.37217079999999,33.1512313
 "Cupertino, California",-122.0321823,37.3229978
 "Moultrie, Georgia",-83.7888387,31.1799407
-"Goldsboro, California",-119.4179324,36.778261
+"Goldsboro, North Carolina",-77.9927651,35.3848841
 "Bossier City, Louisiana",-93.7321228,32.5159852
 "Akron, Alabama",-87.7425105,32.8765165
 "Monterrey, Mexico",-100.3161126,25.6866142
@@ -353,21 +353,21 @@ Hometown,lon,lat
 "Richmond, Kentucky",-84.2946539,37.7478572
 "Elba, Alabama",-86.0677243,31.4146108
 "Meridianville, Alabama",-86.57221539999999,34.8514782
-"Simpsonville, California",-119.4179324,36.778261
+"Simpsonville, South Carolina",-82.25428339999999,34.7370639
 "Tucson, Arizona",-110.9741769,32.2539787
 "Roswell, Georgia",-84.3615555,34.0232431
 "Wetumpka, Alabama",-86.2119127,32.5437448
 "Annapolis, Maryland",-76.4921829,38.9784453
 "Hernando, Mississippi",-89.9937018,34.823987
 "Gardendale, Alabama",-86.8127702,33.6601033
-"Jefferson City, Mississippi",-89.3985283,32.3546679
+"Jefferson City, Missouri",-92.1735164,38.57670170000001
 "Kingsland, Georgia",-81.68982609999999,30.7999563
 "Gordo, Alabama",-87.9027962,33.3201178
 "Kentwood, Louisiana",-90.5089843,30.9382358
 "Gaithersburg, Maryland",-77.2016062,39.1439689
 "Sachse, Texas",-96.5952703,32.9762327
 "South Bend, Indiana",-86.25198979999999,41.6763545
-"Morganton, California",-119.4179324,36.778261
+"Morganton, North Carolina",-81.6848188,35.7454071
 "Deerfield Beach, Florida",-80.09976569999999,26.3184123
 "Tulsa, Oklahoma",-95.99277500000001,36.1539816
 "Oneonta, Alabama",-86.472764,33.9481537
@@ -406,7 +406,7 @@ Hometown,lon,lat
 "Plantation, Florida",-80.23310359999999,26.1275862
 "Hollywood, Florida",-80.1494901,26.0112014
 "Reno, Nev.",-119.8142691,39.529919
-"Fort Mill, California",-119.4179324,36.778261
+"Fort Mill, South Carolina",-80.94507589999999,35.0073697
 "West Monroe, Louisiana",-92.14763529999999,32.5184775
 "Little Rock, Arkansas",-92.2880157,34.7444618
 "Salt Lake City, Utah",-111.8910474,40.7607793
@@ -415,8 +415,8 @@ Hometown,lon,lat
 "Seffner, Florida",-82.27564679999999,27.9836329
 "Waldorf, Maryland",-76.9105483,38.6265124
 "New Brockton, Alabama",-85.9293861,31.3857239
-"Cary, California",-78.7811169,35.79154
-"Conway, California",-119.4179324,36.778261
+"Cary, North Carolina",-78.7811169,35.79154
+"Conway, South Carolina",-79.0478143,33.8360034
 "Lacey's Spring, Alabama",-86.590015,34.5337436
 "Philadelphia, Pennsylvania",-75.1652215,39.9525839
 "Alabaster, Alabama",-86.8163773,33.2442813
@@ -436,7 +436,7 @@ Hometown,lon,lat
 "Glasgow, Kentucky",-85.91192149999999,36.9958839
 "Sarasota, Florida",-82.5310117,27.336465
 "Saraland, Alabama",-88.07055559999999,30.820742
-"Hickory, California",-119.4179324,36.778261
+"Hickory, North Carolina",-81.3444573,35.7344538
 "Havre de Grace, Maryland",-76.09161700000001,39.5492792
 "Okeechobee, Florida",-80.82978279999999,27.2439349
 "Honolulu, Hawai'i",-157.85814010000001,21.3098845
@@ -460,7 +460,7 @@ Hometown,lon,lat
 "Middlesex, New Jersey",-74.4926541,40.572603
 "Colleyville, Texas",-97.155012,32.8809603
 "Greenwood Village, Colorado",-104.9508141,39.6172101
-"Concord, California",-122.0310733,37.9779776
+"Concord, North Carolina",-80.579511,35.4087517
 "Reform, Alabama",-88.01530079999999,33.378451
 "Katy, Texas",-95.8245093,29.7857765
 "Upper Marlboro, Maryland",-76.74969089999999,38.8159473
@@ -470,14 +470,14 @@ Hometown,lon,lat
 "Double Springs, Alabama",-87.40223859999999,34.1464916
 "Duncanville, Texas",-96.9083366,32.6518004
 "Belleville, Michigan",-83.4852133,42.2047619
-"Rock Hill, California",-119.1176063,36.301339
+"Rock Hill, South Carolina",-81.02507840000001,34.9248667
 "Marrero, Louisiana",-90.1003506,29.8993723
-"Mount Pleasant, California",-120.9785646,39.6123927
+"Mount Pleasant, South Carolina",-79.82842579999999,32.8323225
 "Libertyville, Illinois",-87.9531303,42.2830786
 "Fairview, Tennessee",-87.12139529999999,35.9820074
 "Oak Creek, Wisconsin",-87.8631362,42.8858503
 "Fort Valley, Georgia",-83.8874084,32.5537585
-"Walhalla, California",-119.4179324,36.778261
+"Walhalla, South Carolina",-83.06404169999999,34.7648176
 "Valrico, Florida",-82.2420317,27.9462615
 "Mount Macedon, Victoria AU",144.5884001,-37.399641
 "Akron, Ohio",-81.51900529999999,41.0814447
@@ -526,7 +526,7 @@ Hometown,lon,lat
 "Sea Island, Georgia",-81.33169029999999,31.2017278
 "Dublin, Ireland",-6.2603097,53.3498053
 "Wilmer, Alabama",-88.36140019999999,30.823243
-"Greer, California",-119.4179324,36.778261
+"Greer, South Carolina",-82.2270568,34.9387279
 "Roseville, California",-121.2880059,38.7521235
 "Ardmore, Tennessee",-86.8571659,35.0037911
 "Jackson, Mississippi",-90.1848103,32.2987573
@@ -538,8 +538,8 @@ Hometown,lon,lat
 "Selma, Alabama",-87.02110069999999,32.4073589
 "Glenview, Illinois",-87.8223368,42.0778065
 "London, England",-0.1275862,51.5072178
-"Hilton Head, California",-119.4179324,36.778261
-"Greensboro, California",-119.4179324,36.778261
+"Hilton Head, South Carolina",-80.752608,32.216316
+"Greensboro, North Carolina",-79.7919754,36.0726354
 "Campbellsville, Kentucky",-85.3419069,37.3433974
 "Bridgewater, Conn.",-73.3662305,41.5350949
 "Jordanstown, Northern                                                            Ireland",-5.892553899999999,54.680508
@@ -547,7 +547,7 @@ Hometown,lon,lat
 "Angleton, Texas",-95.4318847,29.16941
 "Salem, New York",-73.3276101,43.1722983
 "Niceville, Florida",-86.48217199999999,30.5168639
-"Lexington, California",-121.9730139,37.164668
+"Lexington, South Carolina",-81.2362107,33.9815369
 "Caldogno, Italy",11.5127997,45.61283700000001
 "Castel Gandolfo, Italy",12.6485192,41.7497932
 "Daegu, South Korea",128.5655119,35.8294374
@@ -596,7 +596,7 @@ Hometown,lon,lat
 "Penryn, California",-121.1692868,38.8519794
 "Melbourne, Florida",-80.60810889999999,28.0836269
 "Danville, California",-121.9999606,37.8215929
-"Charleston, California",-115.89417,35.96833
+"Charleston, South Carolina",-79.93105120000001,32.7764749
 "Port Elizabeth, South Africa",25.6022423,-33.9608369
 "Wisconsin Dells, Wisconsin",-89.7709579,43.6274794
 "Springfield, Illinois",-89.6501481,39.78172130000001
@@ -607,12 +607,12 @@ Hometown,lon,lat
 "Maple Valley, Washington",-122.0453589,47.3903403
 "Johns Creek, Georgia",-84.198579,34.0289259
 "Eijsden, Netherlands",5.7077516,50.77734239999999
-"Davidson, California",-122.4533333,37.7383333
+"Davidson, North Carolina",-80.8486846,35.4993031
 "Alexander City, Alabama",-85.9538532,32.944012
 "Minneapolis, Min.",-93.2650108,44.977753
 "Aalborg, Denmark",9.921747,57.0488195
 "York, Pennsylvania",-76.727745,39.9625984
-"Waxhaw, California",-119.4179324,36.778261
+"Waxhaw, North Carolina",-80.7434019,34.9245935
 "Elmshorn, Germany",9.6632521,53.7513549
 "Holland, Michigan",-86.1089301,42.7875235
 "Santa Cruz, California",-122.0307963,36.9741171
@@ -630,7 +630,7 @@ Hometown,lon,lat
 "Szeged, Hungary",20.1414253,46.2530102
 "West Chicago, Illinois",-88.2039607,41.8847507
 "Limassol, Cyprus",33.0413055,34.6786322
-"Westminster, California",-117.9897058,33.7591757
+"Westminster, South Carolina",-83.0965425,34.6648197
 "Framingham, Massachussets",-71.4161565,42.279286
 "Radnor, Pennsylvania",-75.3599105,40.0462208
 "Madison, Wisconsin",-89.4007501,43.0721661
@@ -664,7 +664,7 @@ Hometown,lon,lat
 "Winter Garden, Florida",-81.58618469999999,28.5652787
 "Cypress, Texas",-95.6937856,29.9716905
 "Cairo, Egypt",31.2357116,30.0444196
-"Nevada, Mississippi",-90.4681507,32.5240295
+"Nevada, Missouri",-94.3546719,37.83920519999999
 "Helsingborg, Sweden",12.6945121,56.0464674
 "Haifa, Israel",34.989571,32.7940463
 "Sydney, Australia",151.2092955,-33.8688197
@@ -715,7 +715,7 @@ Hometown,lon,lat
 "Grosse Pointe Park, Michigan",-82.93741589999999,42.3758708
 "Yorktown, Virginia",-76.5096731,37.2387556
 "Rochester, Michigan",-83.1338214,42.680588
-"Kernersville, California",-119.4179324,36.778261
+"Kernersville, North Carolina",-80.07365329999999,36.1198588
 "Spearfish, S.D.",-103.8593698,44.4908172
 "Lenexa, Kan.",-94.73357089999999,38.9536174
 "Coppell, Texas",-97.01500779999999,32.9545687
@@ -727,14 +727,14 @@ Hometown,lon,lat
 "Cape Coral, Florida",-81.9495331,26.5628537
 "Montgomery, Texas",-95.69633549999999,30.3882613
 "Boonton, New Jersey",-74.4087405,40.904019
-"St. Peters, Mississippi",-89.3985283,32.3546679
+"St. Peters, Missouri",-90.6298922,38.7874699
 "Littleton, Colorado",-105.0166498,39.613321
 "Bekkestua, Norway",10.5939371,59.9230472
 "Numansdorp, Netherlands",4.438213699999999,51.734768
 "Orinda, California",-122.1796888,37.8771476
 "Temecula, California",-117.1488156,33.4934243
 "Anaheim Hills, California",-117.7490656,33.8508021
-"Matthews, California",-119.4179324,36.778261
+"Matthews, North Carolina",-80.72368039999999,35.1168131
 "Amsterdam, Netherlands",4.9041389,52.3675734
 "Gulfport, Mississippi",-89.0928155,30.3674198
 "St-Hubert, Québec",-71.20745959999999,46.8130816
@@ -781,7 +781,7 @@ Hometown,lon,lat
 "West Vancouver, British Columbia",-123.1601981,49.328625099999996
 "Caledonia, Michigan",-85.5166864,42.7891985
 "Eugendorf, Salzburg",13.1287727,47.86880679999999
-"Cornelius, California",-119.4179324,36.778261
+"Cornelius, North Carolina",-80.8578093,35.4812139
 "Waxahachie, Texas",-96.8483311,32.3865312
 "West Orange, New Jersey",-74.23908279999999,40.7985699
 "Golden Spring, Jamaica",-76.8014512,18.0901601
@@ -862,8 +862,8 @@ Hometown,lon,lat
 "Bremen, Georgia",-85.1455036,33.7212179
 "Flossmoor, Illinois",-87.6847684,41.5428123
 "Matura, Trinidad & Tobago",-61.0631475,10.6732149
-"Clinton, Mississippi",-90.3217585,32.3415342
-"Brevard, California",-119.4179324,36.778261
+"Clinton, Miss",-90.3217585,32.3415342
+"Brevard, North Carolina",-82.7342919,35.2334472
 "Roselle, Illinois",-88.07979329999999,41.9847504
 "Arab, Alabama",-86.4958219,34.31814970000001
 "Moline, Illinois",-90.51513419999999,41.5067003
@@ -889,19 +889,19 @@ Hometown,lon,lat
 "Kapenguria, Kenya",35.1103736,1.2481932
 "Weston, Florida",-80.3997748,26.1003654
 "Solon, Ohio",-81.44122589999999,41.3897764
-"Wake Forest, California",-117.6861023,33.6469437
+"Wake Forest, North Carolina",-78.50972279999999,35.9798734
 "Chesapeake, Virginia",-76.2874927,36.7682088
 "Lichtenstein, Germany",9.2559325,48.4338176
 "Arcadia, California",-118.0353449,34.1397292
 "Orono, Maine",-68.6719411,44.8831125
-"O'Fallon, Mississippi",-89.3985283,32.3546679
+"O'Fallon, Missouri",-90.69984769999999,38.8106075
 "Walpole, Massachussets",-71.2517835,42.1470851
 "Pleasant Hill, Iowa",-93.5196138,41.5873903
 "Toco, Trinidad and Tobago",-60.94964329999999,10.8311439
 "Grand Rapids, Michigan",-85.6680863,42.9633599
 "Clinton Corners, New York",-73.76312519999999,41.8298561
 "Cabot, Arkansas",-92.0163297,34.9748751
-"O’Fallon, Mississippi",-89.3985283,32.3546679
+"O’Fallon, Missouri",-90.69984769999999,38.8106075
 "Labrea, Trinidad and Tobago",-61.6172831,10.2371321
 "Fairview, Alabama",-86.68805189999999,34.2553741
 "Ocean Township, New Jersey",-74.0420699,40.2645806
@@ -911,7 +911,7 @@ Hometown,lon,lat
 "Trinidad and Tobago, NA",-61.222503,10.691803
 "Arlington, Virginia",-77.09098089999999,38.8816208
 "Milwaukee, Wisconsin",-87.9064736,43.0389025
-"Kekava, Louisiana",24.2271889,56.8226783
+"Kekava, Louisiana",-91.5208624,30.5190775
 "Steilacoom, Washington",-122.6026274,47.1698197
 "Carlisle, Pennsylvania",-77.20027449999999,40.2010241
 "Carrollton, Texas",-96.8899636,32.9756415
@@ -929,11 +929,11 @@ Hometown,lon,lat
 "Saint Vincent and the Grenadines, NA",-61.287228,12.984305
 "Coldwater, Michigan",-85.00052149999999,41.9403263
 "Agulezechukwu, Anambra",7.078081399999999,6.0101939
-"Dearborn, Mississippi",-89.3985283,32.3546679
-"Ballantine, Mississippi",-90.0964805,34.3942749
+"Dearborn, Missouri",-94.76996079999999,39.5219411
+"Ballantine, Missouri",-91.8318334,37.9642529
 "Findlay, Ohio",-83.6502309,41.0391283
 "Parkton, Maryland",-76.65825889999999,39.6430963
-"Spartanburg, California",-119.4179324,36.778261
+"Spartanburg, South Carolina",-81.9320482,34.9495672
 "Iten, Kenya",35.5083136,0.6732353999999999
 "Killeen, Texas",-97.72779589999999,31.1171194
 "Louisville, Ohio",-81.25955189999999,40.8372809
@@ -942,7 +942,7 @@ Hometown,lon,lat
 "Glendora, California",-117.865339,34.1361187
 "Wallkill, New York",-74.1840358,41.60564919999999
 "Plainfield, Illinois",-88.2120315,41.632223
-"Durham, California",-121.7999767,39.6462733
+"Durham, North Carolina",-78.898619,35.9940329
 "Soroti, Uganda",33.6063855,1.7131812
 "Canton, Michigan",-83.48211599999999,42.3086444
 "Amersfoort, The Netherlands",5.387826599999999,52.1561113
@@ -963,7 +963,7 @@ Hometown,lon,lat
 "West Pokot County, Kenya",35.3905046,1.6210076
 "Rantoul, Illinois",-88.1558785,40.3083672
 "Camden, Tennessee",-88.09781509999999,36.0589486
-"Marrakech, Mississippi",-89.3985283,32.3546679
+"Marrakech, Missouri",-91.8318334,37.9642529
 "Morristown, New Jersey",-74.4815438,40.79676670000001
 "Melbourne, Victoria",144.9630576,-37.8136276
 "Caracas, Venezuela",-66.90360629999999,10.4805937
@@ -973,10 +973,11 @@ Hometown,lon,lat
 "Caledon, Ontario",-79.8670882,43.8701204
 "Riehen, Switzerland",7.649911100000001,47.58482739999999
 "Angers, France",-0.5518257,47.47116159999999
+"Raleigh, California",-78.6381787,35.7795897
 "Cali, Colorado",-105.7820674,39.5500507
 "Blanes, Spain",2.7902289,41.6759954
 "Palhaza, Hungary",21.507078,48.4717353
-"Hilton Head Island, California",-119.4179324,36.778261
+"Hilton Head Island, South Carolina",-80.752608,32.216316
 "Fukushima, Japan",140.4747856,37.7607991
 "Mississauga, California",-79.6441198,43.5890452
 "Cardiff-by-the-Sea, California",-117.2788973,33.0208265
@@ -1015,7 +1016,7 @@ Hometown,lon,lat
 "Chandler, Arizona",-111.8412502,33.3061605
 "Fort Collins, Colorado",-105.084423,40.5852602
 "Rochester Hills, Michigan",-83.1499322,42.65836609999999
-"Mills River, California",-119.4179324,36.778261
+"Mills River, North Carolina",-82.566789,35.3884479
 "Wapakoneta, Ohio",-84.1935594,40.5678265
 "Highland Park, Texas",-96.79194539999999,32.8334607
 "Kimberly, Wisconsin",-88.3389952,44.2722093
@@ -1075,7 +1076,7 @@ Hometown,lon,lat
 "Norwalk, Conn.",-73.4081575,41.11774399999999
 "Pennington, New Jersey",-74.790718,40.3284402
 "Burke, Virginia",-77.27165049999999,38.7934466
-"Sumter, California",-119.4179324,36.778261
+"Sumter, South Carolina",-80.3414693,33.9204354
 "Studio City, California",-118.3870991,34.1395597
 "Rockford, Michigan",-85.5600316,43.1200272
 "Tiverton, R.I.",-71.2134231,41.6259211
@@ -1100,7 +1101,7 @@ Hometown,lon,lat
 "Canton, Ohio",-81.378447,40.79894729999999
 "Grand Haven, Michigan",-86.22838639999999,43.0630734
 "Norristown, Pennsylvania",-75.3399048,40.121497
-"Eldon, Mississippi",-89.3985283,32.3546679
+"Eldon, Missouri",-92.58157589999999,38.34836360000001
 "Hunting Beach, California",-117.9988026,33.6594835
 "Richboro, Pennsylvania",-75.0107245,40.2151086
 "Los Alamitos, California",-118.0718894,33.8032009
@@ -1120,7 +1121,7 @@ Hometown,lon,lat
 "New Lenox, Illinois",-87.9656098,41.5119761
 "Christchurch, New Zealand",172.6305589,-43.5320214
 "Brockville, Ontario",-75.68428580000001,44.5895244
-"St. Charles, Mississippi",-89.3985283,32.3546679
+"St. Charles, Missouri",-90.4974359,38.7881062
 "Portland, Oregon",-122.6783853,45.515232
 "Muskego, Wisconsin",-88.1492892,42.9016299
 "Bourbonnais, Illinois",-87.87952299999999,41.1760108
@@ -1142,7 +1143,7 @@ Hometown,lon,lat
 "Pearl, Mississippi",-90.13426079999999,32.2662515
 "Cambridge, New Zealand",175.466267,-37.8891864
 "Balwyn, Australia",145.0813238,-37.8128937
-"Chesterfield, Mississippi",-89.3985283,32.3546679
+"Chesterfield, Missouri",-90.5770675,38.6631083
 "Oklahoma City, Oklahoma",-97.5164276,35.4675602
 "Red Bank, New Jersey",-74.0643065,40.3470543
 "Oswego, Illinois",-88.35145960000001,41.6828074
@@ -1197,7 +1198,7 @@ Hometown,lon,lat
 "Greenbrier, Arkansas",-92.38789729999999,35.2340491
 "Trophy Club, Texas",-97.1836246,32.9979014
 "Mont Belvieu, Texas",-94.89075799999999,29.8477222
-"Lee's Summit, Mississippi",-89.3985283,32.3546679
+"Lee's Summit, Missouri",-94.3821724,38.9108408
 "Grapevine, Texas",-97.0780654,32.9342919
 "Prairie Village, Kan.",-94.6335684,38.9916726
 "Magnolia, Arkansas",-93.2393835,33.2670757
@@ -1221,18 +1222,18 @@ Hometown,lon,lat
 "Friendswood, Texas",-95.2010447,29.5293998
 "Hot Springs, Arkansas",-93.05460029999999,34.5077615
 "Clayton, California",-121.9357925,37.9410341
-"Monett, Mississippi",-93.92761030000001,36.9197522
+"Monett, Missouri",-93.92761030000001,36.9197522
 "Sheridan, Arkansas",-92.39914089999999,34.3068334
 "Wichita Falls, Texas",-98.4933873,33.9137085
 "Kings Park, New York",-73.2573369,40.88620900000001
 "Pine Bluff, Arkansas",-92.0033977,34.224908
 "Berthoud, Colorado",-105.0810924,40.3083174
-"Loch Lloyd, Mississippi",-94.59598059999999,38.8322747
+"Loch Lloyd, Missouri",-94.59598059999999,38.8322747
 "Haughton, Louisiana",-93.50406269999999,32.53265140000001
 "Port Neches, Texas",-93.9585067,29.9913244
 "Warren, Ohio",-80.81841659999999,41.2375569
 "Stoneham, Massachussets",-71.1001891,42.4816758
-"Florissant, Mississippi",-89.3985283,32.3546679
+"Florissant, Missouri",-90.322614,38.789217
 "Bullard, Texas",-95.320229,32.1398804
 "Eau Claire, Wisconsin",-91.4984941,44.811349
 "Georgetown, Kentucky",-84.55883109999999,38.2097967
@@ -1242,7 +1243,7 @@ Hometown,lon,lat
 "Kearney, Nebraska",-99.0816784,40.69933030000001
 "Savannah, Texas",-96.9081597,33.2258526
 "Golden, Colorado",-105.2210997,39.755543
-"Kennett, Mississippi",-89.3985283,32.3546679
+"Kennett, Missouri",-90.0556493,36.2361762
 "Kerrville, Texas",-99.1403189,30.0474332
 "Tushka, Oklahoma",-96.16721319999999,34.3203693
 "Quitman, Arkansas",-92.2160457,35.3840424
@@ -1254,7 +1255,7 @@ Hometown,lon,lat
 "Gravette, Arkansas",-94.4518839,36.4222948
 "Wichita, Kan",-97.33005299999999,37.68717609999999
 "Lockport, Illinois",-88.05783699999999,41.5894752
-"Ballwin, Mississippi",-88.63533129999999,34.509544
+"Ballwin, Missouri",-90.54623389999999,38.5950532
 "La Joya, Texas",-98.4814092,26.2470165
 "Benton Ark., NA",-92.58537799999999,34.5693083
 "Foreman, Arkansas",-94.3920665,33.72165409999999
@@ -1270,7 +1271,7 @@ Hometown,lon,lat
 "Quitman, Georgia",-83.5598811,30.7849191
 "Double Oak, Texas",-97.1105669,33.065122
 "Nederland, Texas",-93.9923965,29.9743803
-"Kimberling City, Mississippi",-89.3985283,32.3546679
+"Kimberling City, Missouri",-93.4168531,36.6333962
 "Maize, Kan.",NA,NA
 "Mesquite, Texas",-96.5991593,32.76679550000001
 "Pharr, Texas",-98.1836216,26.1947962
@@ -1310,6 +1311,7 @@ Hometown,lon,lat
 "Lepanto, Arkansas",-90.33105169999999,35.6134185
 "DeSoto, Texas",-96.8570738,32.5896998
 "Abuja, Nigeria",7.398574,9.0764785
+"Columbia, Missouri",-92.3340724,38.9517053
 "Lawrence, Kan.",-95.2352501,38.9716689
 "El Dorado, Arkansas",-92.66557159999999,33.207471
 "Abidjan, Ivory Coast",-4.0082563,5.3599517
@@ -1317,8 +1319,8 @@ Hometown,lon,lat
 "Columbia, Illinois",-90.2012239,38.44366369999999
 "Forrest City, Arkansas",-90.7852312,35.0092581
 "Fort Wayne, Indiana",-85.1393513,41.079273
-"Wilson, California",-121.6257966,38.9782281
-"Republic, Mississippi",-89.3985283,32.3546679
+"Wilson, North Carolina",-77.91112369999999,35.7258286
+"Republic, Missouri",-93.4801942,37.1200526
 "Desoto, Texas",-96.8570738,32.5896998
 "Little Rock. Ark., NA",-92.2880157,34.7444618
 "Maumelle, Arkansas",-92.39775089999999,34.8700046
@@ -1329,8 +1331,9 @@ Hometown,lon,lat
 "Mitchellville, Maryland",-76.8201976,38.9382537
 "Brookhaven, Georgia",-84.33712659999999,33.8650186
 "Ada, Oklahoma",-96.6783449,34.774531
+"Concord, California",-122.0310733,37.9779776
 "Morrilton, Arkansas",-92.7437844,35.1526163
-"Springfield, Mississippi",-89.3985283,32.3546679
+"Springfield, Missouri",-93.29229889999999,37.2089572
 "Dakar, Senegal",-17.4676861,14.716677
 "Dickinson, Texas",-95.0513172,29.4607876
 "Hillside, New Jersey",-74.2287333,40.6955044
@@ -1366,7 +1369,7 @@ Hometown,lon,lat
 "La Mesa, California",-117.0230839,32.7678287
 "Nowata, Oklahoma",-95.6380341,36.700645
 "Cut Off, Louisiana",-90.3381361,29.5427168
-"Mauldin, California",-119.4179324,36.778261
+"Mauldin, South Carolina",-82.310119,34.77873
 "Iowa City, Iowa",-91.53461689999999,41.6578257
 "Manvel, Texas",-95.35799399999999,29.4627365
 "Bainbridge, Georgia",-84.57546990000002,30.9037995
@@ -1377,7 +1380,7 @@ Hometown,lon,lat
 "Lahaina, Hawai'i",-156.6816195,20.882371
 "West Palm Beach, Florida",-80.0533746,26.7153424
 "Heber Springs, Arkansas",-92.030216,35.4914255
-"Webb City, Mississippi",-90.34425759999999,33.9473356
+"Webb City, Missouri",-94.4630035,37.1464475
 "Glendale, Arizona",-112.1859866,33.5386523
 "Pritchard, Alabama",-88.0896618,30.74515449999999
 "Dumas, Arkansas",-91.4835196,33.8834161
@@ -1387,7 +1390,7 @@ Hometown,lon,lat
 "Maimi, Florida",-80.1917902,25.7616798
 "Ft. Lauderdale, Florida",-80.13731740000001,26.1224386
 "Victoria, Minnesota",-93.6615338,44.8587227
-"Bolivar, Mississippi",-91.0531635,33.6598339
+"Bolivar, Missouri",-93.4104749,37.6144838
 "S. Bernardino, California",-117.2897652,34.1083449
 "Hardy, Arkansas",-91.4827573,36.3156298
 "Svendborg, Denmark",10.607282,55.067434
@@ -1417,8 +1420,8 @@ Hometown,lon,lat
 "Helena-West Helena, Arkansas",-90.5911996,34.5291892
 "Ashdown, Arkansas",-94.1316238,33.67426450000001
 "Jenks, Oklahoma",-95.9683278,36.0228734
-"Branson, Mississippi",-93.21851439999999,36.6436731
-"Festus, Mississippi",-89.3985283,32.3546679
+"Branson, Missouri",-93.21851439999999,36.6436731
+"Festus, Missouri",-90.40329659999999,38.2135566
 "Spring Grove, Illinois",-88.23647749999999,42.4436308
 "Fordyce, Arkansas",-92.41297460000001,33.8137295
 "Kensett, Arkansas",-91.668385,35.2334187
@@ -1456,14 +1459,14 @@ Hometown,lon,lat
 "Siloam Springs, Arkansas",-94.54156429999999,36.1859196
 "Cambridge, Wisconsin",-89.0164995,43.0036122
 "Greenland, Arkansas",-94.1740459,35.9941317
-"Duncan, California",-123.0550013,38.453803
+"Duncan, South Carolina",-82.1451096,34.9378962
 "Hope, Arkansas",-93.5971381,33.66846719999999
 "Ozark, Arkansas",-93.8272262,35.4869588
 "Haslet, Texas",-97.34779569999999,32.9748469
 "Hudsonville, Michigan",-85.8650358,42.870859
-"Wilmington, California",-118.2643567,33.7857948
+"Wilmington, North Carolina",-77.8868117,34.2103894
 "Locust Grove, Georgia",-84.109083,33.3459495
-"Independence, Mississippi",-89.8089763,34.70510040000001
+"Independence, Missouri",-94.41550679999999,39.0911161
 "Grove, Oklahoma",-94.76911860000001,36.5936863
 "Big Sandy, Texas",-95.1088328,32.58375210000001
 "Andover, Kan.",-97.1364294,37.7139041
@@ -1474,6 +1477,7 @@ Hometown,lon,lat
 "East St. Louis, Illinois",-90.1506465,38.624514
 "Paris, Tennessee",-88.32671069999999,36.3020023
 "Live Oak, Florida",-82.98402000000002,30.2949457
+"Clayton, North Carolina",-78.4563914,35.650711
 "Moody, Alabama",-86.49081679999999,33.5909365
 "Henderson, Texas",-94.7993802,32.1532156
 "Zapopan, Mexico",-103.416501,20.6719563
@@ -1528,11 +1532,12 @@ Hometown,lon,lat
 "Toowoomba, Australia",151.9506696,-27.5598212
 "Godfrey, Illinois",-90.1867764,38.9556031
 "Pace, Florida",-87.1610807,30.5993603
-"Ofallan, Mississippi",-89.3985283,32.3546679
+"Ofallan, Missouri",-90.69984769999999,38.8106075
 "Sevierville, Tennessee",-83.56183500000002,35.8681455
 "Lincolnshire, England",-0.1601246,52.9451889
 "Orting, Washington",-122.2042824,47.0978795
 "Aguascalientes, Mexico",-102.2915677,21.8852562
+"Ellisville, Missouri",-90.5870686,38.5925532
 "Narragansett, RI",-71.44950299999999,41.4500844
 "Southaven, Mississippi",-90.0022958,34.9918587
 "Ormond Beach, Florida",-81.0558894,29.2858129
@@ -1540,8 +1545,8 @@ Hometown,lon,lat
 "Bismarck, North Dakota",-100.7876931,46.8054947
 "The Colony, Texas",-96.8927532,33.0806341
 "Cancun, Mexico",-86.8515279,21.161908
-"Brookline, Mississippi",-90.48647849999999,33.1726248
-"Kirkwood, Mississippi",-89.3985283,32.3546679
+"Brookline, Missouri",-93.4094629,37.1734106
+"Kirkwood, Missouri",-90.406785,38.5833862
 "Preston, England",-2.70309,53.763201
 "East Grand Forks, Minnesota",-97.00934699999999,47.9311871
 "Trieste, Italy",13.7768182,45.6495264
@@ -1554,8 +1559,10 @@ Hometown,lon,lat
 "Crawfordsville, Indiana",-86.87445160000001,40.0411536
 "Arezzo, Italy",11.8796336,43.46328390000001
 "Bolton, United Kingdom",-2.4282192,53.57686469999999
+"St. Louis, Mississippi",-89.33004609999999,30.3088076
 "Truckee, California",-120.1832533,39.327962
-"Pfafftown, California",-119.4179324,36.778261
+"Brookline, Mississippi",-90.48647849999999,33.1726248
+"Pfafftown, North Carolina",-80.3622436,36.1527249
 "Bristow, Virginia",-77.5367043,38.723303
 "Parma, Italy",10.3279036,44.801485
 "Virginia Beach, Virginia",-75.97921939999999,36.8516437
@@ -1578,24 +1585,24 @@ Hometown,lon,lat
 "Chesterfield, Michigan",-82.79941939999999,42.6960659
 "Elk River, Minnesota",-93.5547381,45.303218
 "Beach City, Texas",-94.8442859,29.7381591
-"Kings Mountain, California",-122.322869,37.4189152
+"Kings Mountain, North Carolina",-81.34119419999999,35.2451342
 "Pearland, Texas",-95.2860474,29.5635666
 "Porter, Texas",-95.2364276,30.1044506
 "Brownsburg, Indiana",-86.39777350000001,39.8433769
 "Sycamore, Illinois",-88.6867538,41.9889173
 "Parkland, Florida",-80.25322489999999,26.3107774
 "South Lebanon, OH",-84.21326979999999,39.3708927
-"Belmont, California",-122.2758008,37.5202145
+"Belmont, North Carolina",-81.0377936,35.2438483
 "Hanover, Pennsylvania",-76.9830358,39.8006553
 "South Phoenix, Arizona",-112.0734812,33.4067115
-"Adrian, Mississippi",-84.03716589999999,41.8975471
+"Adrian, Missouri",-94.3516159,38.397518
 "Carrolton, Texas",-96.8899636,32.9756415
-"Kearney, Mississippi",-90.7289864,32.7531878
+"Kearney, Missouri",-94.3621703,39.3677802
 "Roanoke, Texas",-97.2258483,33.0040126
 "Renton, Washington",-122.2079218,47.4796927
 "Michigan City, Indiana",-86.8950297,41.70753939999999
 "Gallatin, Tennessee",-86.4464143,36.3883928
-"Farmington, Mississippi",-88.4522686,34.930088
+"Farmington, Missouri",-90.4217895,37.7808846
 "Las Cruces, N.M.",-106.7636538,32.3199396
 "Evergreen, Colorado",-105.3172146,39.6333213
 "Masarykova, Korycany",17.1709668,49.1123183
@@ -1615,7 +1622,6 @@ Hometown,lon,lat
 "McAllen, Texas",-98.23001239999999,26.2034071
 "Burleson, Texas",-97.3208492,32.5420821
 "Lee’s Summit, Missouri",-94.3821724,38.9108408
-"St. Louis, Missouri",-90.19940419999999,38.6270025
 "Eagle Mountain, Utah",-112.006882,40.31411689999999
 "Happy Valley, Oregon",-122.5125279,45.4412329
 "Heath, Texas",-96.474987,32.8365147
@@ -1629,6 +1635,7 @@ Hometown,lon,lat
 "Lookout Mountain, Georgia",-85.35773630000001,34.9775757
 "Richmond Hill, Ontario",-79.4402808,43.8828401
 "Tinmath, Colorado",-104.9852533,40.5291491
+"Wilkesboro, North Carolina",-81.1606401,36.1459649
 "Nassau, Bahamas",-77.3503609,25.0443312
 "Hensley, Arkansas",-92.2057037,34.5053723
 "Manchester, Jamaica",-77.5160788,18.0669654
@@ -1692,12 +1699,13 @@ Hometown,lon,lat
 "Rocklin, California",-121.2357828,38.7907339
 "Benton, Louisiana",-93.7418454,32.6948677
 "Missouri Valley, Iowa",-95.88766969999999,41.5563785
-"Nixa, Mississippi",-89.3985283,32.3546679
+"Nixa, Missouri",-93.294353,37.0433863
 "Decatur, Indiana",-84.9291329,40.830603
 "Okmulgee, Oklahoma",-95.9515399,35.6266957
-"Neosho, Mississippi",-94.36799599999999,36.8689554
+"Neosho, Missouri",-94.36799599999999,36.8689554
 "New Windsor, New York",-74.02375180000001,41.4767605
 "Chaguana, Trinadad & Tobago",-61.4114482,10.5168387
+"Greenville, South Carolina",-82.3940104,34.85261759999999
 "North Andros, Bahamas",-78.0195387,24.7063805
 "Tontitown, Arkansas",-94.2191982,36.1759952
 "Capetown, South Africa",18.4240553,-33.9248685
@@ -1718,13 +1726,13 @@ Hometown,lon,lat
 "Lubbock, Texas",-101.8456417,33.5845617
 "Rancho Santa Margherita, California",-117.602832,33.640171
 "Northhampton, England",-0.8944420999999999,52.23706499999999
-"Ste. Genevieve, Mississippi",-89.3985283,32.3546679
+"Ste. Genevieve, Missouri",-90.0475582,37.9786618
 "Abilene, Texas",-99.73314390000002,32.4487364
 "Davenport, Iowa",-90.5776367,41.5236437
 "Lee's Summit Missouri, NA",-94.3821724,38.9108408
 "Oakland Gardens, New York",-73.758241,40.7408584
 "Richland Park, St. Vincent and the Grenadines",-61.1679944,13.201182
-"Camdenton, Mississippi",-89.3985283,32.3546679
+"Camdenton, Missouri",-92.7446289,38.0080902
 "Henrietta, NY.",-77.6128039,43.0592452
 "Hamburg, Arkansas",-91.79755449999999,33.225724
 "Mandeville, Jamaica",-77.5074568,18.0383278
@@ -1755,6 +1763,7 @@ Hometown,lon,lat
 "Canton, Georgia",-84.4907621,34.2367621
 "Spokane, Waashington",-117.4235319,47.6579711
 "Lemannville, Louisiana",-90.06563109999999,30.35825059999999
+"Springfield, Mississippi",-89.3985283,32.3546679
 "St. Mary, Jamaica",-76.964306,18.3092711
 "Newark, New Jersey",-74.1723667,40.735657
 "Salem, Oregon",-123.0350963,44.9428975
@@ -1785,7 +1794,7 @@ Hometown,lon,lat
 "Cedar Rapids, Iowa",-91.6656232,41.9778795
 "Madrid, Spain",-3.7037902,40.4167754
 "Nanning, China",108.3669,22.8167299
-"Wildwood, Mississippi",-90.2411958,33.619285
+"Wildwood, Missouri",-90.6629047,38.582831
 "Gilmer, Texas",-94.94243790000002,32.7287472
 "Barranquilla, Colorado",-74.80698129999999,11.0041072
 "Pretoria, Rep. of South Africa",28.2292712,-25.7478676
@@ -1824,12 +1833,13 @@ Hometown,lon,lat
 "Barceloneta, Puerto Rico",-66.5383891,18.4547057
 "Paris, France",2.3522219,48.856614
 "Caguas, Puerto Rico",-66.035249,18.2387995
-"Pleasant Hill, Mississippi",-89.894533,34.9145394
-"Carl Junction, Mississippi",-94.56550659999999,37.1767249
-"Carthage, Mississippi",-89.5361825,32.7326356
+"Pleasant Hill, Missouri",-94.269391099999993,38.7875094
+"Carl Junction, Missouri",-94.56550659999999,37.1767249
+"Carthage, Missouri",-94.31022279999999,37.176447
 "Mount Vernon, Texas",-95.2213321,33.1887271
 "Seguin, Texas",-97.96458319999999,29.56892479999999
 "Stilwell, Kan.",-94.6592143,38.7672883
+"Clinton, Mississippi",-90.3217585,32.3415342
 "Wellington, Alabama",-85.89274569999999,33.8225999
 "Fremont, California",-121.988583,37.5485396
 "Owens Crossroads, Alabama",-86.4588768,34.5881461
@@ -1868,7 +1878,7 @@ Hometown,lon,lat
 "Orange County, California",-117.8311428,33.7174708
 "Brielle, New Jersey",-74.05652630000002,40.1078931
 "Laurel, Maryland",-76.8483061,39.0992752
-"Galena, Mississippi",-89.5523039,34.6570443
+"Galena, Missouri",-93.466579,36.8053375
 "Wedowee, Alabama",-85.484675,33.3090047
 "Stockbridge, Georgia",-84.23380929999999,33.5442781
 "Pembroke, Georgia",-81.6220565,32.1360332
@@ -1896,12 +1906,12 @@ Hometown,lon,lat
 "Silverhill, Alabama",-87.75165590000002,30.5454715
 "Oak Park, Illinois",-87.7845025,41.8850317
 "Mogadore, Ohio",-81.3978884,41.0464454
-"Asheboro, California",-119.4179324,36.778261
+"Asheboro, North Carolina",-79.8136446,35.7079146
 "Frankfort, Illinois",-87.84866129999999,41.4958665
 "Sioux Falls, South Dakota",-96.731265,43.5460223
 "Maineville, Ohio",-84.22076969999999,39.3150592
 "Holtville, Alabama",-86.321991,32.636185
-"Wentzville, Mississippi",-90.8529107,38.81144
+"Wentzville, Missouri",-90.8529107,38.81144
 "Newnan, Georgia",-84.79965729999999,33.3806716
 "Anderson, Indiana",-85.6802541,40.1053196
 "Silute, Lithuania",21.4706202,55.34288669999999
@@ -1910,11 +1920,11 @@ Hometown,lon,lat
 "Inglewood, California",-118.3531311,33.9616801
 "Waterbury, Conn.",-73.0514965,41.5581525
 "Palm Bay, Florida",-80.5886646,28.0344621
-"Stanley, California",-122.2938623,38.2446383
+"Stanley, North Carolina",-81.0903175,35.3535258
 "Warwick, Georgia",-83.9187886,31.8310072
 "Voorhees, New Jersey",-74.961517,39.8519447
 "Opp, Alabama",-86.2555067,31.2826685
-"North Augusta, California",-119.4179324,36.778261
+"North Augusta, South Carolina",-81.9651152,33.5018026
 "Lakewood Ranch, Florida",-82.4285151,27.4117037
 "Nahunta, Georgia",-81.98122599999999,31.20439
 "Ogun, Nigeria",3.4737378,6.997974699999999
@@ -1924,10 +1934,10 @@ Hometown,lon,lat
 "Santo Domingo, Dominican Republic",-69.93609239999999,18.4626178
 "Minneapolis, Minnesota",-93.2650108,44.977753
 "Port St. Lucie, Florida",-80.3582261,27.2730492
-"Norway, California",-120.0365724,38.8246295
+"Norway, South Carolina",-81.1253773,33.4518194
 "Ft. Walton Beach, Florida",-86.6170308,30.42007079999999
 "Bolingbrook, Illinois",-88.0683955,41.69864159999999
-"Winston-Salem, California",-119.4179324,36.778261
+"Winston-Salem, North Carolina",-80.244216,36.09985959999999
 "Kennewick, Washington",-119.119948,46.2086683
 "Macungie, Pennsylvania",-75.55518579999999,40.51593039999999
 "Broward, Florida",-80.365865,26.190096
@@ -1938,7 +1948,7 @@ Hometown,lon,lat
 "Mali, NA",NA,NA
 "Ponchatoula, Louisiana",-90.4414762,30.4388041
 "Baytown, Texas",-94.97742740000001,29.7355047
-"Maputo, Mississippi",-89.3985283,32.3546679
+"Maputo, Missouri",-91.8318334,37.9642529
 "Bogalusa, Louisiana",-89.8486858,30.7910204
 "Muldrow, Oklahoma",-94.5988306,35.4062034
 "Linden, Alabama",-87.7980665,32.3062534
@@ -1952,13 +1962,13 @@ Hometown,lon,lat
 "Ellicott City, Maryland",-76.7983067,39.2673283
 "Doylestown, Pennsylvania",-75.1298939,40.3101063
 "Bowling Green, Ohio",-83.6513229,41.3747744
-"Greenwood, California",-120.9147455,38.8994054
+"Greenwood, South Carolina",-82.1617883,34.1954001
 "Glen Mills, Pennsylvania",-75.5103484,39.9016273
 "Daphine, Alabama",-87.9036047,30.6035255
 "Velika Gorica, Croatia",16.0752431,45.7142122
 "Miramar, Florida",-80.30356019999999,25.9860762
 "Chambersburg, Pennsylvania",-77.6611022,39.9375911
-"Beaufort, California",-119.4179324,36.778261
+"Beaufort, South Carolina",-80.6698286,32.4315813
 "Guntersville, Alabama",-86.29470409999999,34.3581473
 "Plettenberg, Germany",7.8701794,51.209623
 "Valley Center, Kan.",-97.3720207,37.8323292
@@ -1971,7 +1981,7 @@ Hometown,lon,lat
 "Rio Grande City, Texas",-98.8203046,26.3797874
 "Freeport, Bahamas",-78.6429019,26.5333159
 "Grahamsville, New York",-74.547935,41.8478701
-"Apex, California",-120.82222,38.72694
+"Apex, North Carolina",-78.85028559999999,35.732652
 "Phoenix, Az.",-112.0740373,33.4483771
 "Newport News, Virginia",-76.4730122,37.0870821
 "Shorter, Alabama",-85.9183541,32.3951313
@@ -1992,7 +2002,7 @@ Hometown,lon,lat
 "Bealton, Virginia",-77.76777299999999,38.5830443
 "Spanish Town, Jamaica",-76.9748123,18.0166835
 "Hoover, NA",NA,NA
-"Misenheimer, California",-119.4179324,36.778261
+"Misenheimer, North Carolina",-80.28839040000001,35.4848625
 "Evansville, Indiana",-87.5710898,37.9715592
 "Park Hills, Kentucky",-84.5321652,39.0714491
 "Thomasville, Georgia",-83.9787808,30.8365815
@@ -2027,9 +2037,9 @@ Hometown,lon,lat
 "Odenville, Alabama",-86.396648,33.6773237
 "South Lake Tahoe, California",-119.9771868,38.939926
 "Buchanan, Georgia",-85.1900624,33.8021734
-"Mt. Pleasant, California",-120.9785646,39.6123927
+"Mt. Pleasant, South Carolina",-79.82842579999999,32.8323225
 "Jonesboro, Georgia",-84.3538128,33.5215013
-"Bluffton, California",-119.4179324,36.778261
+"Bluffton, South Carolina",-80.8603868,32.2371465
 "Thomaston, Georgia",-84.3265854,32.8881879
 "Atmore, Alabama",-87.4938708,31.0237921
 "Greenville, Alabama",-86.6177517,31.8295972
@@ -2051,7 +2061,7 @@ Hometown,lon,lat
 "Brunswick, Georgia",-81.4878157,31.1510919
 "Fort Payne, Alabama",-85.7196893,34.4442547
 "Stuart, Florida",-80.2528257,27.197548
-"Havelock, California",-119.4179324,36.778261
+"Havelock, North Carolina",-76.9013301,34.8790492
 "Livonia, Michigan",-83.35270969999999,42.36837
 "Natchitoches, Louisiana",-93.08627489999999,31.7607195
 "Centre, Alabama",-85.67885310000001,34.1520406
@@ -2095,7 +2105,7 @@ Hometown,lon,lat
 "Eutaw, Alabama",-87.8875145,32.8406848
 "Attalla, Alabama",-86.0885852,34.0217639
 "Madison, Conn.",-72.5754149,41.2959908
-"Oak Ridge, California",-121.7513411,37.4746583
+"Oak Ridge, North Carolina",-79.98892769999999,36.1734694
 "New Washington, Ohio",-82.85435009999999,40.9622784
 "Tunica, Mississippi",-90.3828769,34.6845455
 "Magee, Mississippi",-89.7336852,31.8737712
@@ -2104,22 +2114,22 @@ Hometown,lon,lat
 "Milton, Florida",-87.03968809999999,30.6324149
 "Paradise, California",-121.6219177,39.7596061
 "Blackshear, Georgia",-82.2420661,31.3060513
-"Reidsville, California",-119.4179324,36.778261
-"Tar Heel, California",NA,NA
+"Reidsville, North Carolina",-79.6644747,36.3548586
+"Tar Heel, North Carolina",-78.79002129999999,34.7332237
 "Inverness, Florida",-82.3313955,28.8354507
 "Munich, Germany",11.5819806,48.1351253
 "Libreville, Georgia",9.4672676,0.4161976
 "Enebyberg, Sweden",18.0391085,59.43248120000001
 "Frederiksberg, Copenhagen",12.513321,55.677069
-"Gastonia, California",-119.4179324,36.778261
+"Gastonia, North Carolina",-81.1870849,35.2621735
 "Hampton Cove, Alabama",-86.4885985,34.6673996
 "Blacksburg, Virginia",-80.4139393,37.2295733
-"Advance, California",-118.9026011,36.5157803
+"Advance, North Carolina",-80.4096909,35.9412419
 "Eagle, Idaho",-116.3540138,43.6954424
 "George, South Africa",22.4529878,-33.9881281
 "Ayr, Scotland",-4.629179000000001,55.458564
 "Sunshine Coast, Queensland",153.066667,-26.65
-"Elgin, California",-119.4179324,36.778261
+"Elgin, South Carolina",-80.794252,34.17098259999999
 "Guangxi, China",109.4154583,24.3255257
 "Howey-in-the-Hills, Florida",-81.7745339,28.7139939
 "Bogota, Colorado",-74.072092,4.710988599999999
@@ -2171,7 +2181,7 @@ Hometown,lon,lat
 "Rio de Janeiro, NA",-43.1728965,-22.9068467
 "Culpepper, Virginia",-77.9961177,38.4733465
 "Upplands Vasby, Sweden",17.92834,59.51961
-"Huntersville, California",-119.4179324,36.778261
+"Huntersville, North Carolina",-80.84285040000002,35.410694
 "Luxembourg, NA",6.129582999999999,49.815273
 "Jefferson, Georgia",-83.5723876,34.1170537
 "Hockessin, Del.",-75.6966001,39.7876112
@@ -2230,7 +2240,7 @@ Hometown,lon,lat
 "Stillwater, Minnesota",-92.80884429999999,45.056004
 "Brandon, Mississippi",-90.001384,32.2788733
 "Brackney, Pennsylvania",-75.926862,41.989798
-"Black Mountain, California",-122.1481097,37.3173167
+"Black Mountain, North Carolina",-82.3212302,35.6178951
 "Williamson, Georgia",-84.3615902,33.1823419
 "San Augustine, Texas",-94.1119678,31.5296413
 "Abingdon, Maryland",-76.27722229999999,39.4622357
@@ -2241,7 +2251,7 @@ Hometown,lon,lat
 "Coto De Caza, California",-117.5906715,33.5951048
 "Orange Beach, Alabama",-87.5867598,30.2697033
 "Maple Grove, Minnesota",-93.4557877,45.0724642
-"Summerville, California",-123.067815,41.0987505
+"Summerville, South Carolina",-80.17581009999999,33.0188755
 "Berlin, New Jersey",-74.9290536,39.7912261
 "Morgantown, W.V.",-79.95589679999999,39.629526
 "Wausau, Wisconsin",-89.6301221,44.9591352
@@ -2291,18 +2301,18 @@ Hometown,lon,lat
 "Palmetto, Florida",-82.57231929999999,27.5214269
 "Viljandi, Estonia",25.5859691,58.363476
 "Middleburg Heights, Ohio",-81.812912,41.3614401
-"Eureka, Mississippi",-89.7859103,32.509029
+"Eureka, Missouri",-90.62790439999999,38.5025537
 "Reston, Virginia",-77.35700279999999,38.9586307
-"Blythewood, California",-119.4179324,36.778261
+"Blythewood, South Carolina",-80.97397699999999,34.2143159
 "Wahoo, Nebraska",-96.6212604,41.2115023
 "Decatur, Texas",-97.5861393,33.2342834
 "Eagan, Minnesota",-93.1668858,44.8041322
 "Highland, California",-117.2015791,34.1211873
 "Sebring, Florida",-81.440907,27.495592
-"Liberty, Mississippi",-90.8123243,31.1582312
+"Liberty, Missouri",-94.4191177,39.2461138
 "Watertown, Minnesota",-93.847189,44.9635738
 "Puyallup, Washington",-122.2928974,47.1853785
-"Stoneville, California",-119.4179324,36.778261
+"Stoneville, North Carolina",-79.9069847,36.4665269
 "Yorktown, Indiana",-85.4941396,40.1736547
 "Castle Pines, Colorado",-104.8947682,39.4716139
 "Oxford, Ohio",-84.74523099999999,39.5069974
@@ -2328,7 +2338,7 @@ Hometown,lon,lat
 "Atlantic Beach, Florida",-81.398696,30.3344077
 "Trenton, Florida",-82.8176203,29.6132942
 "Brea, California",-117.9002918,33.916475
-"Gray Summit, Mississippi",-89.3985283,32.3546679
+"Gray Summit, Missouri",-90.81763459999999,38.4892372
 "Lincoln, California",-121.2930079,38.891565
 "Lake Panasoffkee, Florida",-82.13328179999999,28.7876707
 "Middleburg, Florida",-81.8603778,30.0688512
@@ -2358,7 +2368,7 @@ Hometown,lon,lat
 "Portland, Maine",-70.2568189,43.6590993
 "Frankfurt, Germany",8.6821267,50.1109221
 "Pleasant Hill, California",-122.0607963,37.9479786
-"Lake Norman, California",-119.4179324,36.778261
+"Lake Norman, North Carolina",-80.918003,35.5019795
 "New Oxford, Pennsylvania",-77.0558143,39.8637086
 "Perth, Australia",115.861309,-31.9523123
 "Kaunas, Lithuania",23.9035965,54.8985207
@@ -2423,7 +2433,7 @@ Hometown,lon,lat
 "Bradenton, NA",-82.5748194,27.4989278
 "Coconut Grove, NA",-80.2377186,25.7355248
 "Largo, NA",NA,NA
-"Shelby, California",-119.4179324,36.778261
+"Shelby, North Carolina",-81.5356463,35.2923513
 "Wellborn, NA",NA,NA
 "Clearwater, NA",-82.7958948,27.9655722
 "Alachua, NA",-82.49442260000001,29.7938144
@@ -2442,14 +2452,14 @@ Hometown,lon,lat
 "Delray Beach, NA",-80.0728201,26.4614625
 "Crescent City, NA",-124.2025913,41.7557501
 "Dover, Del.",-75.5243682,39.158168
-"Union, California",-122.30889,38.32139
+"Union, North Carolina",-81.9909404,35.3184522
 "Groveland, NA",-71.0314451,42.76036879999999
 "Orange Park, NA",-81.706484,30.1660736
 "Fort Myers, NA",-81.8723084,26.640628
 "Warminster, Pennsylvania",-75.0903154,40.2053679
 "Tallahassee, NA",-84.28062349999999,30.4381828
 "Coconut Creek, NA",-80.17893509999999,26.2517482
-"Winston Salem, California",-119.4179324,36.778261
+"Winston Salem, North Carolina",-80.244216,36.09985959999999
 "West Palm Beach, NA",-80.0533746,26.7153424
 "Port Saint Lucie, NA",-80.3582261,27.2730492
 "Manor, Texas",-97.5576772,30.3410655
@@ -2530,7 +2540,7 @@ Hometown,lon,lat
 "Scarborough, California",-119.4179324,36.778261
 "Aarhus, Denmark",10.203921,56.162939
 "Richardson, Texas",-96.7298519,32.9483335
-"Denver, California",-119.4179324,36.778261
+"Denver, North Carolina",-81.0295793,35.5316576
 "Ahmedabad, Indiana",72.5713621,23.022505
 "Wilbraham, Massachussets",-72.431586,42.1237206
 "Curitiba-PR, Brazil",-49.2699727,-25.4372382
@@ -2596,14 +2606,14 @@ Hometown,lon,lat
 "Villa Hills, Kentucky",-84.5929998,39.0633933
 "Royal Oak, Michigan",-83.1446485,42.4894801
 "Briarcliff Manor, NY",-73.840231,41.1402322
-"Holly Springs, California",-119.4179324,36.778261
+"Holly Springs, North Carolina",-78.8336218,35.6512655
 "Sudbury, California",-119.4179324,36.778261
 "West Vancouver, Florida",-81.5157535,27.6648274
 "Eustis, Florida",-81.6853534,28.8527675
 "Bergen, Norway",5.3220544,60.39126279999999
 "Worthington, Ohio",-83.017962,40.0931191
 "Largo, Florida",-82.7873244,27.9094665
-"Indian Trail, California",-116.0277823,34.186799
+"Indian Trail, North Carolina",-80.6692352,35.0768141
 "Erie, Pennsylvania",-80.085059,42.12922409999999
 "Rancho Sante Fe, California",-117.202813,33.020321
 "Västerås, Sweden",16.5448091,59.60990049999999
@@ -2611,7 +2621,7 @@ Hometown,lon,lat
 "Rancho Palos Verdes, California",-118.3870173,33.7444613
 "Millville, Utah",-111.8229982,41.6815987
 "Sandy, Utah",-111.8389726,40.5649781
-"Ridgeland, California",-119.4179324,36.778261
+"Ridgeland, South Carolina",-80.980386,32.4807435
 "Flagler Beach, Florida",-81.1270035,29.4749754
 "Manasquan, New Jersey",-74.04739909999999,40.12115439999999
 "Sharpsburg, Georgia",-84.6485417,33.3392842
@@ -2632,6 +2642,7 @@ Hometown,lon,lat
 "South Huntington, New York",-73.3987314,40.82370969999999
 "Mokena, Illinois",-87.8892189,41.5261437
 "Oxford, Florida",-82.0373039,28.9274834
+"Cornelius, California",-119.4179324,36.778261
 "Workmans, Barbados",-59.5455143,13.1409396
 "Hayti, South Dakota",-97.2050728,44.6571872
 "San Pedro de Macoris, D.R.",-69.3051234,18.46266
@@ -2686,7 +2697,7 @@ Hometown,lon,lat
 "Kočevje, Slovenia",14.8633128,45.6409009
 "Carolina, Puerto Rico",-65.9630925,18.3958165
 "Santurce, Puerto Rico",-66.0641969,18.4481441
-"Arden, California",-121.3770336,38.6008071
+"Arden, North Carolina",-82.5166982,35.4661613
 "Gurabo, PR",-65.9729421,18.2543987
 "Laramie, Wy.",-105.5911007,41.3113669
 "Radford, Virginia",-80.5764477,37.13179239999999
@@ -2701,7 +2712,7 @@ Hometown,lon,lat
 "Worchester, Massachussets",-71.8022934,42.2625932
 "Hurricane, Virginia",-78.6568942,37.4315734
 "Olive Hill, Kentucky",-83.17406539999999,38.3000809
-"High Ridge, Mississippi",-89.3985283,32.3546679
+"High Ridge, Missouri",-90.5365126,38.4589432
 "Franklinville, New Jersey",-75.080747,39.61779689999999
 "Breese, Illinois",-89.52703059999999,38.6106042
 "West Chester Township, Ohio",-84.41726659999999,39.3321262
@@ -2720,7 +2731,7 @@ Hometown,lon,lat
 "Elizabethtown, Pennsylvania",-76.6027455,40.1528719
 "Somerset, Kentucky",-84.6041084,37.0920222
 "Mount Vernon, Kentucky",-84.3404919,37.3528615
-"Smithville, Mississippi",-88.391154,34.0701074
+"Smithville, Missouri",-94.5810659,39.38694419999999
 "Waterloo, Ontario",-80.5204096,43.4642578
 "Airville, Pennsylvania",-76.40635089999999,39.8323244
 "Soddy Daisy, Tennessee",-85.1907904,35.2359025
@@ -2744,7 +2755,7 @@ Hometown,lon,lat
 "Winchester, Ohio",-83.6507541,38.9417359
 "Palos Verdes Estates, California",-118.3900737,33.8005714
 "Calumet City, Illinois",-87.5294871,41.6155909
-"Pinehurst, California",-119.0164975,36.6952252
+"Pinehurst, North Carolina",-79.4694767,35.1954345
 "Maysville, Kentucky",-83.744365,38.6411854
 "Sugar Grove, Illinois",-88.443686,41.7614181
 "Pinetop, Arizona",-109.9603843,34.1425438
@@ -2760,6 +2771,7 @@ Hometown,lon,lat
 "Minooka, Illinois",-88.2617305,41.4553084
 "Danville, Kentucky",-84.77217019999999,37.6456329
 "Columbus, New Jersey",-74.7206894,40.0727889
+"Inman, South Carolina",-82.0901088,35.0470617
 "Lebanon, Ohio",-84.2029922,39.4353373
 "Butler, New Jersey",-74.3415394,41.0037087
 "McHenry, Illinois",-88.2667534,42.333355
@@ -2768,7 +2780,7 @@ Hometown,lon,lat
 "Henderson, Nevada",-114.9817213,36.0395247
 "Sturgis, Kentucky",-87.983914,37.5467135
 "Union, Kentucky",-84.68050099999999,38.9458951
-"Hazelwood, Mississippi",-90.3709489,38.7714396
+"Hazelwood, Missouri",-90.3709489,38.7714396
 "Ottawa, Illinois",-88.8425769,41.3455892
 "Normal, Illinois",-88.9906312,40.5142026
 "Hopkinsville Ky., NA",-87.4886186,36.8656008
@@ -2798,7 +2810,7 @@ Hometown,lon,lat
 "Kitchener, Ontario",-80.4925337,43.4516395
 "Cynthiana, Kentucky",-84.2941013,38.3903526
 "Houston, NA",-95.3698028,29.7604267
-"Little Washington, California",-119.4179324,36.778261
+"Little Washington, North Carolina",-77.0521742,35.54655169999999
 "Lepanton, Arkansas",-90.33105169999999,35.6134185
 "Franklin Lakes, New Jersey",-74.2057011,41.0167639
 "Manchester, N.H.",-71.4547891,42.9956397
@@ -2834,7 +2846,7 @@ Hometown,lon,lat
 "Pikeville, Kentucky",-82.5187629,37.4792672
 "Monticello, Kentucky",-84.8491126,36.8297937
 "Morgantown, Virginia",-79.95589679999999,39.629526
-"Hopkins, California",-122.2820729,37.881538
+"Hopkins, South Carolina",-80.8770342,33.9043212
 "Harlan County, Kentucky",-83.2077645,36.8890304
 "Stanford, Kentucky",-84.6618876,37.5311901
 "Compton, California",-118.2200712,33.8958492
@@ -2866,7 +2878,7 @@ Hometown,lon,lat
 "Ashland, Kentucky",-82.63793869999999,38.4784144
 "Marysville, Ohio",-83.3671432,40.2364486
 "Cleveland Heights, Ohio",-81.556235,41.5200518
-"Woodruff, California",-119.4179324,36.778261
+"Woodruff, South Carolina",-82.0370466,34.7395701
 "Burlington, Kentucky",-84.7241133,39.02756
 "Lima, Ohio",-84.1052256,40.742551
 "McComb, Mississippi",-90.4531535,31.2437872
@@ -2886,7 +2898,7 @@ Hometown,lon,lat
 "Versailles, Kentucky",-84.7299464,38.05257599999999
 "Paintsville, Kentucky",-82.8071054,37.814538400000004
 "Thornville, Ohio",-82.4201539,39.896454
-"Georgetown, California",-120.8385462,38.9068445
+"Georgetown, South Carolina",-79.2944964,33.376834
 "Sylvania, Ohio",-83.7129935,41.7189392
 "Prince George’s County, Maryland",-76.8720961,38.78492110000001
 "Mansfield, Ohio",-82.5154471,40.75839
@@ -2932,12 +2944,12 @@ Hometown,lon,lat
 "Johnson County, Kentucky",-82.8640623,37.8048335
 "Eminence, Kentucky",-85.1805105,38.3700683
 "Willingboro, New Jersey",-74.89164579999999,40.028848000000004
-"Rocky Mount, California",-119.4179324,36.778261
+"Rocky Mount, North Carolina",-77.7905339,35.9382103
 "Sicklerville, New Jersey",-74.9697707,39.7172152
 "North Jackson, Ohio",-80.8875121,41.1179797
 "Irvington, New Jersey",-74.22864349999999,40.7263249
 "Ironton, Ohio",-82.6829406,38.5367471
-"Clayton, Mississippi",-90.41648850000001,34.6001028
+"Clayton, Missouri",-90.32372629999999,38.6425518
 "Winchester, Kentucky",-84.17965029999999,37.990079
 "Washington Court House, Ohio",-83.437579,39.5373688
 "Dieburg, Germany",8.8444959,49.9010547
@@ -2956,13 +2968,14 @@ Hometown,lon,lat
 "Hastings, Michigan",-85.29084030000001,42.6458682
 "Vienna, Austria",16.3718643,48.2081664
 "Martinsville, Indiana",-86.4283279,39.42782529999999
-"West Columbia, California",-119.4179324,36.778261
+"West Columbia, South Carolina",-81.0739825,33.9934867
 "Tschagguns, Austria",9.8968434,47.0679592
 "San Sebastián, Spain",-1.9812313,43.318334
 "Roquetas de Mar, Spain",-2.6288523,36.7637909
 "Glenview, Kentucky",-85.65023939999999,38.3084025
 "Laurel Springs, New Jersey",-75.00627879999999,39.8201141
 "Moscow, Idaho",-117.0001651,46.73238749999999
+"Lexington, North Carolina",-80.2533838,35.8240265
 "Harare, Zimbabwe",31.0492259,-17.8216288
 "Allansford, Australia",142.6061471,-38.3869607
 "Derwood, Maryland",-77.1611903,39.1174267
@@ -3002,6 +3015,7 @@ Hometown,lon,lat
 "Fort Thomas, Kentucky",-84.4471633,39.07506070000001
 "Mequon, Wisconsin",-88.0314174,43.2159232
 "Brookfield, Illinois",-87.8517253,41.8239203
+"Greer, California",-119.4179324,36.778261
 "Lutherville Timonium, Maryland",-76.6123884,39.4354087
 "Almonte, Ontario",-76.19405979999999,45.22556549999999
 "Commack, New York",-73.29289430000001,40.8428759
@@ -3025,7 +3039,7 @@ Hometown,lon,lat
 "Port Crane, New York",-75.83352649999999,42.1642427
 "Christiansburg, Virginia",-80.4089389,37.1298517
 "San Diego, NA",-117.1610838,32.715738
-"New Bern, California",-119.4179324,36.778261
+"New Bern, North Carolina",-77.04411429999999,35.108493
 "Suffern, New York",-74.1495889,41.1148179
 "Shickshinny, Pennsylvania",-76.15020779999999,41.1531388
 "Clinton, Tennessee",-84.1318632,36.1034126
@@ -3039,7 +3053,7 @@ Hometown,lon,lat
 "San José, Costa Rica",-84.0907246,9.9280694
 "Gjovik, Norwary",10.5001072,60.8941465
 "Jessheim, Norway",11.169393,60.14758189999999
-"Casablanca, Mississippi",-89.3985283,32.3546679
+"Casablanca, Missouri",-91.8318334,37.9642529
 "Lewis Center, Ohio",-83.0100987,40.1983884
 "New York, NA",-74.0059728,40.7127753
 "Bexley, Ohio",-82.93768039999999,39.9689532
@@ -3066,9 +3080,11 @@ Hometown,lon,lat
 "Eindhoven, Netherlands",5.462289699999999,51.42314229999999
 "Northbrook, Illinois",-87.82895479999999,42.1275267
 "Paphos, Cyprus",32.4217786,34.77539489999999
+"Charlotte, California",-118.4268981,36.7761885
 "Westlake, Ohio",-81.9179173,41.4553232
 "Stavanger, Norway",5.7331073,58.9699756
 "Schkopau, Germany",11.9851505,51.3900745
+"Waxhaw, California",-119.4179324,36.778261
 "Hobro, Denmark",9.797647999999999,56.6391392
 "Oksboel, Denmark",8.2801861,55.6280388
 "Augsburg, Germany",10.89779,48.3705449
@@ -3101,7 +3117,7 @@ Hometown,lon,lat
 "Belle Garden, Trinidad and Tobago",-60.5958534,11.2378938
 "Northville, MI",-83.4832692,42.4311464
 "Ventura, California",-119.2945199,34.2804923
-"North Charleston, California",-119.4179324,36.778261
+"North Charleston, South Carolina",-80.0130514,32.8771106
 "Chesterland, Ohio",-81.3378874,41.5222735
 "Gothenburg, Sweden",11.97456,57.70887
 "Woodbrige, Virginia",-77.2497049,38.6581722
@@ -3114,7 +3130,7 @@ Hometown,lon,lat
 "Brooklyn, NY",-73.9441579,40.6781784
 "Mohrsville, Pennsylvania",-75.9777786,40.4744405
 "Ardsley, New York",-73.8437452,41.0106531
-"Bozeman, Mississippi",-89.3985283,32.3546679
+"Bozeman, Missouri",-111.037259,45.67931189999999
 "Laval, Quebec",-73.712409,45.6066487
 "Hudson Ohio, NA",-81.44066699999999,41.240056
 "McComb, Ohio",-83.79271469999999,41.10755229999999
@@ -3130,7 +3146,7 @@ Hometown,lon,lat
 "Dearborn, Michigan",-83.17631449999999,42.3222599
 "Ioannina, Greece",20.8537466,39.66502880000001
 "Hamden, CT",-72.9026064,41.3838782
-"Burlington, California",-123.910568,40.308666
+"Burlington, North Carolina",-79.43725119999999,36.0959604
 "Aurora, IL",-88.32007150000001,41.7605849
 "Lovejoy, Georgia",-84.3143675,33.4362245
 "Calvert, TX",-96.6738627,30.9779651
@@ -3143,8 +3159,11 @@ Hometown,lon,lat
 "Rineyville, Kentucky",-85.9699631,37.7495098
 "Arcadia, Indiana",-86.0216521,40.1758704
 "Swarthmore, Pennslyvannia",-75.3499123,39.9020565
+"Kirkwood, Mississippi",-89.3985283,32.3546679
 "Rushville, Indiana",-85.4463594,39.6092137
+"Durham, California",-121.7999767,39.6462733
 "Breast Works, Portland",-122.6783853,45.515232
+"Winston-Salem, California",-119.4179324,36.778261
 "Center Grove, Indiana",-86.19693699999999,39.5772108
 "Fukui, Japan",136.219623,36.0641386
 "Paris, NA",2.3522219,48.856614
@@ -3175,6 +3194,7 @@ Hometown,lon,lat
 "Dike, Iowa",-92.6282497,42.4641498
 "Burlington, Wisconsin",-88.27620259999999,42.6780726
 "Grand Prairie, Texas",-96.99778459999999,32.7459645
+"Fort Mill, California",-119.4179324,36.778261
 "Blue Mounds, Wisconsin",-89.8323454,43.0174968
 "Lantana, Texas",-97.11978669999999,33.08371
 "Stewartville, Minnesota",-92.4885079,43.8555186
@@ -3195,7 +3215,6 @@ Hometown,lon,lat
 "New Port Richey, Florida",-82.7192671,28.2441768
 "Maurepas, Louisiana",-90.66449620000002,30.2962967
 "Medford, New Jersey",-74.8390162,39.86618259999999
-"Ferguson, Mississippi",-88.9756044,31.1940708
 "LaPlace, Louisiana",-90.4800848,30.0665907
 "Eunice, Louisiana",-92.4176324,30.4943669
 "Colfax, Louisiana",-92.70681599999999,31.5190623
@@ -3232,9 +3251,9 @@ Hometown,lon,lat
 "Somers, New York",-73.7360175,41.29963050000001
 "Donaldsonville, Louisiana",-90.9928773,30.1010323
 "Oxford, Conn.",-73.1168393,41.4338203
-"Pawley's Island, California",-119.4179324,36.778261
+"Pawley's Island, South Carolina",-79.12143130000001,33.4332236
 "Walker, Louisiana",-90.86148779999999,30.4879678
-"Clemson, California",-119.4179324,36.778261
+"Clemson, South Carolina",-82.8373654,34.6834382
 "Brusly, Louisiana",-91.2537198,30.3943588
 "Rayne, Louisiana",-92.26846169999999,30.234925
 "Wheelersburg, Ohio",-82.8554477,38.73035489999999
@@ -3248,7 +3267,7 @@ Hometown,lon,lat
 "Columbia, Louisiana",-92.0779129,32.1051567
 "Deer Park, Texas",-95.1238204,29.7052284
 "Richwood, Texas",-95.4099403,29.0560789
-"Franklin, California",-121.454323,38.376675
+"Franklin, North Carolina",-83.3815429,35.1823171
 "Branch, Louisiana",-92.26762769999999,30.3488122
 "Weidman, Michigan",-84.9689133,43.6875278
 "Cleveland, Mississippi",-90.7248187,33.7440023
@@ -3261,7 +3280,7 @@ Hometown,lon,lat
 "Mount Vernon, New York",-73.8370786,40.9125992
 "Torrance, California",-118.3406288,33.8358492
 "Helotes, Texas",-98.6802212,29.5611837
-"Elliott, California",NA,NA
+"Elliott, South Carolina",-80.1636836,34.1071005
 "Holly Springs, Mississippi",-89.44868939999999,34.76759670000001
 "Waggaman, Louisiana",-90.2109093,29.9185388
 "Nagoya-Shi, Japan",136.9065571,35.18145060000001
@@ -3302,7 +3321,7 @@ Hometown,lon,lat
 "Belle Chasse, Louisiana",-89.99062529999999,29.8549287
 "Tickfaw, Louisiana",-90.4831456,30.5774119
 "Winnfield, Louisiana",-92.6395931,31.9254413
-"Hope Mills, California",-119.4179324,36.778261
+"Hope Mills, North Carolina",-78.95072619999999,34.9756761
 "Woodville, Mississippi",-91.29955509999999,31.104619
 "Erin, Tennessee",-87.6947414,36.3183879
 "Plaquemine, Louisiana",-91.23427439999999,30.2890833
@@ -3365,7 +3384,7 @@ Hometown,lon,lat
 "Redding, California",-122.3916754,40.5865396
 "Watson, Louisiana",-90.9531574,30.5757431
 "Leatherhead, England",-0.33112,51.29640699999999
-"Blowing Rock, California",-119.4179324,36.778261
+"Blowing Rock, North Carolina",-81.6776059,36.135129
 "Keithville, Louisiana",-93.82965410000001,32.3333667
 "Hilton, KZN",30.2858846,-29.5560289
 "Hillsboro, Virginia",-77.72284210000001,39.1984887
@@ -3406,7 +3425,7 @@ Hometown,lon,lat
 "Grand Blanc, Michigan",-83.6299518,42.9275277
 "Riverwoods, Illinois",-87.897014,42.1675254
 "Saint Michael, Minnesota",-93.6649642,45.209964
-"Chisinau, Mississippi",28.8638103,47.0104529
+"Chisinau, Missouri",28.8638103,47.0104529
 "St. John's, Newfoundland",-52.7452511,47.5556097
 "Oswiecim, Poland",19.2097782,50.0343982
 "Sugarland, Texas",-95.6225521,29.5984434
@@ -3419,13 +3438,14 @@ Hometown,lon,lat
 "Orefield, Pennsylvania",-75.5849281,40.63495090000001
 "Chino, California",-117.688944,34.0122346
 "Bristol, England",-2.58791,51.454513
+"Claremont, North Carolina",-81.1461917,35.7145776
 "Hackettstown, New Jersey",-74.8290555,40.8539879
 "Luling, Louisiana",-90.3664694,29.9321498
 "Valley Village, California",-118.3841777,34.1633045
 "Hillsdale, New Jersey",-74.0404175,41.0025975
-"Warrensburg, Mississippi",-89.3985283,32.3546679
+"Warrensburg, Missouri",-93.73604979999999,38.7627893
 "Chanhassen, Minnesota",-93.53231029999999,44.86196450000001
-"Hillsborough, California",-122.3794163,37.5741032
+"Hillsborough, North Carolina",-79.0997347,36.0754183
 "Hamilton, Ontario",-79.8711024,43.2557206
 "Richmond, British Columbia",-123.133569,49.1665898
 "Massey, Auckland",174.6183581,-36.8318902
@@ -3435,7 +3455,7 @@ Hometown,lon,lat
 "Panama City, Pennsylvania",-77.1945247,41.2033216
 "North Caldwell, New Jersey",-74.2582027,40.8648215
 "Boring, Oregon",-122.3734641,45.4313662
-"Rolla, Mississippi",-89.3985283,32.3546679
+"Rolla, Missouri",-91.7715303,37.948544
 "Pearl River, Louisiana",-89.7483972,30.3760264
 "Rogers, Minnesota",-93.5525206,45.1878015
 "Reading, Berkshire",-0.9787475,51.45512009999999
@@ -3468,11 +3488,11 @@ Hometown,lon,lat
 "Windsor, Berkshire",-0.6157136999999999,51.48034209999999
 "White Hill District, Jamaica",-77.8480529,18.093349
 "Glenn Dale, Maryland",-76.8205265,38.98761040000001
-"Fuquay-Varina, California",-119.4179324,36.778261
+"Fuquay-Varina, North Carolina",-78.80001279999999,35.584323500000004
 "Coatesville, Pennsylvania",-75.8238355,39.9831616
 "Harvest, Alabama",-86.7508323,34.8556441
 "Accokeek, Maryland",-77.0283092,38.6676168
-"Leland, California",-119.4179324,36.778261
+"Leland, North Carolina",-78.03432120000001,34.2293803
 "Bloomfield, Conn.",-72.73009449999999,41.826488
 "Ughelli, Nigeria",5.993833899999999,5.5001866
 "Waukee, Iowa",-93.8722165,41.6149579
@@ -3516,7 +3536,7 @@ Hometown,lon,lat
 "Khmelnytskyi, Ukraine",26.987133,49.422983
 "Tel Mond, Israel",34.91846,32.256608
 "Meraux, Louisiana",-89.91471609999999,29.92981709999999
-"Angier, California",-78.7391813,35.5071044
+"Angier, North Carolina",-78.7391813,35.5071044
 "Clear Lake, S.D.",-96.679851,44.7535482
 "Gramercy, Louisiana",-90.6898128,30.0474239
 "Morrow, Ohio",-84.1271568,39.3545046
@@ -3536,7 +3556,7 @@ Hometown,lon,lat
 "Mission, Texas",-98.32529319999999,26.2159066
 "Indialantic, Florida",-80.5656079,28.0894599
 "Eastborough, Kan.",-97.2597969,37.686989
-"Elon, California",-119.4179324,36.778261
+"Elon, North Carolina",-79.50660839999999,36.1003405
 "Ridgeland, Mississippi",-90.1323087,32.4284761
 "Sterling, Virginia",-77.4291298,39.0066993
 "Lake Odessa, Michigan",-85.1383367,42.7847564
@@ -3582,6 +3602,7 @@ Hometown,lon,lat
 "Jackson, MS",-90.1848103,32.2987573
 "Southaven, MS",-90.0022958,34.9918587
 "Mangham, Louisiana",-91.77484849999999,32.3090366
+"Olive Branch, Miss",-89.8295315,34.9617604
 "Coldwater, Mississippi",-89.9773124,34.6917684
 "Ocean Springs, MS",-88.8278057,30.4113097
 "Houston, Mississippi",-88.99922670000001,33.8984461
@@ -3611,7 +3632,7 @@ Hometown,lon,lat
 "Verbena, Alabama",-86.5123493,32.7498851
 "Castle Rock, Washington",-122.9076141,46.275111
 "Irwinton, Georgia",-83.1726541,32.8112594
-"Taylors, California",-116.4183462,33.5983598
+"Taylors, South Carolina",-82.2962268,34.9203946
 "Goffstown, N.H.",-71.6002223,43.0204052
 "Vancleave, Mississippi",-88.6875237,30.5404745
 "Dover, Florida",-82.2195344,27.9941885
@@ -3646,8 +3667,8 @@ Hometown,lon,lat
 "Cornelia, Georgia",-83.5271166,34.5114883
 "Sand Rock, Alabama",-85.76857799999999,34.24287169999999
 "Palestine, Arkansas",-90.9020292,34.9734057
-"Sullivan, Mississippi",-89.5084007,31.80432739999999
-"Kannapolis, California",-119.4179324,36.778261
+"Sullivan, Missouri",-91.16042069999999,38.2081045
+"Kannapolis, North Carolina",-80.6217341,35.4873613
 "George County, Mississippi",-88.6723578,30.8431226
 "Brookhaven, Mississippi",-90.4406506,31.5790588
 "Jasper, Texas",-93.99688119999999,30.920823
@@ -3676,7 +3697,7 @@ Hometown,lon,lat
 "Saltillo, MS",-88.68172009999999,34.3764923
 "Amsterdam, The Netherlands",4.9041389,52.3675734
 "Moca, Dominican Republic",-70.5231108,19.3908634
-"Grandview, Mississippi",-89.3985283,32.3546679
+"Grandview, Missouri",-94.5330096,38.8858407
 "The Bronx, New York",-73.8648268,40.8447819
 "Philadelphia, Penn.",-75.1652215,39.9525839
 "Coker, Alabama",-87.6877882,33.2459512
@@ -3723,6 +3744,7 @@ Hometown,lon,lat
 "Rathfriland, Ireland",-6.161147799999999,54.2381042
 "Newburgh, New York",-74.0104178,41.5034271
 "Slinger, Wisconsin",-88.28620649999999,43.333613
+"Carthage, Mississippi",-89.5361825,32.7326356
 "Oma, Mississippi",-90.1448079,31.7268312
 "Llandrindod, Wales",-3.377742,52.24169999999999
 "Baden-Baden, Germany",8.228524199999999,48.76564
@@ -3732,7 +3754,7 @@ Hometown,lon,lat
 "Clarendon, Jamaica",-77.2405153,17.9557183
 "Weir, Mississippi",-89.29090219999999,33.2667917
 "Sherborn, Massachussets",-71.3697813,42.23898570000001
-"Abbeville, California",-119.4179324,36.778261
+"Abbeville, South Carolina",-82.3790147,34.1781719
 "Natchez, Mississippi",-91.40317100000001,31.5604442
 "Bryam, Mississippi",-90.2453671,32.179316300000004
 "Martinez, Georgia",-82.0756734,33.5173577
@@ -3848,7 +3870,6 @@ Hometown,lon,lat
 "Bolton, MS",-90.46009579999999,32.3493122
 "Bassfield, MS",-89.7395195,31.4965591
 "Antioch, TN",-86.6715948,36.0597177
-"Nixa, Missouri",-93.294353,37.0433863
 "Natchez, MS",-91.40317100000001,31.5604442
 "Katy, TX",-95.8245093,29.7857765
 "Collins, MS",-89.5553465,31.645443
@@ -3901,6 +3922,7 @@ Hometown,lon,lat
 "Centreville, Mississippi",-91.068438,31.0896202
 "Purvis, Mississippi",-89.40978659999999,31.1432351
 "Shubuta, Mississippi",-88.69948509999999,31.8601554
+"Brandon, Miss",-90.001384,32.2788733
 "Richmond, California",-122.3477486,37.9357576
 "Lexington, Mississippi",-90.0531408,33.1131833
 "Louisville, Mississippi",-89.0550624,33.1237377
@@ -3963,7 +3985,7 @@ Hometown,lon,lat
 "Merrimack, N.H.",-71.49483219999999,42.8678693
 "Red Oak, Texas",-96.8153,32.5332101
 "Alta Loma, California",-117.5981086,34.1222317
-"Dexter, Mississippi",-89.99286169999999,31.0743469
+"Dexter, Missouri",-89.9578688,36.7958866
 "Las Vegas, N.V.",-115.1391009,36.171563
 "Toronto, Ont.",-79.3831843,43.653226
 "Arrington, Tennessee",-86.7091643,35.8681199
@@ -3978,11 +4000,11 @@ Hometown,lon,lat
 "Garðbær, Iceland",-21.9285133,64.0907747
 "Grandville, Michigan",-85.7630885,42.9097484
 "Clinton, Conn.",-72.5288034,41.2882208
-"Fredericktown, Mississippi",-89.3985283,32.3546679
+"Fredericktown, Missouri",-90.2940069,37.55977540000001
 "Winnipeg, Man.",-97.1385145,49.8954221
 "San Gabriel, California",-118.1058333,34.09611110000001
 "North Richland Hills, Texas",-97.2289029,32.8342952
-"Salisbury, California",-119.4179324,36.778261
+"Salisbury, North Carolina",-80.4742261,35.6709727
 "Gressier, Haiti",-72.5274719,18.5403208
 "Hyderabad, Indiana",78.486671,17.385044
 "Danderyd, Sweden",18.0256382,59.4059401
@@ -4002,7 +4024,7 @@ Hometown,lon,lat
 "Crevillent, Spain",-0.8113636,38.2446844
 "Banja Luka, Bosnia and Herzegovina",17.191,44.7721811
 "Balcarce, Argentina",-58.25545839999999,-37.8464067
-"Podgorica, Mississippi",19.2593642,42.4304196
+"Podgorica, Missouri",-91.8318334,37.9642529
 "Trnava, Slovakia",17.5833218,48.3709108
 "Bijeljina, Bosnia and Herzegovina",19.2150224,44.75695109999999
 "Zvornik, Bosnia and Herzegovina",19.1048105,44.3865457
@@ -4039,32 +4061,32 @@ Hometown,lon,lat
 "Red Bud, IL",-89.9942741,38.2117172
 "Longmont, Colorado",-105.1019275,40.1672068
 "Novi, Michigan",-83.4754913,42.48059
-"Town and Country, Mississippi",-89.3985283,32.3546679
+"Town and Country, Missouri",-90.46345319999999,38.6122751
 "Oklahoma City, Ok.",-97.5164276,35.4675602
 "Collinsville, Illinois",-89.9845476,38.6703266
-"Oronogo, Mississippi",-89.3985283,32.3546679
-"Auxvasse, Mississippi",-89.3985283,32.3546679
+"Oronogo, Missouri",-94.4702269,37.1883908
+"Auxvasse, Missouri",-91.8971198,39.0180962
 "Adel, Iowa",-94.0174535,41.6143414
 "Ingleside, Illinois",-88.13981799999999,42.3812067
 "Highland Park, Illinois",-87.8003437,42.1816918
 "Greendale, Wisconsin",-87.9959191,42.9405711
 "Williamsburg, Indiana",-84.99711119999999,39.9505592
 "Driftwood, Texas",-98.0315889,30.123275
-"Lake St. Louis, Mississippi",-89.3985283,32.3546679
+"Lake St. Louis, Missouri",-90.78836040000002,38.7809384
 "Hubertus, Wisconsin",-88.221674,43.2364366
-"Huntsville, Mississippi",-89.4613202,33.3481008
+"Huntsville, Missouri",-92.5451834,39.440589
 "Bridgeport, Texas",-97.75475519999999,33.2101155
 "Scarborough, Australia",115.7576807,-31.8943696
 "DeWitt, Iowa",-90.53896619999999,41.8239952
-"Poplar Bluff, Mississippi",-89.3985283,32.3546679
-"Imperial, Mississippi",-89.3985283,32.3546679
+"Poplar Bluff, Missouri",-90.392888,36.7569994
+"Imperial, Missouri",-90.37845250000001,38.3697763
 "Chamainus, Britich Columbia",-123.7344814,48.9301648
 "Olympia, Washington",-122.9006951,47.0378741
 "Bushnell, Florida",-82.1128629,28.6649924
 "Osprey, Florida",-82.4903748,27.1961627
 "Plymouth, Minnesota",-93.4555093,45.0105194
-"Weldon Springs, Mississippi",-89.3985283,32.3546679
-"Washington, Mississippi",-91.29927839999999,31.5787773
+"Weldon Springs, Missouri",-90.6892929,38.713386
+"Washington, Missouri",-91.01208779999999,38.55810719999999
 "Sammamish, Wa.",-122.0355736,47.61626829999999
 "Duluth, Minnesota",-92.1004852,46.78667189999999
 "Lino Lakes, Minnesota",-93.0888324,45.1602442
@@ -4074,63 +4096,65 @@ Hometown,lon,lat
 "Medicine Lake, Minnesota",-93.4192127,44.9991099
 "Flushing, New York",-73.8306716,40.7647238
 "Clinton, Iowa",-90.1887379,41.8444735
-"Loose Creek, Mississippi",-89.3985283,32.3546679
-"Willard, Mississippi",-89.3985283,32.3546679
-"Lincoln, Mississippi",-90.52578229999999,31.5359248
+"Loose Creek, Missouri",-91.957391,38.5080888
+"Willard, Missouri",-93.42852719999999,37.305047
+"Lincoln, Missouri",-93.3346497,38.3908555
 "Woodbridge, Conn.",-73.0084385,41.352597
 "Rio Grande, Puerto Rico",-65.8322841,18.3450502
 "Bayside, New York",-73.7692026,40.7602604
 "Victoriaville, Quebec",-71.95895589999999,46.0556724
 "Excelsior, Minnesota",-93.5663455,44.9032963
 "Hugo, Minnesota",-92.99334119999999,45.159964
-"Marion, California",-119.4179324,36.778261
-"St. Elizabeth, Mississippi",-89.3985283,32.3546679
-"Marthasville, Mississippi",-89.3985283,32.3546679
+"Marion, North Carolina",-82.00927449999999,35.6840131
+"St. Elizabeth, Missouri",-92.2679547,38.2558698
+"Marthasville, Missouri",-91.0576449,38.6283838
 "Kentfield, California",-122.5571997,37.9521465
 "Jamestown, Tennessee",-84.9318919,36.4275699
 "Kane'ohe, Hawai'i",-157.799637,21.4028819
-"St. Genevieve, Mississippi",-89.3985283,32.3546679
+"St. Genevieve, Missouri",-90.0475582,37.9786618
 "Port Washington, New York",-73.69818579999999,40.8256561
 "East Meadow, New York",-73.5590157,40.7139898
 "Hiawatha, Iowa",-91.6815252,42.0491958
 "Smithtown, New York",-73.2006687,40.8559314
 "Surprise, Arizona",-112.3679279,33.6292337
-"Tunas, Mississippi",-89.3985283,32.3546679
+"Tunas, Missouri",-93.0276891,37.8497583
 "Coto de Caza, California",-117.5906715,33.5951048
-"Troy, Mississippi",-88.8850571,34.1189972
+"Troy, Missouri",-90.9806954,38.9794922
 "Germantown, M.D.",-77.2716502,39.1731621
-"Silex, Mississippi",-89.3985283,32.3546679
-"Maryville, Mississippi",-89.3985283,32.3546679
+"Silex, Missouri",-91.0543076,39.1233792
+"Maryville, Missouri",-94.8724706,40.3461017
 "East Amherst, New York",-78.69698310000001,43.0183126
-"Arbyrd, Mississippi",-89.3985283,32.3546679
-"Platte City, Mississippi",-89.3985283,32.3546679
-"Chilliecothe, Mississippi",-89.3985283,32.3546679
-"Mexico, Mississippi",-89.3985283,32.3546679
-"Norborne, Mississippi",-93.6774377,39.3025168
+"Arbyrd, Missouri",-90.2387092,36.0509021
+"Platte City, Missouri",-94.78246089999999,39.3702773
+"Chilliecothe, Missouri",-93.5524358,39.7952946
+"Jefferson City, California",-119.4179324,36.778261
+"Mexico, Missouri",-91.887271,39.1730652
+"Norborne, Missouri",-93.6774377,39.3025168
 "Dallas Center, Iowa (Dallas Center-Grimes)",-93.96118589999999,41.6843456
 "Mission Viejo, Virginia",-117.6581562,33.5968913
-"Lonedell, Mississippi",-89.3985283,32.3546679
+"Lonedell, Missouri",-90.827494,38.30794280000001
 "Oak Forest, Pennsylvania",-80.2389566,39.8420204
-"Camden Point, Mississippi",-89.3985283,32.3546679
+"Camden Point, Missouri",-94.7416267,39.4527758
 "Grain Valley, Virginia",-94.19855799999999,39.0150069
 "Johnston, Iowa (Johnston)",-93.7130493,41.6709834
 "Leitchfield, Kentucky",-86.2938637,37.4800544
-"Raymore, Mississippi",-89.3985283,32.3546679
-"Tipton, Mississippi",-89.3985283,32.3546679
+"Raymore, Missouri",-94.4527294,38.801953
+"Tipton, Missouri",-92.7799153,38.655578
 "La Grange, Louisiana",-91.5208624,30.5190775
 "Saugus, California",-118.5404007,34.4135244
 "Salt Lake City, Utah (WEST)",-111.9160483,40.7702237
-"Hillsboro, Mississippi",-89.5114581,32.4593085
-"Weston, Mississippi",-90.3975928,31.701277
+"Hillsboro, Missouri",-90.5627432,38.2320376
+"Weston, Missouri",-94.9016298,39.4111092
 "Carterville, Mississippi",-89.24617119999999,31.3198971
 "Moss Bluff, Louisiana",-93.19070970000001,30.3027042
 "Van Buren, Missouri",-91.0145714,36.9956066
 "Melfa, Virginia",-75.7413182,37.6492986
 "Omaha, NE (Marian)",-96.02900299999999,41.3010619
 "South Brunswick, New Jersey",-74.5316938,40.3806901
+"Plainfield, Louisiana",-91.5208624,30.5190775
 "East Fishkill, New York",-73.7956884,41.5534267
 "Seaford, New York",-73.4881809,40.6659344
-"Grain Valley, Mississippi",-89.3985283,32.3546679
+"Grain Valley, Missouri",-94.19855799999999,39.0150069
 "Johnston, Iowa",-93.7130493,41.6709834
 "La Grange, Texas",-96.87664699999999,29.9055033
 "Willoughby, Ohio",-81.4065011,41.6397696
@@ -4140,70 +4164,70 @@ Hometown,lon,lat
 "Bowen, Illinois",-91.0626374,40.23337890000001
 "Dubuque, Iowa",-90.6677347,42.506348
 "Joba, South Sudan",31.57125,4.859363
-"Town & Country, Mississippi",NA,NA
+"Town & Country, Missouri",NA,NA
 "Quincy, Illinois",-91.4098726,39.9356016
-"Mercer, Mississippi",-89.3985283,32.3546679
-"Montrose, Mississippi",-89.2356169,32.1243161
-"Steele, Mississippi",-89.4253446,32.4904184
+"Mercer, Missouri",-93.5321644,40.5113975
+"Montrose, Missouri",-93.98132969999999,38.2578023
+"Steele, Missouri",-89.8292512,36.0839594
 "Manlleu, Spain",2.2778128,42.0111171
 "Sibenik, Croatia",15.8952045,43.7350196
-"Columbia, Missouri",-92.3340724,38.9517053
 "West Plains, Missouri",-91.8523711,36.7281154
-"Strafford, Mississippi",-88.9333845,31.9048771
+"Strafford, Missouri",-93.11712639999999,37.2683802
 "Sioux City, IA",-96.40494079999999,42.4963416
 "Napier, New Zealand",176.9191904,-39.4892664
 "Rhenish Girls, NA",18.8594152,-33.94575580000001
-"Augusta, Mississippi",-89.0347743,31.2024033
+"Augusta, Missouri",-90.882081,38.5725523
 "Staunton, Illinois",-89.7912063,39.0122684
 "Paarl, South Africa",18.9621091,-33.7342304
 "Kenton, Ohio",-83.60965159999999,40.6469982
-"Memphis, Mississippi",-89.3985283,32.3546679
+"Memphis, Missouri",-92.1712924,40.4578119
 "Glen St. Mary, Florida",-82.16151789999999,30.27578369999999
 "Cleburne, Texas",-97.38668369999999,32.3476438
 "Cochran, Georgia",-83.35460979999999,32.3868278
-"Fenton, Mississippi",-89.3808832,30.4149165
+"Fenton, Missouri",-90.4429881,38.5126456
 "Clute, Texas",-95.3988291,29.0246906
-"Ladue, Mississippi",-90.3806725,38.6497743
+"Ladue, Missouri",-90.3806725,38.6497743
 "Muskegon Heights, Michigan",-86.23894639999999,43.2011264
 "Belleville, Illinois",-89.9839935,38.5200504
-"Lake Ozark, Mississippi",-92.6387968,38.1986435
+"Lake Ozark, Missouri",-92.6387968,38.1986435
 "Darien, Illinois",-87.9737943,41.7483483
-"Lamar, Mississippi",-89.31785049999999,34.9173149
+"Lamar, Missouri",-94.27661479999999,37.49504780000001
 "Fargo, North Dakota",-96.7898034,46.8771863
 "Canadian, Texas",-100.3820772,35.91282
 "Russellville, Arkansas",-93.13370069999999,35.278116
 "Bristol, UK",-2.58791,51.454513
-"Raytown, Mississippi",-89.7986906,32.6893021
+"Raytown, Missouri",-94.46356379999999,39.0086171
 "Cahokia, Illinois",-90.1901113,38.5708849
 "Harlan, Iowa",-95.32555409999999,41.653044
 "Hershey, Pennsylvania",-76.65024679999999,40.2859239
 "West Dallas, Texas",-96.8738771,32.7787841
 "Whittier, California",-118.032844,33.9791793
 "Southfield, Michigan",-83.2218731,42.4733688
-"Grover, California",-120.6212821,35.1216424
-"Boonville, Mississippi",-88.5667036,34.6581596
-"Gaffney, California",-119.4179324,36.778261
+"Grover, North Carolina",-81.4498097,35.1745756
+"Boonville, Missouri",-92.74324179999999,38.9736392
+"Independence, Mississippi",-89.8089763,34.70510040000001
+"Gaffney, South Carolina",-81.64981949999999,35.0717945
 "Little Elm, Texas",-96.89098919999999,33.1782296
 "Crown Point, In.",-87.3653135,41.4169806
 "Elkhorn, Wisconsin",-88.5445447,42.6727927
+"Jackson, Missouri",-89.6662063,37.3822732
 "Sterling Heights, Michigan",-83.0302033,42.5803122
-"Weldon Spring, Mississippi",-90.6892929,38.713386
-"Lebanon, Mississippi",-89.0375559,32.3987533
+"Weldon Spring, Missouri",-90.6892929,38.713386
+"Lebanon, Missouri",-92.6637865,37.6805967
 "Braceville, Ohio",-80.9545346,41.2283898
-"New Melle, Mississippi",-90.8795796,38.70977389999999
-"Lee’s Summit, Mississippi",-94.3821724,38.9108408
+"New Melle, Missouri",-90.8795796,38.70977389999999
 "Warsaw, Indiana",-85.8530469,41.2381
 "Blue Mountains, Australia",150.4865272,-33.3856304
 "South San Francisco, California",-122.4077498,37.654656
 "Santa Maria, California",-120.4357191,34.9530337
 "Overbrook, Pennsylvania",-75.2641206,39.9763796
 "Northville, Michigan",-83.4832692,42.4311464
-"Kahoka, Mississippi",-91.71960879999999,40.4203184
-"Park Hills, Mississippi",-89.3985283,32.3546679
+"Kahoka, Missouri",-91.71960879999999,40.4203184
+"Park Hills, Missouri",-90.51818039999999,37.854218
 "Fortuna, California",-124.1572756,40.5981867
-"Wardsville, Mississippi",-89.3985283,32.3546679
-"Vandalia, Mississippi",-89.3985283,32.3546679
-"Cameron, Mississippi",-89.8839713,32.8356884
+"Wardsville, Missouri",-92.17434829999999,38.4889231
+"Vandalia, Missouri",-91.48848869999999,39.3108745
+"Cameron, Missouri",-94.241057,39.7402801
 "Eldora, Iowa",-93.10575759999999,42.3680382
 "Mission, Kan.",-94.6557914,39.0277832
 "Wauconda, Illinois",-88.1392474,42.2589122
@@ -4212,13 +4236,13 @@ Hometown,lon,lat
 "Jonesboro, Louisiana",-92.7159853,32.2412672
 "Meridian, Ida.",-116.3915131,43.6121087
 "Clem, Georgia",-85.0132758,33.5281673
-"St. Joseph, Mississippi",-89.3985283,32.3546679
+"St. Joseph, Missouri",-94.84668099999999,39.7674578
 "Saginaw, Texas",-97.3639068,32.8601275
 "Perkinston, Mississippi",-89.14278949999999,30.7822362
 "Suffolk, Virginia",-76.5835621,36.7282054
-"Calhoun Falls, California",-119.4179324,36.778261
+"Calhoun Falls, South Carolina",-82.5956875,34.0923375
 "New Lothrop, Michigan",-83.969967,43.1166949
-"Marshall, Mississippi",-89.4742177,34.7729491
+"Marshall, Missouri",-93.1968704,39.1230777
 "Chatsworth, Georgia",-84.7699385,34.7659145
 "Newhall, California",-118.5400404,34.373361
 "Daingerfield, Texas",-94.7218731,33.031793
@@ -4228,13 +4252,13 @@ Hometown,lon,lat
 "Sandviken, Sweden",16.775918,60.621607
 "Troon, Scotland",-4.659948,55.541332
 "Cuneo, Italy",7.5426711,44.3844766
-"Rogersville, Mississippi",-89.3985283,32.3546679
-"Shell Knob, Mississippi",-93.6175382,36.6088329
+"Rogersville, Missouri",-93.0557343,37.116995
+"Shell Knob, Missouri",-93.6175382,36.6088329
 "Oxted, England",-3e-6,51.255714
 "Vallda, Sweden",11.97111,57.48623999999999
 "Dunedin, Florida",-82.7717684,28.0197404
 "Columbus, Indiana",-85.9213796,39.2014404
-"Savannah, Mississippi",-89.4908948,30.7396329
+"Savannah, Missouri",-94.8302451,39.9416606
 "Lincoln, Illinois",-89.3648183,40.1483768
 "Jamestown, North Dakota",-98.7084357,46.9105438
 "Carnoustie, Scotland",-2.70325,56.502565
@@ -4255,13 +4279,13 @@ Hometown,lon,lat
 "Highlands Ranch, Co.",-104.9739333,39.5480789
 "Hutchinson, Minnesota",-94.3692926,44.89254830000001
 "Shawnee, Oklahoma",-96.9253004,35.3272928
-"Saint Louis, Mississippi",-89.33004609999999,30.3088076
+"Saint Louis, Missouri",-90.19940419999999,38.6270025
 "Andale, Kan.",NA,NA
 "Britton, Michigan",-83.8310513,41.9867114
 "Oslo, Norway",10.7522454,59.9138688
 "The Netherlands, NA",5.291265999999999,52.132633
-"Overland, Mississippi",-89.3985283,32.3546679
-"Parkville, Mississippi",-89.3985283,32.3546679
+"Overland, Missouri",-90.3623381,38.7011626
+"Parkville, Missouri",-94.6821806,39.1950029
 "Aubrey, Texas",-96.98611799999999,33.3042834
 "Richland Hills, Texas",-97.2316869,32.8091672
 "Rapid City, South Dakota",-103.2310149,44.0805434
@@ -4269,119 +4293,119 @@ Hometown,lon,lat
 "Archbold, Ohio",-84.307172,41.5214401
 "Adkins, Texas",-98.2372329,29.3930129
 "Circleville, New York",-74.3834883,41.5142604
-"Glendive, Mississippi",-89.3985283,32.3546679
-"Marvin, California",NA,NA
-"Dardenne Prarie, Mississippi",-89.3985283,32.3546679
+"Glendive, Missouri",-91.8318334,37.9642529
+"Marvin, North Carolina",-80.81479399999999,34.9918154
+"Dardenne Prarie, Missouri",-90.72930079999999,38.7703087
 "Fontana, Wisconsin",-88.5752084,42.551374
 "Pomona, California",-117.7499909,34.055103
 "Llandough, Wales",-3.198786,51.454881
 "Sammamish, Washington",-122.0355736,47.61626829999999
 "Elk Grove Village, Illinois",-87.9703461,42.0039178
 "Saarbrücken, Germany",6.997547,49.2381697
-"Manchester, Mississippi",-89.3985283,32.3546679
+"Manchester, Missouri",-90.5092882,38.5969977
 "Wales, Wisconsin",-88.38400879999999,43.0057564
 "Brookfield, Wisconsin",-88.12605549999999,43.0609354
 "Lombard, IL",-88.00784349999999,41.8800296
 "Seneca, Illinois",-88.60979359999999,41.3111442
 "Prosper, TX",-96.78508219999999,33.2480074
-"Eureka, Missouri",-90.62790439999999,38.5025537
-"Joplin, Mississippi",-94.51328099999999,37.08422710000001
-"Powersville, Mississippi",-89.3985283,32.3546679
+"Joplin, Missouri",-94.51328099999999,37.08422710000001
+"Powersville, Missouri",-93.3002138,40.5491762
 "Bergan, Norway",5.3220544,60.39126279999999
-"Hannibal, Mississippi",-91.35848159999999,39.7083789
-"Butler, Mississippi",-90.2989743,33.2276243
+"Hannibal, Missouri",-91.35848159999999,39.7083789
+"Butler, Missouri",-94.33050589999999,38.2586347
 "Normal, IL",-88.9906312,40.5142026
-"Lake Saint Louis, Mississippi",-89.3985283,32.3546679
+"Lake Saint Louis, Missouri",-90.78836040000002,38.7809384
 "Cheney, Kan.",NA,NA
-"Buckner, Mississippi",-89.3985283,32.3546679
+"Buckner, Missouri",-94.19855749999999,39.132506
 "Dallas, TX",-96.79698789999999,32.7766642
-"Kansas City, Missouri",-94.5785667,39.0997265
-"Moberly, Mississippi",-89.3985283,32.3546679
+"Moberly, Missouri",-92.43823669999999,39.4183689
 "Dover Plains, New York",-73.5765151,41.74120509999999
-"Cuba, Mississippi",-88.69449689999999,34.9750886
+"Cuba, Missouri",-91.40348329999999,38.0628225
 "Lewistown, Pennsylvania",-77.571382,40.5992395
-"Stanberry, Mississippi",-89.3985283,32.3546679
+"Stanberry, Missouri",-94.5382939,40.217771
 "Merida, Yucatan",-89.5925857,20.9673702
 "Balatonalmadi, Hungary",18.0086997,47.0317027
 "West Lafayette, Indiana",-86.90806549999999,40.4258686
 "Stralsund, Germany",13.0770347,54.30906539999999
-"Edina, Mississippi",-89.3985283,32.3546679
+"Edina, Missouri",-92.17268209999999,40.1675386
 "Elizabeth, Illinois",-90.22151699999999,42.31779110000001
-"Braymer, Mississippi",-93.796047,39.5869582
+"Braymer, Missouri",-93.796047,39.5869582
 "Mato Grosso, Brazil",-56.921099,-12.6818712
 "Sofia, Bulgaria",23.3218675,42.6977082
 "Gahanna, Oh.",-82.8793446,40.0192307
-"Pevely, Mississippi",-90.3906719,38.2835468
-"Sedalia, Mississippi",-89.3985283,32.3546679
-"Potosi, Mississippi",-89.3985283,32.3546679
+"Pevely, Missouri",-90.3906719,38.2835468
+"Sedalia, Missouri",-93.2282613,38.7044609
+"Potosi, Missouri",-90.7879086,37.936438
 "St. Augustine, Trinidad & Tob.",-61.3997773,10.6473412
 "Grimes, Ia.",-93.7925199,41.6883646
-"Herculaneum, Mississippi",-89.3985283,32.3546679
+"Herculaneum, Missouri",-90.393146,38.25489090000001
 "Burlington, Illinois",-88.54814119999999,42.0528038
 "North Liberty, Ia.",-91.6075791,41.7521876
-"Peculiar, Mississippi",-89.3985283,32.3546679
+"Peculiar, Missouri",-94.4585625,38.71917639999999
 "Montpelier, Vt.",-72.5753869,44.26005929999999
 "Houston, Tx.",-95.3698028,29.7604267
 "Kenya, NA",37.906193,-0.023559
 "Kewanee, Illinois",-89.9248303,41.2455927
 "Reinholds, Pennsylvania",-76.1154669,40.2670462
-"Lancaster, Mississippi",-89.3985283,32.3546679
+"Lancaster, Missouri",-92.5279662,40.5208627
 "Beloit, Kan.",-98.10615949999999,39.45611780000001
 "Poplar Grove, Illinois",-88.822047,42.3683521
-"Riverside, Mississippi",-89.3625766,34.5098247
+"Riverside, Missouri",-94.61301209999999,39.1775031
 "Stigler, Oklahoma",-95.1230169,35.253708
-"Black Jack, Mississippi",-88.7319952,33.4376218
-"California, Mississippi",-119.4179324,36.778261
+"Black Jack, Missouri",-90.2673346,38.7933833
+"California, Missouri",-92.5665786,38.6275278
 "Zeeland, Michigan",-86.01865099999999,42.8125246
-"Odessa, Mississippi",-89.3985283,32.3546679
+"Odessa, Missouri",-93.95355579999999,38.9991748
 "Chatham, Illinois",-89.70454389999999,39.676163
-"Brentwood, Mississippi",-90.10093580000002,32.3317637
-"New Haven, Mississippi",-89.58479190000001,31.8159942
+"Brentwood, Missouri",-90.34928289999999,38.6175522
+"New Haven, Missouri",-91.2190416,38.6083822
 "Dighton, Kan.",-71.15673439999999,41.84385899999999
-"Saint Charles, Mississippi",-89.3985283,32.3546679
-"Valley Park, Mississippi",-90.8667691,32.6334691
+"Saint Charles, Missouri",-90.4974359,38.7881062
+"Valley Park, Missouri",-90.49262139999999,38.5492204
 "Bristol, Minnesota",-92.16933139999999,43.5444099
 "Maidenhead, England",-0.7242048,51.52182089999999
 "Doerentrup, Germany",9.002389299999999,52.0406712
 "Novi Sad, Serbia",19.8227056,45.2396085
 "Brewster, New York",-73.6170721,41.3973163
 "Faulconbridge, Australia",150.5473195,-33.693501
-"Belton, Mississippi",-88.7882609,34.3105928
-"Lathrop, Mississippi",-89.3985283,32.3546679
+"Belton, Missouri",-94.5318982,38.8119527
+"Lathrop, Missouri",-94.3299461,39.5483354
 "Milton, W.V.",-82.1323637,38.4345321
-"Mebane, California",-79.2696688,36.0967637
-"Marshville, California",-119.4179324,36.778261
+"Mebane, North Carolina",-79.2696688,36.0967637
+"Marshville, North Carolina",-80.3670085,34.988486
 "Centerville, Iowa",-92.8738196,40.7290565
 "Union, Illinois",-88.5423132,42.2330782
 "Perry, Oklahoma",-97.28809830000002,36.2894855
 "Awatukee, Arizona",-112.0357137,33.3122624
 "Rock Island, Illinois",-90.5787476,41.5094771
-"Lawson, Mississippi",-89.3985283,32.3546679
+"Lawson, Missouri",-94.2041096,39.4383387
 "Altoona, Iowa",-93.47508359999999,41.6435514
 "Washington, Illinois",-89.4073123,40.7036482
-"Kirksville, Mississippi",-89.3985283,32.3546679
+"Kirksville, Missouri",-92.5832496,40.19475389999999
 "Sidney, Ohio",-84.1554987,40.2842164
-"Moorehead City, California",-119.4179324,36.778261
+"Moorehead City, North Carolina",-76.7260436,34.7229391
 "Charlestown, Indiana",-85.6702406,38.45312
-"Weatherby, Mississippi",-89.3985283,32.3546679
+"Weatherby, Missouri",-94.2443945,39.9094454
 "West Linn, Oregon",-122.6301313,45.3662205
 "West Allis, Wisconsin",-88.0070315,43.0166806
+"Fulton, Missouri",-91.94795859999999,38.84670819999999
 "Oconto Falls, Wisconsin",-88.1428798,44.8738805
-"Staley, Mississippi",-89.3985283,32.3546679
+"Staley, Missouri",-91.8318334,37.9642529
 "Alton, Illinois",-90.1842764,38.8906038
-"Dardenne Prairie, Mississippi",-89.3985283,32.3546679
+"Dardenne Prairie, Missouri",-90.72930079999999,38.7703087
 "Glen Ellyn, Illinois",-88.0670118,41.8775293
 "Islamorada, Florida",-80.62783639999999,24.9242943
 "Kaysville, Ut.",-111.9385521,41.0352216
-"Excelsior Springs, Mississippi",-89.3985283,32.3546679
+"Excelsior Springs, Missouri",-94.22605589999999,39.3391712
 "Alexandria, Kentucky",-84.3879946,38.9595078
 "Gardner, Kan.",-94.9271868,38.8108408
-"Seneca, Mississippi",-89.4395091,31.0393488
-"Pacific, Mississippi",-89.3985283,32.3546679
+"St. Peters, Mississippi",-89.3985283,32.3546679
+"Seneca, Missouri",-94.61105739999999,36.8414565
+"Pacific, Missouri",-90.7415194,38.4819976
 "Columbus, Kan.",-94.8441239,37.1692278
 "Aurora, Oregon",-122.7559267,45.2309536
-"Oak Grove, Mississippi",-89.4145095,31.2860087
-"Waynesville, Mississippi",-89.3985283,32.3546679
+"Oak Grove, Missouri",-94.12939089999999,39.0050073
+"Waynesville, Missouri",-92.2007227,37.8286516
 "Houston, Ohio",-84.33053939999999,40.2493317
 "Rocky Point, New York",-72.9253805,40.9525987
 "Surrey, British Columbia",-122.8490125,49.1913466
@@ -4392,74 +4416,76 @@ Hometown,lon,lat
 "Rock Falls, Illinois",-89.68899669999999,41.7797533
 "Alanya, Turkey",31.995408,36.544443
 "Cranberry Township, Pennsylvania",-80.1071379,40.6849626
-"Holts Summit, Mississippi",-89.3985283,32.3546679
-"Murrells Inlet, California",-119.4179324,36.778261
+"Holts Summit, Missouri",-92.1224055,38.640315
+"Murrells Inlet, South Carolina",-79.0414261,33.5510021
 "St. Clair, Michigan",-82.486024,42.8208653
-"Scranton, California",-116.50278,36.45194
-"Easley, California",-119.4179324,36.778261
-"Cayce, California",-119.4179324,36.778261
-"Lugoff, California",-119.4179324,36.778261
-"Laurinburg, California",-119.4179324,36.778261
+"Scranton, South Carolina",-79.7439557,33.9176621
+"Easley, South Carolina",-82.6015206,34.829838
+"Cayce, South Carolina",-81.0739827,33.96570910000001
+"Lugoff, South Carolina",-80.6892486,34.2273712
+"Laurinburg, North Carolina",-79.46282479999999,34.7740494
 "Nassawdox, Virginia",-75.8582639,37.4748572
-"Laurens, California",-119.4179324,36.778261
-"Piedmont, California",-122.2314865,37.8244063
+"Laurens, South Carolina",-82.0142597,34.4990116
+"Piedmont, South Carolina",-82.4645714,34.7023389
 "Loxahatchee, Florida",-80.2385732,26.7713387
 "Medford, New York",-73.0001068,40.8175985
 "Salisbury, Maryland",-75.5993692,38.3606736
-"Hartsville, California",-119.4179324,36.778261
-"Gilbert, California",-118.5976082,37.1371566
+"Hartsville, South Carolina",-80.07333129999999,34.3742857
+"Gilbert, South Carolina",-81.3937131,33.9243121
 "Hobart, Indiana",-87.2550353,41.5322592
 "Midlothian, Virginia",-77.6490005,37.5061069
-"Weaverville, California",-122.94197080000001,40.7309778
+"Weaverville, North Carolina",-82.5606851,35.6970547
 "Onley, Virginia",-75.71604049999999,37.6909641
-"Honea Path, California",-119.4179324,36.778261
+"Honea Path, South Carolina",-82.3915121,34.4465018
 "Alto, Georgia",-83.5737843,34.4673222
 "La Verne, California",-117.7678355,34.1008426
 "Monroe, Georgia",-83.713229,33.7948364
-"Hudson, California",-119.4179324,36.778261
-"Latta, California",-119.4179324,36.778261
-"Liberty, California",-122.7019321,38.2843604
-"Lancaster, California",-118.1481016,34.703947
-"Prosperity, California",-119.4179324,36.778261
-"Gaston, California",-120.74056,39.39417
+"Hudson, North Carolina",-81.4959267,35.8484645
+"Latta, South Carolina",-79.4311616,34.3371047
+"Liberty, South Carolina",-82.69235909999999,34.78789100000001
+"Lancaster, South Carolina",-80.7709014,34.7204257
+"Prosperity, South Carolina",-81.5331602,34.2093079
+"Gaston, South Carolina",-81.1009286,33.8170974
 "Orcutt, California",-120.4359966,34.8652574
-"Clemmons, California",-121.0875922,38.1909312
+"Clemmons, North Carolina",-80.3819984,36.0215258
 "Yukon, Oklahoma",-97.76254410000001,35.5067215
 "Wyoming, Ontario",-82.11877679999999,42.9488694
 "Morris, Illinois",-88.4211785,41.357254
 "Elizabethton, Tennessee",-82.21068760000001,36.3487196
 "Dorchester, Ontario",-81.049127,42.9852149
-"Chapin, California",-119.4179324,36.778261
+"Chapin, South Carolina",-81.3498211,34.1659795
 "Federalsburg, Maryland",-75.77215509999999,38.6942809
-"Belton, California",-122.0732973,37.0513374
+"Belton, South Carolina",-82.49429479999999,34.5228881
 "Mabelton, Georgia",-84.5824329,33.8187167
 "Melville, New York",-73.41512139999999,40.7934322
 "Glenwood, Maryland",-77.0277326,39.2868284
 "New Hartford, New York",-75.2876661,43.073403
-"Sherrills Ford, California",-119.4179324,36.778261
+"Sherrills Ford, North Carolina",-80.9864655,35.6204121
 "Daleville, Virginia",-79.9129552,37.4099016
+"Westminster, California",-117.9897058,33.7591757
 "Bell, California",-118.1870156,33.9775142
-"Hanahan, California",-119.4179324,36.778261
+"Hanahan, South Carolina",-80.0031833,32.9305786
 "Moses Lake, Washington",-119.2780771,47.1301417
-"Boiling Springs, California",-119.4179324,36.778261
-"Stanfield, California",-119.4179324,36.778261
+"Boiling Springs, South Carolina",-81.9817726,35.046508
+"Stanfield, North Carolina",-80.4270094,35.2334772
 "Flatonia, Texas",-97.10859719999999,29.6877325
 "Rowland Heights, California",-117.9053395,33.9761238
 "Brooklet, Georgia",-81.6631659,32.37962940000001
-"Williamston, California",-119.4179324,36.778261
+"Williamston, South Carolina",-82.4779053,34.6184471
 "New Tripoli, Pennsylvania",-75.752039,40.681007
-"Chesterfield, California",-119.4179324,36.778261
-"Ladson, California",-119.4179324,36.778261
+"Chesterfield, South Carolina",-80.0881194,34.7359889
+"Ladson, South Carolina",-80.1098123,32.9857275
 "Rehoboth Beach, Del.",-75.07601369999999,38.7209454
 "Hudson, Florida",-82.69343429999999,28.3644485
-"Little Mountain, California",-119.4179324,36.778261
+"Little Mountain, South Carolina",-81.41232289999999,34.1962557
 "Mt. Zion, Illinois",-88.8742405,39.7714252
 "Lakewood, California",-118.1339563,33.8536269
 "Lake Jackson, Texas",-95.4343859,29.0338575
 "Milledgeville, Georgia",-83.2320991,33.0801429
-"Dillon, California",-122.9664887,38.2489921
+"Dillon, South Carolina",-79.3711579,34.4165505
 "Pomfret, Maryland",-77.0306325,38.5735817
 "Whitewright, Texas",-96.3924833,33.5128856
+"Union, South Carolina",-81.623711,34.7154122
 "Ridgeland S.C., NA",-80.980386,32.4807435
 "Kingsburg, California",-119.5541061,36.5139516
 "Chauncey, Georgia",-83.0645928,32.1046197
@@ -4468,9 +4494,9 @@ Hometown,lon,lat
 "Martin, Georgia",-83.18487809999999,34.4870458
 "Plainfield, New Jersey",-74.4073736,40.6337136
 "Klaipeda, Lithuania",21.1442794,55.70329479999999
-"Moncks Corner, California",-119.4179324,36.778261
+"Moncks Corner, South Carolina",-80.01313739999999,33.1960027
 "Anzoátegui, Venezuela",-63.95861110000001,8.5913073
-"Eastover, California",-119.4179324,36.778261
+"Eastover, South Carolina",-80.6928654,33.876821
 "Deltona, Florida",-81.26367379999999,28.9005446
 "Mars, Pennsylvania",-80.0117254,40.6958996
 "Harrington Park, New Jersey",-73.9798601,40.9837089
@@ -4479,39 +4505,39 @@ Hometown,lon,lat
 "East Chicago, Indiana",-87.4547635,41.63920239999999
 "Lacey, Washington",-122.8232553,47.0358969
 "Bredäng, Sweden",17.9333207,59.2949285
-"Orangeburg, California",-119.4179324,36.778261
+"Orangeburg, South Carolina",-80.8556476,33.4918203
 "Lommel, Belgium",5.309601900000001,51.2306827
 "Helsinki, Finland",24.938379,60.16985569999999
-"Roebuck, California",-119.4179324,36.778261
-"North Myrtle Beach, California",-119.4179324,36.778261
-"Chester, California",-121.2319098,40.3062736
+"Roebuck, South Carolina",-81.9662139,34.8795683
+"North Myrtle Beach, South Carolina",-78.680016,33.8160058
+"Chester, South Carolina",-81.2142561,34.7048613
 "Cayenne, French Guiana",-52.3354386,4.937977399999999
-"Monck's Corner, California",-119.4179324,36.778261
+"Monck's Corner, South Carolina",-80.01313739999999,33.1960027
 "Kaplan, Louisiana",-92.2848515,29.997984
-"Goose Creek, California",-119.4179324,36.778261
+"Goose Creek, South Carolina",-80.03258670000001,32.9810059
 "Sandersville, Georgia",-82.810138,32.9815431
 "St. Thomas, U.S.V.I.",-64.8940946,18.3380965
 "Montes Claros, Brazil",-43.8670745,-16.7291552
-"Turbeville, California",-119.4179324,36.778261
+"Turbeville, South Carolina",-80.0184063,33.8907158
 "Warren, Michigan",-83.01465259999999,42.5144566
 "Albertville, Minnesota",-93.6687657,45.2312337
 "West Salem, Ohio",-82.1098748,40.9714448
 "Rockleigh, New Jersey",-73.930414,41.0003754
-"Seneca, California",-121.084682,40.11044400000001
+"Seneca, South Carolina",-82.9532036,34.6856555
 "Niskayuna, New York",-73.89144069999999,42.8000049
 "Mickleton, New Jersey",-75.2378013,39.7904071
 "Lakesite, Tennessee",-85.126899,35.2086819
-"Winterville, California",-119.4179324,36.778261
+"Winterville, North Carolina",-77.40107619999999,35.529051
 "Christianburg, Virginia",-80.4089389,37.1298517
 "Brookville, Ohio",-84.4113366,39.8367207
-"Lincolnton, California",-119.4179324,36.778261
+"Lincolnton, North Carolina",-81.2545251,35.473745
 "Chester Springs, Pennsylvania",-75.6342521,40.0784461
 "Newtown Square, Pennsylvania",-75.4007058,39.9868904
 "Glenelg, Maryland",-76.9943449,39.2682882
 "Cambridge, Massachussets",-71.10973349999999,42.3736158
 "Canal Winchester, Ohio",-82.8123646,39.8466556
 "Coeur d'Alene, Idaho",-116.7812225,47.6734632
-"West End, California",-122.2810806,37.7724287
+"West End, North Carolina",-79.5671837,35.2399843
 "South Orange, New Jersey",-74.2609903,40.7489277
 "Flemington, New Jersey",-74.85933179999999,40.5123258
 "Toms River, New Jersey",-74.1979458,39.9537358
@@ -4521,91 +4547,92 @@ Hometown,lon,lat
 "North Andover, Massachussets",-71.1350575,42.69870239999999
 "Phoenixville, Pennsylvania",-75.51491279999999,40.1303822
 "Ghent, Belgium",3.7303351,51.0500182
-"Central, California",-119.7889248,36.9915398
+"Central, South Carolina",-82.7812526,34.7242749
 "Garnet Valley, Pennsylvania",-75.4696206,39.85834080000001
 "Attleboro, Massachussets",-71.2856082,41.94454409999999
 "Newburgh, IN",-87.4052865,37.9444882
-"Wrightsville Beach, California",-119.4179324,36.778261
+"Wrightsville Beach, North Carolina",-77.7963709,34.2085036
 "Skive, Denmark",9.0309083,56.5651232
-"Moore, California",-115.2644313,35.3894321
+"Moore, South Carolina",-81.992074,34.833416
 "Allentown, Pennsylvania",-75.4714098,40.6022939
-"St. Matthews, California",-119.4179324,36.778261
+"St. Matthews, South Carolina",-80.77786809999999,33.664876
 "Havelock, NC.",-76.9013301,34.8790492
-"Mount Airy, California",-119.4179324,36.778261
-"Williston, California",-119.4179324,36.778261
-"Darlington, California",-120.40056,38.72917
+"Mount Airy, North Carolina",-80.6053793,36.4999641
+"Williston, South Carolina",-81.4201063,33.4026477
+"Darlington, South Carolina",-79.8757116,34.3003526
 "Hamilton, New Jersey",-74.6796651,40.2115109
 "Charlotte, NC.",-80.8431267,35.2270869
 "Fort Oglethorpe, Georgia",-85.2569,34.9489645
-"Granite Falls, California",-119.4179324,36.778261
-"Bamberg, California",-119.4179324,36.778261
-"Camden, California",-119.796944,36.431111
-"Hamer, California",-119.4179324,36.778261
-"Cowpens, California",-119.4179324,36.778261
-"Pinewood, California",-116.7375177,33.8141851
-"Allendale, California",-121.943022,38.444630600000004
-"Hodges, California",-117.1925,34.815556
-"Lyman, California",-119.4179324,36.778261
-"Floydale, California",-119.4179324,36.778261
-"Pelzer, California",-119.4179324,36.778261
+"Granite Falls, North Carolina",-81.4306457,35.7965205
+"Bamberg, South Carolina",-81.0348202,33.2971012
+"Camden, South Carolina",-80.6070237,34.24653929999999
+"Hamer, South Carolina",-79.3296565,34.4773478
+"Cowpens, South Carolina",-81.8039916,35.0167918
+"Pinewood, South Carolina",-80.4634176,33.7404382
+"Allendale, South Carolina",-81.3084405,33.0079345
+"Hodges, South Carolina",-82.2442889,34.2876186
+"Lyman, South Carolina",-82.12733120000001,34.9481741
+"Floydale, South Carolina",-79.3361584,34.3237717
+"Pelzer, South Carolina",-82.45914429999999,34.6462737
 "Oakland, Florida",-81.6280811,28.5551762
-"Leesville, California",-122.4235921,39.1893342
-"Saluda, California",-119.4179324,36.778261
+"Leesville, South Carolina",-81.5132276,33.9163501
+"Saluda, South Carolina",-81.77205219999999,34.0015232
 "Dartmouth, Massachussets",-70.9704787,41.6130323
 "Huntingdon, Tennessee",-88.4281063,36.0006178
-"Bennettsville, California",-119.4179324,36.778261
-"Harrisburg, California",-117.108093,36.363171
-"James Island, California",-119.4179324,36.778261
-"Pendleton, California",-117.3871529,33.2145465
-"Southern Pines, California",-119.4179324,36.778261
-"Aynor, California",-119.4179324,36.778261
-"Powdersville, California",-119.4179324,36.778261
-"Richburg, California",-119.4179324,36.778261
+"Bennettsville, South Carolina",-79.68478139999999,34.6173803
+"Harrisburg, North Carolina",-80.6559017,35.3237528
+"James Island, South Carolina",-79.95284509999999,32.7534721
+"Pendleton, South Carolina",-82.7837514,34.6517733
+"Southern Pines, North Carolina",-79.3922539,35.1740471
+"Aynor, South Carolina",-79.1994874,33.9998881
+"Powdersville, South Carolina",-82.4929054,34.7917845
+"Richburg, South Carolina",-81.0195262,34.7159745
 "Chapin S.C., NA",-81.3498211,34.1659795
 "Rutledge, Georgia",-83.6123935,33.6259545
 "Tucker, Georgia",-84.2171424,33.8545479
-"Buford, California",-119.4179324,36.778261
-"Raeford, California",-119.4179324,36.778261
-"Kingstree, California",-119.4179324,36.778261
-"Vance, California",-119.1034385,36.2241173
-"Monroe, California",-122.7513769,38.4526896
-"Mullins, California",-119.4179324,36.778261
+"Buford, South Carolina",-80.6167328,34.7445961
+"Raeford, North Carolina",-79.2241997,34.9809995
+"Kingstree, South Carolina",-79.83062640000001,33.6676643
+"Vance, South Carolina",-80.4228665,33.4337744
+"Monroe, North Carolina",-80.5495112,34.9854275
+"Mullins, South Carolina",-79.25449019999999,34.2057166
 "Watchung, New Jersey",-74.4509863,40.63788
 "East Stroudsburg, Pennsylvania",-75.1817547,41.0030522
 "Nokesville, Virginia",-77.57971189999999,38.698729
 "Sylvania, Georgia",-81.636776,32.7504441
-"New Ellenton, California",-119.4179324,36.778261
-"Clinton, California",-120.6682645,38.3760236
+"New Ellenton, South Carolina",-81.68566539999999,33.421531
+"Clinton, North Carolina",-78.32333249999999,34.9979453
 "Reeltown, Alabama",-85.80523509999999,32.6037445
 "Smyrna, Del.",-75.6046494,39.2998339
 "Tampa. Fla., NA",-82.45875269999999,27.9516896
 "Bethlehem, Georgia",-83.7137827,33.9320556
 "Everett, Massachussets",-71.0536625,42.40843
 "Riceboro, Georgia",-81.4339538,31.7368764
-"Gadsden, California",-119.4179324,36.778261
+"Gadsden, South Carolina",-80.7659223,33.8457093
+"Marion, South Carolina",-79.4006069,34.178216
 "Warrenton, Georgia",-82.6620781,33.40708370000001
 "Bentonia, Mississippi",-90.3648139,32.6409711
-"Santee, California",-116.9739167,32.8383828
-"Rockingham, California",-119.4179324,36.778261
+"Santee, South Carolina",-80.4864764,33.4751634
+"Rockingham, North Carolina",-79.7739457,34.9393201
 "Stevens, Pennsylvania",-76.1551874,40.2162335
-"Dalzell, California",-119.4179324,36.778261
+"Dalzell, South Carolina",-80.4300818,34.0168212
 "Washington D.C., NA",-77.0368707,38.9071923
-"Wagener, California",-121.0813274,37.7979829
+"Wagener, South Carolina",-81.36121419999999,33.6523712
 "Harlem, NY",-73.9464769,40.8115504
 "Oxford, Georgia",-83.8674051,33.6190031
 "Summerville, SC",-80.17581009999999,33.0188755
 "Eatonton, Georgia",-83.3884961,33.3267997
-"Varnville, California",-119.4179324,36.778261
+"Varnville, South Carolina",-81.07927219999999,32.8504445
 "Yorktown Heights, New York",-73.7776336,41.2709274
 "Cypress, TX.",-95.6937856,29.9716905
 "Yeovil, England",-2.633308,50.942061
-"Isle of Palms, California",-119.4179324,36.778261
+"Isle of Palms, South Carolina",-79.7343791,32.8194131
 "Sharon, Pennsylvania",-80.4934035,41.2331116
 "Saint Helena, California",-122.4703868,38.5052429
 "Abingdon, Virginia",-81.9773482,36.70983349999999
 "Limbach, Slovakia",17.2225798,48.2884848
 "Mdina, Malta",14.4031146,35.8863691
-"Ware Shoals, California",-119.4179324,36.778261
+"Ware Shoals, South Carolina",-82.2467853,34.3984511
 "Valbonne, France",7.009186,43.64152
 "East Northport, New York",-73.3245613,40.8767647
 "Lancaster, Ohio",-82.5993294,39.7136754
@@ -4632,6 +4659,7 @@ Hometown,lon,lat
 "Badalona, Spain",2.2449607,41.446964
 "Kettering, Ohio",-84.1688274,39.68950359999999
 "Montepelior, Virginia",-77.6844344,37.8212538
+"Beaufort, North Carolina",-76.6638186,34.7182174
 "Coburg, Bayern",10.962695,50.2612094
 "California, Maryland",-76.5074542,38.3004029
 "Rumney, N.H.",-71.8125811,43.80534859999999
@@ -4641,10 +4669,10 @@ Hometown,lon,lat
 "Penn Valley, California",-121.1910659,39.196005
 "Great Falls, Virginia",-77.2883157,38.9981652
 "Bat Hefer, Israel",35.013729,32.333714
-"Iron Station, California",-119.4179324,36.778261
+"Iron Station, North Carolina",-81.15618979999999,35.4415237
 "Wurzburg, Germany",9.9533548,49.79130439999999
 "Pola de Siero, Spain",-5.660825,43.3915224
-"Topsail Beach, California",-119.4179324,36.778261
+"Topsail Beach, North Carolina",-77.63052929999999,34.3651685
 "Bothell, WA",-122.2054452,47.76011099999999
 "Solon, OH",-81.44122589999999,41.3897764
 "Ochlocknee, Georgia",-84.0529518,30.97379969999999
@@ -4689,7 +4717,7 @@ Hometown,lon,lat
 "Hilton Head Island, SC",-80.752608,32.216316
 "Raleigh, NC",-78.6381787,35.7795897
 "Weddington, NC",-80.7609035,35.0223708
-"Tirapol, Mississippi",-89.3985283,32.3546679
+"Tirapol, Missouri",-91.8318334,37.9642529
 "Charleston, SC",-79.93105120000001,32.7764749
 "Kingwood, TX",-95.18447739999999,30.0500255
 "North Chesterfield, Virginia",-77.5969889,37.5003021
@@ -4705,7 +4733,7 @@ Hometown,lon,lat
 "Urbandale, IA",-93.76074109999999,41.6293984
 "Bentonville, AR",-94.21021410000002,36.3723561
 "Ypsilanti, Michigan",-83.61299389999999,42.2411499
-"Daniel Island, California",-119.4179324,36.778261
+"Daniel Island, South Carolina",-79.91203019999999,32.8590639
 "Allested-Vejli, Denmark",10.314978,55.270498
 "Tynset, Norway",10.7824199,62.2759356
 "Wolverhampton, England",-2.1256587,52.5868159
@@ -4714,11 +4742,10 @@ Hometown,lon,lat
 "Kerkrade, Netherlands",6.0657726,50.8678177
 "Capljina, Bosnia & Herzegovina",17.7054838,43.11182669999999
 "Totowa, New Jersey",-74.20986789999999,40.9050988
-"Harrisonville, Mississippi",-90.0778615,31.9723781
-"Denton, California",-119.4179324,36.778261
+"Harrisonville, Missouri",-94.3488372,38.6533445
+"Denton, North Carolina",-80.1158813,35.6334712
 "Thornton, Colorado",-104.9719243,39.8680412
 "Moon Township, Pennsylvania",-80.22134770000001,40.51697670000001
-"Fenton, Missouri",-90.4429881,38.5126456
 "Kecskemét, Hungary",19.6896861,46.8963711
 "Gelsted, Denmark",9.9733561,55.3988323
 "LaSalle, Ontario",-83.1024769,42.2355411
@@ -4734,7 +4761,7 @@ Hometown,lon,lat
 "Millsboro Del., NA",-75.2913018,38.59150229999999
 "Odense, Denmark",10.40237,55.40375599999999
 "West Deptford, New Jersey",-75.1895576,39.8318378
-"Summerfield, California",-119.4179324,36.778261
+"Summerfield, North Carolina",-79.9047583,36.2087468
 "San Juan Capistrano, California",-117.6627655,33.5019027
 "Maumee, Ohio",-83.65382439999999,41.5628294
 "Lynden, Washington",-122.4529469,48.9428018
@@ -4753,16 +4780,15 @@ Hometown,lon,lat
 "Laytonsville, Maryland",-77.1427587,39.2120504
 "Harpenden, England",-0.358953,51.81845999999999
 "Cary, NC",-78.7811169,35.79154
-"Lake Wylie, California",-119.4179324,36.778261
+"Lake Wylie, South Carolina",-81.0428538,35.108476
 "Tinton Falls, New Jersey",-74.1004185,40.3042773
 "Hingham, MA",-70.889759,42.2418172
 "Livingston, NJ",-74.3300842,40.7862871
 "Flemington, NJ",-74.85933179999999,40.5123258
-"Sanford, California",-118.3122808,34.0628775
+"Sanford, North Carolina",-79.1802994,35.4798757
 "Monroe Township, NJ",-74.43304739999999,40.336419
 "Myrtle Beach, SC",-78.8802094,33.6954218
 "Wheatfield, NY",-78.8722341,43.08510690000001
-"St. Charles, Missouri",-90.4974359,38.7881062
 "Wyckoff, NJ",-74.1729106,41.0095316
 "Tarpon Springs, Florida",-82.7567679,28.1461248
 "Lansdowne, Virginia",-77.4793641,39.0832176
@@ -4771,23 +4797,23 @@ Hometown,lon,lat
 "Frisco, TX",-96.82361159999999,33.1506744
 "Merignies, France",3.110068,50.505926
 "Youngsville, NC",-78.4744439,36.0248732
-"Landrum, California",-119.4179324,36.778261
+"Landrum, South Carolina",-82.1892795,35.1751148
 "Federal Way, Washington",-122.3126222,47.3223221
 "Hercules, California",-122.2885808,38.0171441
 "Oxon Hill, Maryland",-76.98972780000001,38.80331779999999
 "Lansdale, Penn.",-75.2837862,40.2414952
 "Blauvelt, New York",-73.95763780000001,41.0634299
 "Somerset, New Jersey",-74.48848679999999,40.497604
-"Chesnee, California",-119.4179324,36.778261
+"Chesnee, South Carolina",-81.8609371,35.1484549
 "Hamilton Ohio, NA",-84.5613355,39.3995008
 "Ocean, New Jersey",-74.0420699,40.2645806
-"Hartville, California",-119.4179324,36.778261
+"Hartville, South Carolina",-80.07333129999999,34.3742857
 "Independence, Ohio",-81.63790329999999,41.3686645
 "Gros-Islet, Saint Lucia",-60.9452794,14.0843578
 "Baldwin, Georgia",-83.5373946,34.4917665
 "Northampton, Massachussets",-72.64120129999999,42.3250896
 "Pattenburg, New Jersey",-75.0114612,40.6361054
-"McCormick, California",-119.4179324,36.778261
+"McCormick, South Carolina",-82.29345850000001,33.9134577
 "Midland Park, New Jersey",-74.1406988,40.98926429999999
 "Elgin, Minnesota",-92.2515588,44.1302435
 "Winfield, W.V.",-81.8934675,38.5331448
@@ -4796,8 +4822,8 @@ Hometown,lon,lat
 "Providence, R.I.",-71.4128343,41.8239891
 "Fort Washington, Maryland",-77.0230313,38.7073379
 "Butterworth, South Africa",28.1446262,-32.3323496
-"Saint Matthews, California",-119.4179324,36.778261
-"St. George, California",-119.4179324,36.778261
+"Saint Matthews, South Carolina",-80.77786809999999,33.664876
+"St. George, South Carolina",-80.57565330000001,33.1859958
 "Clyo, Georgia",-81.2670507,32.4840731
 "Capitol Heights, Maryland",-76.9158068,38.8851122
 "Danville, Pennsylvania",-76.6127329,40.96342
@@ -4807,7 +4833,7 @@ Hometown,lon,lat
 "St. George, Barbados",-59.54611249999999,13.1401378
 "Mahe, Seychelles",55.480396,-4.6826693
 "Decatur, Illinois",-88.9548001,39.8403147
-"Willow Spring, California",-119.20361,38.18861
+"Willow Spring, North Carolina",-78.73111039999999,35.5956253
 "Zephyrhills, Florida",-82.18119469999999,28.2336196
 "Gonaives, Haiti",-72.6801576,19.4511496
 "Slovenia, NA",14.995463,46.151241
@@ -4815,7 +4841,7 @@ Hometown,lon,lat
 "East Setauket, New York",-73.1025502,40.9293759
 "Obinomba, Nigeria",6.176563799999999,5.862086499999999
 "Bonaire, Georgia",-83.5960161,32.5437575
-"Pawleys Island, California",-119.4179324,36.778261
+"Pawleys Island, South Carolina",-79.12143130000001,33.4332236
 "Frenchtown, New Jersey",-75.06156,40.5262138
 "Coimbra, Portugal",-8.4102573,40.2033145
 "Morocco, NA",-7.092619999999999,31.791702
@@ -4823,7 +4849,7 @@ Hometown,lon,lat
 "Glenside, Pennsylvania",-75.1527928,40.0999077
 "Ward Hill, Massachussets",-71.1044564,42.75686109999999
 "Amityville, New York",-73.4170673,40.6789893
-"Walterboro, California",-119.4179324,36.778261
+"Walterboro, South Carolina",-80.6667688,32.9051704
 "Westmoreland, Jamaica",-78.1564432,18.2944378
 "Granville, Ohio",-82.51960369999999,40.06811920000001
 "Sao Jose dos Campos, Pennsylvania",-77.1945247,41.2033216
@@ -4851,11 +4877,11 @@ Hometown,lon,lat
 "Wittman, Arizona",-112.5282591,33.7763856
 "West Dundee, Illinois",-88.28285810000001,42.0980812
 "Rosemount, Minnesota",-93.12577230000001,44.7394103
-"SImpsonville, California",-119.4179324,36.778261
+"SImpsonville, South Carolina",-82.25428339999999,34.7370639
 "Manitowoc, Wisconsin",-87.657584,44.0886059
 "El Dorado, Trinidad and Tobago",-61.37643809999999,10.6500961
 "Nazareth, Pennsylvania",-75.3096237,40.740375
-"Kershaw, California",-119.4179324,36.778261
+"Kershaw, South Carolina",-80.5836836,34.5518201
 "Chardon, Ohio",-81.2133262,41.5786639
 "Union City, Tennessee",-89.0570096,36.4242303
 "Mansfield, Massachussets",-71.2190578,42.03345650000001
@@ -4985,7 +5011,7 @@ Hometown,lon,lat
 "Darien, Conn.",-73.4686858,41.0771914
 "Hortonville, Wisconsin",-88.63816150000001,44.334705
 "Champaign, Illinois",-88.2433829,40.1164204
-"Richlands, California",-117.1411443,33.1542054
+"Richlands, North Carolina",-77.5466342,34.8993297
 "Chicago Heights, Illinois",-87.6355995,41.506146
 "La Vergne, Tennessee",-86.5819394,36.0156178
 "Rincon, Georgia",-81.2353612,32.2947732
@@ -5089,7 +5115,8 @@ Hometown,lon,lat
 "Hsinchu, Taiwan",120.9674798,24.8138287
 "Berkshire, England",-1.1853677,51.4669939
 "Wilmington, NC",-77.8868117,34.2103894
-"Mooresville, California",-119.4179324,36.778261
+"Mooresville, North Carolina",-80.8140473,35.5820319
+"Hillsborough, California",-122.3794163,37.5741032
 "Marlboro, New Jersey",-74.26872910000002,40.3380949
 "Shenzhen, China",114.05956,22.5428599
 "Montargis, France",2.736291,47.99729
