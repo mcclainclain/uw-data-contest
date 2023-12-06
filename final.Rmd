@@ -29,6 +29,8 @@ library(ggrepel)
 show_table = function(df, caption="") {
   return (df %>% kbl(caption = caption) %>% kable_classic_2(bootstrap_options = c("striped", "hover"), full_width = F, font_size=20, html_font="Cambria"))
 }
+
+
 ```
 
 
@@ -167,6 +169,7 @@ csv_files = csv_files[!(csv_files %in% c("geocodes.csv", "rosters.csv"))]
 
 all_schools = data.frame()
 
+# Combine all of the content from each csv together into one large dataframe.
 for (f in csv_files) {
   file = read_csv(f)
   file$School = rep(str_split_1(f, "/")[1], nrow(file))
@@ -216,6 +219,8 @@ print(paste("Old number of names:", length(names), "New number of names", length
 ```
 
 ### Standardizing State Names
+
+All of the city names are not the same, that is just the nature of scraping from these different websites. So we have to try and standardize as best as possible in order to produce relevant data. 
 
 ```{r}
 
@@ -357,7 +362,7 @@ Behind the scenes, I used a script to help standardize the states, so that we do
 hometowns$City = paste(hometowns$Town, ", ", hometowns$State, sep="")
 all_schools$Hometown = hometowns$City
 
-# Write this to a csv to use for geocoding
+# Write this to a csv to use for geocoding script
 write.csv(all_schools, "rosters.csv", row.names=F)
 ```
 
@@ -372,8 +377,10 @@ I created a `geocodes.R` script that takes the cities in the players dataset and
 library(tidyverse)
 library(ggmap)
 
+# Get the rosters.csv file we just wrote
 players = read_csv("rosters.csv")
 
+# Read the API key from our .REnviron file
 readRenviron("./.Renviron")
 register_google(Sys.getenv("MAPSAPIKEY"))
 
@@ -383,7 +390,7 @@ cities$Hometown = cities$unique.players.Hometown.
 cities = cities %>% select(Hometown) %>% drop_na()
 
 
-
+# Geocode all of the cities
 geocoded_cities = mutate_geocode(cities, Hometown)
 
 write_csv(distinct(geocoded_cities %>% select(Hometown, lon, lat)), "./geocodes.csv")
@@ -402,10 +409,13 @@ To help with the map, I will add a metric that has the top school of choice for 
 
 ```{r}
 
+
 schools = all_schools %>% select(Hometown, School) %>% group_by(Hometown, School) %>% summarize(n = length(Hometown)) %>% drop_na()
 
+# SQL query to find the School with the most players from that city.
 cities = sqldf("SELECT Hometown, School, max(n) as Num_Players FROM schools GROUP BY Hometown")
 
+# Add all of these schools and their respective number of players to the geocodes dataframe
 top_schools = c()
 ns = c()
 for (city in geocodes$Hometown) {
@@ -480,6 +490,10 @@ for (school in geocodes$School){
   colors = c(colors, school_color(school))
 }
 geocodes$Color = colors
+
+# Colors group for future plotting
+
+group.colors = c("Alabama" = "#9E1B32", "Arkansas" = "#9D2235", "Auburn" = "#E87722", "Florida" = "#0021A5", "Kentucky" = "#0033A0", "LSU" = "#461D7C", "Mississippi State" = "#5D1725", "Missouri" = "#F1B82D", "South Carolina" = "#73000A", "Vanderbilt" = "#866D4B")
 ```
 
 
@@ -499,6 +513,8 @@ First, we retrieve the data from the census API, and clean it up slightly.
 ```{r}
 readRenviron("./.Renviron")
 api_key = Sys.getenv("CENSUSKEY")
+
+# Create our url string
 url = str_glue("https://api.census.gov/data/2019/acs/acs5?get=NAME,B01002_001E,B02001_002E,B02001_003E,B25010_001E,B01003_001E&for=place:*&in=state:*&key={api_key}")
 
 data = fromJSON(url)
@@ -506,10 +522,12 @@ data = fromJSON(url)
 census_data = data.frame(data) %>% slice(2:nrow(data))
 colnames(census_data) = c("City", "Avg_Age", "B02001_002E", "B02001_003E", "Avg_Household_Size", "Total_Pop", "state", "place")
 
+# Change column names
 census_data$B02001_002E = as.numeric(census_data$B02001_002E)
 census_data$B02001_003E = as.numeric(census_data$B02001_003E)
 census_data$Total_Pop = as.numeric(census_data$Total_Pop)
 
+# Calculate percentages
 census_data = census_data %>% 
   mutate(Percent_White = (B02001_002E/Total_Pop) * 100) %>% 
   mutate(Percent_Black = (B02001_003E/Total_Pop) * 100) %>% 
@@ -539,6 +557,7 @@ get_state = function(name) {
 ```
 
 ```{r}
+# Apply City and State Calculations to Census data
 census_data$State = lapply(census_data$City, get_state)
 census_data$City = lapply(census_data$City, split_city)
 census_data$City_str = paste(census_data$City, ", ", census_data$State, sep="")
@@ -547,7 +566,9 @@ census_data$City_str = paste(census_data$City, ", ", census_data$State, sep="")
 
 ## Data Visualizations
 
-We get as many cities as we can that have available census data.
+Below are some different visualizations that I think can represent some of this data in a effective manner.
+
+### Census Data
 
 ```{r}
 cities_w_census = census_data %>% 
@@ -569,7 +590,7 @@ ggplot(pct_black, aes(y=reorder(City_str, Percent_Black), x=Percent_Black)) +
 
 ```
 
-Let's plot the top 50 towns, and see where they land on the map in accordance with the players.
+Let's plot the top 50 towns now, and see where they land on the map in accordance with the players.
 
 ```{r}
 register_google(Sys.getenv("MAPSAPIKEY"))
@@ -583,21 +604,97 @@ geocoded_top_50 = cities_w_census %>%
 m %>% addCircleMarkers(geocoded_top_50$lon, geocoded_top_50$lat, label=geocoded_top_50$City_str, popup=paste("<b>", geocoded_top_50$City_str, "</b><br>", round(geocoded_top_50$Percent_Black, 2), "% Black"), color="purple")
 ```
 
+Let's use the cities dataframe to find the top schools for each of these census cities, so we can see more effectively where players from these places are attending.
+
+```{r}
+# Get top schools for each census city
+tempdf1 = cities %>% filter(Hometown %in% cities_w_census$City_str)
+
+census_top_schools = c()
+
+for (i in 1:nrow(cities_w_census)){
+  city = tempdf1[tempdf1["Hometown"] == cities_w_census$City_str[i],]
+  census_top_schools = c(census_top_schools, city$School)
+}
+
+cities_w_census$Top_School = census_top_schools
+```
+
+
+Which schools are high-black/white recruits attending?
+
+```{r}
+cities_w_census %>% 
+  filter(Percent_Black > 50) %>% 
+  count(Top_School) %>% 
+  arrange(desc(n)) %>% 
+  ggplot(aes(x=reorder(Top_School, -n), y=n, fill=Top_School)) +
+  geom_col(color = "black") +
+  scale_fill_manual(values=group.colors) +
+  theme(axis.text.x = element_text(angle=90, vjust=1)) +
+  xlab("School") +
+  ylab("Number of Majority Black Cities") +
+  ggtitle("Schools who have Most Recruits from Majority Black Cities") +
+  guides(fill=guide_legend(title="School"))
+```
+
+Naturally, we would expect to see opposite results from majority white cities.
+
+
+```{r}
+cities_w_census %>% 
+  filter(Percent_White > 50) %>% 
+  count(Top_School) %>% 
+  arrange(desc(n)) %>% 
+  ggplot(aes(x=reorder(Top_School, -n), y=n, fill=Top_School)) +
+  geom_col(color = "black") +
+  scale_fill_manual(values=group.colors) +
+  theme(axis.text.x = element_text(angle=90, vjust=1)) +
+  xlab("School") +
+  ylab("Number of Majority White Cities") +
+  ggtitle("Schools who have Most Recruits from Majority White Cities") +
+  guides(fill=guide_legend(title="School"))
+```
+
+We see that many of the schools who previously brought more black student-athletes in, tend to be less likely to be a top school in a majority white city.
+
+Let's also take into account how many majority white cities there are in comparison with majority black cities. While this is to be expected due to African-Americans being a large minority, it is important to visualize.
+
+```{r}
+num_black_cities = nrow(cities_w_census %>% filter(Percent_Black > 50))
+num_white_cities = nrow(cities_w_census %>% filter(Percent_White > 50))
+
+num_cities_df = data.frame(Race = c("Black", "White"), Num_Majority_Cities = c(num_black_cities, num_white_cities))
+
+ggplot(num_cities_df, aes(x=reorder(Race, -Num_Majority_Cities), y=Num_Majority_Cities)) +
+  geom_col(fill="lightblue", color="black") +
+  ylab("Number of Majority Cities") +
+  xlab("Race")
+```
+
+
 ### Distance Away From Home
 
 I am quite fascinated by the world of Name, Image, and Likeness (NIL), as well as the impact of the transfer portal on the world of college sports. It started on July 1, 2021, so let's take into account some things with its impact.
 
+First, lets do some data cleaning/calculations to determine spherical distances from each city to its respective school.
 
 ```{r}
 universities = unique(schools$School)
 uni_cities = c("Nashville, TN", "Lexington, KY", "Tuscaloosa, AL", "Gainesville, FL", "Baton Rouge, LA", "Starkville, MS", "Columbia, SC", "Fayetteville, AR", "Auburn, AL", "Columbia, MO")
 
+# Add each university's city so it can be geocoded for distance calculations
 school_locs = data.frame(School = universities, City = uni_cities) %>% mutate_geocode(City)
 ```
+
+
+In the next two chunks, I add each city's geocoded location to the `all_schools` dataframe, as well as the geocoded location for each school in the dataframe.
+
 ```{r}
 
 lons = c()
 lats = c()
+
 # Apply to all players dataframe
 for (city in all_schools$Hometown) {
   geocode = geocodes[geocodes$Hometown == city,]
@@ -622,10 +719,13 @@ all_schools$school_lon = sc_lons
 all_schools$school_lat = sc_lats
 ```
 
+Now with those geocodes in place, we can calculate the Haversine distance (distance across a sphere) of each city-school pair.
+
 ```{r}
 dists = c()
 
 for (i in 1:nrow(all_schools)) {
+  # Calculate distance, divide by 1000 for km
   dists = c(dists, distHaversine(c(all_schools$lon[i], all_schools$lat[i]), c(all_schools$school_lon[i], all_schools$school_lat[i]))/1000)
 }
 
@@ -644,10 +744,13 @@ schools_dist_var = all_schools %>%
   mutate(Color = school_color(School), label= toupper(substr(School, 1, 3)))
 ```
 
+
+Now we can take each schools variance in distance over time, and see how "spread out" their recruitment is.
+
 ```{r}
 
-group.colors = c("Alabama" = "#9E1B32", "Arkansas" = "#9D2235", "Auburn" = "#E87722", "Florida" = "#0021A5", "Kentucky" = "#0033A0", "LSU" = "#461D7C", "Mississippi State" = "#5D1725", "Missouri" = "#F1B82D", "South Carolina" = "#73000A", "Vanderbilt" = "#866D4B")
 
+# This allows for nice labels
 ends = schools_dist_var %>% filter(Year == 2023)
 
 ggplot(schools_dist_var, aes(x=Year, y=distance_var)) +
@@ -693,8 +796,46 @@ ggplot(nil_diff_school, aes(x=School, y=var_diff, fill=School)) +
   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_text(angle=90, vjust=1)) +
   scale_fill_manual(values=group.colors) +
   ylab("Difference in Variance") +
-  xlab("Year Range") +
+  xlab("School") +
   ggtitle("Difference in Variance Before and After NIL Introduction") 
 ```
+
 We see from this that 6 out of 10 schools have increased their recruitment range since NIL was introduced. Some like Kentucky and Auburn have adjusted to bring recruits in that are closer to campus.
 
+### In State Recruiting
+
+Which schools (out of the subset that I have scraped) are the best at recruiting in their state? Out of all of the cities in their state, how many are they the majority recruiter in?
+
+```{r}
+unis = sort(unique(cities$School))
+uni_states = data.frame(School = unis, State = c("Alabama", "Arkansas", "Alabama", "Florida", "Kentucky", "Louisiana", "Mississippi", "Missouri", "South Carolina", "Tennessee"))
+
+# Give the cities dataframe all of their states
+hometowns_unique = distinct(hometowns) %>% arrange(City)
+
+cities$State = hometowns_unique$State
+cities_filtered = cities %>% filter(State %in% uni_states$State)
+
+
+# SQL query to determine percentage of cities in state that a school has a majority in
+sql_calc = sqldf("with cte as (SELECT State, School, COUNT(Hometown) as Num_Cities,
+                 count(*) * 100.0 / sum(count(*)) over(PARTITION BY State) as Percentage_Of_Cities 
+                 FROM cities_filtered 
+                 GROUP BY State, School) 
+                 SELECT * FROM cte WHERE State == School OR (State = 'Alabama' AND School = 'Auburn') OR (State = 'Louisiana' AND School = 'LSU') OR (State = 'Tennessee' AND School = 'Vanderbilt') OR (State = 'Mississippi' AND School = 'Mississippi State')")
+
+
+# Plot
+ggplot(sql_calc, aes(x=reorder(School, -Percentage_Of_Cities), y=Percentage_Of_Cities, fill=School)) +
+  geom_col(color="black") +
+  theme(axis.text.x=element_text(angle=90, vjust=1)) +
+  scale_fill_manual(values=group.colors) +
+  xlab("School") +
+  ylab("Percentage of Cities in State") +
+  ggtitle("Percentage of Majority Cities in State")
+
+```
+
+## Thank You!
+
+Thanks for listening to my presentation! This took a lot of hard work over the last week or so, so I appreciate the support.
